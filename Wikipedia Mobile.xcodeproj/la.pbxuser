@@ -1,0 +1,174 @@
+// !$*UTF8*$!
+{
+	0B2D880911199D3B00328619 /* Wikipedia Mobile */ = {
+		isa = PBXExecutable;
+		activeArgIndices = (
+		);
+		argumentStrings = (
+		);
+		autoAttachOnCrash = 1;
+		breakpointsEnabled = 1;
+		configStateDict = {
+		};
+		customDataFormattersEnabled = 1;
+		dataTipCustomDataFormattersEnabled = 1;
+		dataTipShowTypeColumn = 1;
+		dataTipSortType = 0;
+		debuggerPlugin = GDBDebugging;
+		disassemblyDisplayState = 0;
+		dylibVariantSuffix = "";
+		enableDebugStr = 1;
+		environmentEntries = (
+		);
+		executableSystemSymbolLevel = 0;
+		executableUserSymbolLevel = 0;
+		libgmallocEnabled = 0;
+		name = "Wikipedia Mobile";
+		showTypeColumn = 0;
+		sourceDirectories = (
+		);
+	};
+	0B2D881C11199D4A00328619 /* Source Control */ = {
+		isa = PBXSourceControlManager;
+		fallbackIsa = XCSourceControlManager;
+		isSCMEnabled = 0;
+		scmConfiguration = {
+			repositoryNamesForRoots = {
+				"" = "";
+			};
+		};
+	};
+	0B2D881D11199D4A00328619 /* Code sense */ = {
+		isa = PBXCodeSenseManager;
+		indexTemplatePath = "";
+	};
+	0B2D884B1119A3CD00328619 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28C286DF0D94DF7D0034E888 /* RootViewController.h */;
+		name = "RootViewController.h: 14";
+		rLen = 0;
+		rLoc = 282;
+		rType = 0;
+		vrLen = 466;
+		vrLoc = 0;
+	};
+	0B2D884C1119A3CD00328619 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28C286E00D94DF7D0034E888 /* RootViewController.m */;
+		name = "RootViewController.m: 12";
+		rLen = 0;
+		rLoc = 260;
+		rType = 0;
+		vrLen = 715;
+		vrLoc = 0;
+	};
+	0B2D88591119AC3D00328619 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28C286E00D94DF7D0034E888 /* RootViewController.m */;
+		name = "RootViewController.m: 13";
+		rLen = 0;
+		rLoc = 225;
+		rType = 0;
+		vrLen = 712;
+		vrLoc = 0;
+	};
+	0B2D88741119B92B00328619 /* PlistBookmark */ = {
+		isa = PlistBookmark;
+		fRef = 8D1107310486CEB800E47090 /* Wikipedia_Mobile-Info.plist */;
+		fallbackIsa = PBXBookmark;
+		isK = 0;
+		kPath = (
+		);
+		name = "/Users/la/wikipedia-iphone/Wikipedia_Mobile-Info.plist";
+		rLen = 0;
+		rLoc = 9223372036854775807;
+	};
+	0B2D88751119B92B00328619 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28C286E00D94DF7D0034E888 /* RootViewController.m */;
+		name = "RootViewController.m: 13";
+		rLen = 0;
+		rLoc = 225;
+		rType = 0;
+		vrLen = 669;
+		vrLoc = 0;
+	};
+	0B2D88761119B92B00328619 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28C286E00D94DF7D0034E888 /* RootViewController.m */;
+		name = "RootViewController.m: 14";
+		rLen = 0;
+		rLoc = 260;
+		rType = 0;
+		vrLen = 669;
+		vrLoc = 0;
+	};
+	1D6058900D05DD3D006BFB54 /* Wikipedia Mobile */ = {
+		activeExec = 0;
+		executables = (
+			0B2D880911199D3B00328619 /* Wikipedia Mobile */,
+		);
+	};
+	28C286DF0D94DF7D0034E888 /* RootViewController.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {870, 457}}";
+			sepNavSelRange = "{282, 0}";
+			sepNavVisRange = "{0, 466}";
+		};
+	};
+	28C286E00D94DF7D0034E888 /* RootViewController.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {795, 2145}}";
+			sepNavSelRange = "{260, 0}";
+			sepNavVisRange = "{0, 669}";
+		};
+	};
+	29B97313FDCFA39411CA2CEA /* Project object */ = {
+		activeBuildConfigurationName = Debug;
+		activeExecutable = 0B2D880911199D3B00328619 /* Wikipedia Mobile */;
+		activeTarget = 1D6058900D05DD3D006BFB54 /* Wikipedia Mobile */;
+		breakpoints = (
+		);
+		codeSenseManager = 0B2D881D11199D4A00328619 /* Code sense */;
+		executables = (
+			0B2D880911199D3B00328619 /* Wikipedia Mobile */,
+		);
+		perUserDictionary = {
+			PBXConfiguration.PBXFileTableDataSource3.PBXFileTableDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					617,
+					20,
+					48,
+					43,
+					43,
+					20,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFileDataSource_FiletypeID,
+					PBXFileDataSource_Filename_ColumnID,
+					PBXFileDataSource_Built_ColumnID,
+					PBXFileDataSource_ObjectSize_ColumnID,
+					PBXFileDataSource_Errors_ColumnID,
+					PBXFileDataSource_Warnings_ColumnID,
+					PBXFileDataSource_Target_ColumnID,
+				);
+			};
+			PBXPerProjectTemplateStateSaveDate = 286897979;
+			PBXWorkspaceStateSaveDate = 286897979;
+		};
+		perUserProjectItems = {
+			0B2D884B1119A3CD00328619 = 0B2D884B1119A3CD00328619 /* PBXTextBookmark */;
+			0B2D884C1119A3CD00328619 = 0B2D884C1119A3CD00328619 /* PBXTextBookmark */;
+			0B2D88591119AC3D00328619 = 0B2D88591119AC3D00328619 /* PBXTextBookmark */;
+			0B2D88741119B92B00328619 /* PlistBookmark */ = 0B2D88741119B92B00328619 /* PlistBookmark */;
+			0B2D88751119B92B00328619 /* PBXTextBookmark */ = 0B2D88751119B92B00328619 /* PBXTextBookmark */;
+			0B2D88761119B92B00328619 /* PBXTextBookmark */ = 0B2D88761119B92B00328619 /* PBXTextBookmark */;
+		};
+		sourceControlManager = 0B2D881C11199D4A00328619 /* Source Control */;
+		userBuildSettings = {
+		};
+	};
+}
