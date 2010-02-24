@@ -6,30 +6,65 @@
 //  Copyright __MyCompanyName__ 2010. All rights reserved.
 //
 
+#import <SystemConfiguration/SystemConfiguration.h>
 #import "Wikipedia_MobileAppDelegate.h"
 #import "RootViewController.h"
-
+#import "ModalViewController.h"
 
 @implementation Wikipedia_MobileAppDelegate
 
 @synthesize window;
 @synthesize navigationController;
-
+@synthesize settings;
 
 #pragma mark -
 #pragma mark Application lifecycle
 
 - (void)applicationDidFinishLaunching:(UIApplication *)application {    
-    
-    // Override point for customization after app launch    
+    settings = [NSUserDefaults standardUserDefaults];
+	if ([settings stringForKey:@"languageKey"] == NULL) {
+		[settings setObject:@"en" forKey:@"languageKey"];
+	}
 	
 	[window addSubview:[navigationController view]];
     [window makeKeyAndVisible];
+	
+	if ([self isDataSourceAvailable] == NO) {
+		UIAlertView *errorAlert = [[UIAlertView alloc] initWithTitle:@"Error: No Internet Connection" message:@"This application requires internet access." delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
+		[errorAlert show];
+	}
+}
+
+- (BOOL)isDataSourceAvailable
+{
+    static BOOL checkNetwork = YES;
+    if (checkNetwork) {
+        checkNetwork = NO;
+        
+        Boolean success;
+        const char *host_name = "wikipedia.org";
+		
+        SCNetworkReachabilityRef reachability = SCNetworkReachabilityCreateWithName(NULL, host_name);
+        SCNetworkReachabilityFlags flags;
+        success = SCNetworkReachabilityGetFlags(reachability, &flags);
+        _isDataSourceAvailable = success && (flags & kSCNetworkFlagsReachable) && !(flags & kSCNetworkFlagsConnectionRequired);
+        CFRelease(reachability);
+    }
+    return _isDataSourceAvailable;
 }
 
 
 - (void)applicationWillTerminate:(UIApplication *)application {
 	// Save data if appropriate
+	
+    NSError *error = nil;
+    if (managedObjectContext != nil) {
+        if ([managedObjectContext hasChanges] && ![managedObjectContext save:&error]) {
+			NSString *errorString = [NSString stringWithFormat:@"%@ - %@", error, [error userInfo]];
+			UIAlertView *errorAlert = [[UIAlertView alloc] initWithTitle:@"Database Error" message:errorString delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
+			[errorAlert show];
+        } 
+    }
 }
 
 
@@ -40,6 +75,77 @@
 	[navigationController release];
 	[window release];
 	[super dealloc];
+}
+
+#pragma mark -
+#pragma mark Core Data stack
+
+/**
+ Returns the managed object context for the application.
+ If the context doesn't already exist, it is created and bound to the persistent store coordinator for the application.
+ */
+- (NSManagedObjectContext *) managedObjectContext {
+	
+    if (managedObjectContext != nil) {
+        return managedObjectContext;
+    }
+	
+    NSPersistentStoreCoordinator *coordinator = [self persistentStoreCoordinator];
+    if (coordinator != nil) {
+        managedObjectContext = [[NSManagedObjectContext alloc] init];
+        [managedObjectContext setPersistentStoreCoordinator: coordinator];
+    }
+    return managedObjectContext;
+}
+
+
+/**
+ Returns the managed object model for the application.
+ If the model doesn't already exist, it is created by merging all of the models found in the application bundle.
+ */
+- (NSManagedObjectModel *)managedObjectModel {
+	
+    if (managedObjectModel != nil) {
+        return managedObjectModel;
+    }
+	NSArray *bundles = [NSArray arrayWithObject:[NSBundle mainBundle]];
+    managedObjectModel = [[NSManagedObjectModel mergedModelFromBundles:bundles] retain];    
+    return managedObjectModel;
+}
+
+
+/**
+ Returns the persistent store coordinator for the application.
+ If the coordinator doesn't already exist, it is created and the application's store added to it.
+ */
+- (NSPersistentStoreCoordinator *)persistentStoreCoordinator {
+	
+    if (persistentStoreCoordinator != nil) {
+        return persistentStoreCoordinator;
+    }
+	
+    NSURL *storeUrl = [NSURL fileURLWithPath: [[self applicationDocumentsDirectory] stringByAppendingPathComponent: @"wikipedia.sqlite"]];
+	
+	NSError *error = nil;
+    persistentStoreCoordinator = [[NSPersistentStoreCoordinator alloc] initWithManagedObjectModel:[self managedObjectModel]];
+    if (![persistentStoreCoordinator addPersistentStoreWithType:NSSQLiteStoreType configuration:nil URL:storeUrl options:nil error:&error]) {
+		NSString *errorString = [NSString stringWithFormat:@"%@ - %@", error, [error userInfo]];
+		UIAlertView *errorAlert = [[UIAlertView alloc] initWithTitle:@"Database Error" message:errorString delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
+		[errorAlert show];
+    }    
+	
+    return persistentStoreCoordinator;
+}
+
+
+#pragma mark -
+#pragma mark Application's Documents directory
+
+/**
+ Returns the path to the application's Documents directory.
+ */
+- (NSString *)applicationDocumentsDirectory {
+	return [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) lastObject];
 }
 
 

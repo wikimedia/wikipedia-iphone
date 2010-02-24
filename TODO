@@ -1,0 +1,9 @@
+- Expand MapViewController to support a list view. There is a hidden toolbar on its navigation controller with search and location buttons as well as a map/list switch not yet implemented
+
+- WikiViewController needs to add viewed entries to history (simple fix). Also needs a bookmark button and similar features to the main view.
+
+- LanguageSwitcher needs more optimized code to redraw the table. Currently using an easier way that doesn't crash
+
+- LanguageSwitcher needs to reload the current page in the selected language (if available), not just the main page
+
+- Make bookmarks reorderable

@@ -7,6 +7,36 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0B280E761122A80300D8D39B /* RecentPage.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B280E751122A80300D8D39B /* RecentPage.m */; };
+		0B280F221122EB4000D8D39B /* Bookmark.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B280F211122EB4000D8D39B /* Bookmark.m */; };
+		0B2D8A69111AB1CA00328619 /* ModalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B2D8A67111AB1CA00328619 /* ModalViewController.m */; };
+		0B2D8A6A111AB1CA00328619 /* ModalViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0B2D8A68111AB1CA00328619 /* ModalViewController.xib */; };
+		0B2D8B17111AD34500328619 /* wikipedia.xcdatamodel in Sources */ = {isa = PBXBuildFile; fileRef = 0B2D8B16111AD34500328619 /* wikipedia.xcdatamodel */; };
+		0B2D8C05111B1BAA00328619 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B2D8C04111B1BAA00328619 /* CoreData.framework */; };
+		0B2D8CB1111BFDCE00328619 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B2D8CB0111BFDCE00328619 /* icon.png */; };
+		0B79AEAB11344DB6006BA370 /* history.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B79AEAA11344DB6006BA370 /* history.png */; };
+		0B79AF8F11349681006BA370 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B79AF8E11349681006BA370 /* SystemConfiguration.framework */; };
+		0B79B1841134C802006BA370 /* TODO in Resources */ = {isa = PBXBuildFile; fileRef = 0B79B1831134C802006BA370 /* TODO */; };
+		0B79B1961134C962006BA370 /* README in Resources */ = {isa = PBXBuildFile; fileRef = 0B79B1951134C962006BA370 /* README */; };
+		0B79B1A81134CDE6006BA370 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B79B1A71134CDE6006BA370 /* Default.png */; };
+		0BBBAEF9112026D60056EF45 /* back_btn.png in Resources */ = {isa = PBXBuildFile; fileRef = 0BBBAEF8112026D60056EF45 /* back_btn.png */; };
+		0BBBAF1911203DEC0056EF45 /* location.png in Resources */ = {isa = PBXBuildFile; fileRef = 0BBBAF1811203DEC0056EF45 /* location.png */; };
+		0BBBAF391120422C0056EF45 /* LanguageSwitcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BBBAF371120422C0056EF45 /* LanguageSwitcher.m */; };
+		0BBBAF3A1120422C0056EF45 /* LanguageSwitcher.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0BBBAF381120422C0056EF45 /* LanguageSwitcher.xib */; };
+		0BBBAF59112070610056EF45 /* languages.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0BBBAF58112070610056EF45 /* languages.plist */; };
+		0BC60AE3112619380046CB59 /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BC60AE1112619380046CB59 /* MapViewController.m */; };
+		0BC60AE4112619380046CB59 /* MapViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0BC60AE2112619380046CB59 /* MapViewController.xib */; };
+		0BC60B0811261B220046CB59 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BC60B0711261B220046CB59 /* MapKit.framework */; };
+		0BD186E71128DEC200ED0BDE /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BD186E61128DEC100ED0BDE /* CoreLocation.framework */; };
+		0BD18791112A000500ED0BDE /* NSObject+SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BD18786112A000500ED0BDE /* NSObject+SBJSON.m */; };
+		0BD18792112A000500ED0BDE /* NSString+SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BD18788112A000500ED0BDE /* NSString+SBJSON.m */; };
+		0BD18793112A000500ED0BDE /* SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BD1878A112A000500ED0BDE /* SBJSON.m */; };
+		0BD18794112A000500ED0BDE /* SBJsonBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BD1878C112A000500ED0BDE /* SBJsonBase.m */; };
+		0BD18795112A000500ED0BDE /* SBJsonParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BD1878E112A000500ED0BDE /* SBJsonParser.m */; };
+		0BD18796112A000500ED0BDE /* SBJsonWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BD18790112A000500ED0BDE /* SBJsonWriter.m */; };
+		0BD18877112B008600ED0BDE /* CLController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BD18876112B008600ED0BDE /* CLController.m */; };
+		0BD18E80112CB82C00ED0BDE /* WikiViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BD18E7E112CB82C00ED0BDE /* WikiViewController.m */; };
+		0BD18E81112CB82C00ED0BDE /* WikiViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0BD18E7F112CB82C00ED0BDE /* WikiViewController.xib */; };
 		1D3623260D0F684500981E51 /* Wikipedia_MobileAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* Wikipedia_MobileAppDelegate.m */; };
 		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
 		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
@@ -18,9 +48,53 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0B280E741122A80300D8D39B /* RecentPage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecentPage.h; sourceTree = "<group>"; };
+		0B280E751122A80300D8D39B /* RecentPage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecentPage.m; sourceTree = "<group>"; };
+		0B280F201122EB4000D8D39B /* Bookmark.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Bookmark.h; sourceTree = "<group>"; };
+		0B280F211122EB4000D8D39B /* Bookmark.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Bookmark.m; sourceTree = "<group>"; };
+		0B2D8A66111AB1CA00328619 /* ModalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModalViewController.h; sourceTree = "<group>"; };
+		0B2D8A67111AB1CA00328619 /* ModalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModalViewController.m; sourceTree = "<group>"; };
+		0B2D8A68111AB1CA00328619 /* ModalViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = ModalViewController.xib; path = Classes/ModalViewController.xib; sourceTree = "<group>"; };
+		0B2D8B16111AD34500328619 /* wikipedia.xcdatamodel */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.xcdatamodel; path = wikipedia.xcdatamodel; sourceTree = "<group>"; };
+		0B2D8C04111B1BAA00328619 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		0B2D8CB0111BFDCE00328619 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		0B79AEAA11344DB6006BA370 /* history.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = history.png; sourceTree = "<group>"; };
+		0B79AF8E11349681006BA370 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		0B79B1831134C802006BA370 /* TODO */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = TODO; sourceTree = "<group>"; };
+		0B79B1951134C962006BA370 /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
+		0B79B1A71134CDE6006BA370 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		0BBBAEF8112026D60056EF45 /* back_btn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = back_btn.png; sourceTree = "<group>"; };
+		0BBBAF1811203DEC0056EF45 /* location.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = location.png; sourceTree = "<group>"; };
+		0BBBAF361120422C0056EF45 /* LanguageSwitcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LanguageSwitcher.h; sourceTree = "<group>"; };
+		0BBBAF371120422C0056EF45 /* LanguageSwitcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LanguageSwitcher.m; sourceTree = "<group>"; };
+		0BBBAF381120422C0056EF45 /* LanguageSwitcher.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = LanguageSwitcher.xib; path = Classes/LanguageSwitcher.xib; sourceTree = "<group>"; };
+		0BBBAF58112070610056EF45 /* languages.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = languages.plist; sourceTree = "<group>"; };
+		0BC60AE0112619380046CB59 /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
+		0BC60AE1112619380046CB59 /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
+		0BC60AE2112619380046CB59 /* MapViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = MapViewController.xib; path = Classes/MapViewController.xib; sourceTree = "<group>"; };
+		0BC60B0711261B220046CB59 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		0BD186E61128DEC100ED0BDE /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		0BD18784112A000500ED0BDE /* JSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSON.h; sourceTree = "<group>"; };
+		0BD18785112A000500ED0BDE /* NSObject+SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+SBJSON.h"; sourceTree = "<group>"; };
+		0BD18786112A000500ED0BDE /* NSObject+SBJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+SBJSON.m"; sourceTree = "<group>"; };
+		0BD18787112A000500ED0BDE /* NSString+SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+SBJSON.h"; sourceTree = "<group>"; };
+		0BD18788112A000500ED0BDE /* NSString+SBJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+SBJSON.m"; sourceTree = "<group>"; };
+		0BD18789112A000500ED0BDE /* SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJSON.h; sourceTree = "<group>"; };
+		0BD1878A112A000500ED0BDE /* SBJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJSON.m; sourceTree = "<group>"; };
+		0BD1878B112A000500ED0BDE /* SBJsonBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonBase.h; sourceTree = "<group>"; };
+		0BD1878C112A000500ED0BDE /* SBJsonBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonBase.m; sourceTree = "<group>"; };
+		0BD1878D112A000500ED0BDE /* SBJsonParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonParser.h; sourceTree = "<group>"; };
+		0BD1878E112A000500ED0BDE /* SBJsonParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonParser.m; sourceTree = "<group>"; };
+		0BD1878F112A000500ED0BDE /* SBJsonWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonWriter.h; sourceTree = "<group>"; };
+		0BD18790112A000500ED0BDE /* SBJsonWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonWriter.m; sourceTree = "<group>"; };
+		0BD18875112B008600ED0BDE /* CLController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLController.h; sourceTree = "<group>"; };
+		0BD18876112B008600ED0BDE /* CLController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLController.m; sourceTree = "<group>"; };
+		0BD18E7D112CB82C00ED0BDE /* WikiViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WikiViewController.h; sourceTree = "<group>"; };
+		0BD18E7E112CB82C00ED0BDE /* WikiViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WikiViewController.m; sourceTree = "<group>"; };
+		0BD18E7F112CB82C00ED0BDE /* WikiViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = WikiViewController.xib; path = Classes/WikiViewController.xib; sourceTree = "<group>"; };
 		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		1D3623240D0F684500981E51 /* Wikipedia_MobileAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Wikipedia_MobileAppDelegate.h; sourceTree = "<group>"; };
-		1D3623250D0F684500981E51 /* Wikipedia_MobileAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Wikipedia_MobileAppDelegate.m; sourceTree = "<group>"; };
+		1D3623240D0F684500981E51 /* Wikipedia_MobileAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Wikipedia_MobileAppDelegate.h; path = Classes/Wikipedia_MobileAppDelegate.h; sourceTree = "<group>"; };
+		1D3623250D0F684500981E51 /* Wikipedia_MobileAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Wikipedia_MobileAppDelegate.m; path = Classes/Wikipedia_MobileAppDelegate.m; sourceTree = "<group>"; };
 		1D6058910D05DD3D006BFB54 /* Wikipedia Mobile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Wikipedia Mobile.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		2892E40F0DC94CBA00A64D0F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -41,6 +115,10 @@
 				1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */,
 				1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */,
 				2892E4100DC94CBA00A64D0F /* CoreGraphics.framework in Frameworks */,
+				0B2D8C05111B1BAA00328619 /* CoreData.framework in Frameworks */,
+				0BC60B0811261B220046CB59 /* MapKit.framework in Frameworks */,
+				0BD186E71128DEC200ED0BDE /* CoreLocation.framework in Frameworks */,
+				0B79AF8F11349681006BA370 /* SystemConfiguration.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -52,10 +130,47 @@
 			children = (
 				28C286DF0D94DF7D0034E888 /* RootViewController.h */,
 				28C286E00D94DF7D0034E888 /* RootViewController.m */,
-				1D3623240D0F684500981E51 /* Wikipedia_MobileAppDelegate.h */,
-				1D3623250D0F684500981E51 /* Wikipedia_MobileAppDelegate.m */,
+				0B2D8A66111AB1CA00328619 /* ModalViewController.h */,
+				0B2D8A67111AB1CA00328619 /* ModalViewController.m */,
+				0BBBAF361120422C0056EF45 /* LanguageSwitcher.h */,
+				0BBBAF371120422C0056EF45 /* LanguageSwitcher.m */,
+				0BC60AE0112619380046CB59 /* MapViewController.h */,
+				0BC60AE1112619380046CB59 /* MapViewController.m */,
+				0BD18E7D112CB82C00ED0BDE /* WikiViewController.h */,
+				0BD18E7E112CB82C00ED0BDE /* WikiViewController.m */,
 			);
 			path = Classes;
+			sourceTree = "<group>";
+		};
+		0B280E711122A7DD00D8D39B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0B280E741122A80300D8D39B /* RecentPage.h */,
+				0B280E751122A80300D8D39B /* RecentPage.m */,
+				0B280F201122EB4000D8D39B /* Bookmark.h */,
+				0B280F211122EB4000D8D39B /* Bookmark.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		0BD18783112A000500ED0BDE /* JSON */ = {
+			isa = PBXGroup;
+			children = (
+				0BD18784112A000500ED0BDE /* JSON.h */,
+				0BD18785112A000500ED0BDE /* NSObject+SBJSON.h */,
+				0BD18786112A000500ED0BDE /* NSObject+SBJSON.m */,
+				0BD18787112A000500ED0BDE /* NSString+SBJSON.h */,
+				0BD18788112A000500ED0BDE /* NSString+SBJSON.m */,
+				0BD18789112A000500ED0BDE /* SBJSON.h */,
+				0BD1878A112A000500ED0BDE /* SBJSON.m */,
+				0BD1878B112A000500ED0BDE /* SBJsonBase.h */,
+				0BD1878C112A000500ED0BDE /* SBJsonBase.m */,
+				0BD1878D112A000500ED0BDE /* SBJsonParser.h */,
+				0BD1878E112A000500ED0BDE /* SBJsonParser.m */,
+				0BD1878F112A000500ED0BDE /* SBJsonWriter.h */,
+				0BD18790112A000500ED0BDE /* SBJsonWriter.m */,
+			);
+			path = JSON;
 			sourceTree = "<group>";
 		};
 		19C28FACFE9D520D11CA2CBB /* Products */ = {
@@ -69,8 +184,12 @@
 		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
 			isa = PBXGroup;
 			children = (
+				0B79B1831134C802006BA370 /* TODO */,
+				0B79B1951134C962006BA370 /* README */,
+				0B280E711122A7DD00D8D39B /* Model */,
 				080E96DDFE201D6D7F000001 /* Classes */,
 				29B97315FDCFA39411CA2CEA /* Other Sources */,
+				0BD18783112A000500ED0BDE /* JSON */,
 				29B97317FDCFA39411CA2CEA /* Resources */,
 				29B97323FDCFA39411CA2CEA /* Frameworks */,
 				19C28FACFE9D520D11CA2CBB /* Products */,
@@ -81,8 +200,12 @@
 		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
 			isa = PBXGroup;
 			children = (
+				1D3623240D0F684500981E51 /* Wikipedia_MobileAppDelegate.h */,
+				1D3623250D0F684500981E51 /* Wikipedia_MobileAppDelegate.m */,
 				28A0AAE50D9B0CCF005BE974 /* Wikipedia_Mobile_Prefix.pch */,
 				29B97316FDCFA39411CA2CEA /* main.m */,
+				0BD18875112B008600ED0BDE /* CLController.h */,
+				0BD18876112B008600ED0BDE /* CLController.m */,
 			);
 			name = "Other Sources";
 			sourceTree = "<group>";
@@ -91,8 +214,19 @@
 			isa = PBXGroup;
 			children = (
 				28F335F01007B36200424DE2 /* RootViewController.xib */,
+				0B2D8A68111AB1CA00328619 /* ModalViewController.xib */,
+				0BBBAF381120422C0056EF45 /* LanguageSwitcher.xib */,
+				0BC60AE2112619380046CB59 /* MapViewController.xib */,
+				0BD18E7F112CB82C00ED0BDE /* WikiViewController.xib */,
 				28AD735F0D9D9599002E5188 /* MainWindow.xib */,
 				8D1107310486CEB800E47090 /* Wikipedia_Mobile-Info.plist */,
+				0B2D8B16111AD34500328619 /* wikipedia.xcdatamodel */,
+				0B79B1A71134CDE6006BA370 /* Default.png */,
+				0BBBAF1811203DEC0056EF45 /* location.png */,
+				0BBBAEF8112026D60056EF45 /* back_btn.png */,
+				0B79AEAA11344DB6006BA370 /* history.png */,
+				0B2D8CB0111BFDCE00328619 /* icon.png */,
+				0BBBAF58112070610056EF45 /* languages.plist */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -100,9 +234,13 @@
 		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				0BD186E61128DEC100ED0BDE /* CoreLocation.framework */,
 				1DF5F4DF0D08C38300B7A737 /* UIKit.framework */,
 				1D30AB110D05D00D00671497 /* Foundation.framework */,
 				2892E40F0DC94CBA00A64D0F /* CoreGraphics.framework */,
+				0B2D8C04111B1BAA00328619 /* CoreData.framework */,
+				0BC60B0711261B220046CB59 /* MapKit.framework */,
+				0B79AF8E11349681006BA370 /* SystemConfiguration.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -158,6 +296,18 @@
 			files = (
 				28AD73600D9D9599002E5188 /* MainWindow.xib in Resources */,
 				28F335F11007B36200424DE2 /* RootViewController.xib in Resources */,
+				0B2D8A6A111AB1CA00328619 /* ModalViewController.xib in Resources */,
+				0B2D8CB1111BFDCE00328619 /* icon.png in Resources */,
+				0BBBAEF9112026D60056EF45 /* back_btn.png in Resources */,
+				0BBBAF1911203DEC0056EF45 /* location.png in Resources */,
+				0BBBAF3A1120422C0056EF45 /* LanguageSwitcher.xib in Resources */,
+				0BBBAF59112070610056EF45 /* languages.plist in Resources */,
+				0BC60AE4112619380046CB59 /* MapViewController.xib in Resources */,
+				0BD18E81112CB82C00ED0BDE /* WikiViewController.xib in Resources */,
+				0B79AEAB11344DB6006BA370 /* history.png in Resources */,
+				0B79B1841134C802006BA370 /* TODO in Resources */,
+				0B79B1961134C962006BA370 /* README in Resources */,
+				0B79B1A81134CDE6006BA370 /* Default.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -171,6 +321,20 @@
 				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
 				1D3623260D0F684500981E51 /* Wikipedia_MobileAppDelegate.m in Sources */,
 				28C286E10D94DF7D0034E888 /* RootViewController.m in Sources */,
+				0B2D8A69111AB1CA00328619 /* ModalViewController.m in Sources */,
+				0B2D8B17111AD34500328619 /* wikipedia.xcdatamodel in Sources */,
+				0BBBAF391120422C0056EF45 /* LanguageSwitcher.m in Sources */,
+				0B280E761122A80300D8D39B /* RecentPage.m in Sources */,
+				0B280F221122EB4000D8D39B /* Bookmark.m in Sources */,
+				0BC60AE3112619380046CB59 /* MapViewController.m in Sources */,
+				0BD18791112A000500ED0BDE /* NSObject+SBJSON.m in Sources */,
+				0BD18792112A000500ED0BDE /* NSString+SBJSON.m in Sources */,
+				0BD18793112A000500ED0BDE /* SBJSON.m in Sources */,
+				0BD18794112A000500ED0BDE /* SBJsonBase.m in Sources */,
+				0BD18795112A000500ED0BDE /* SBJsonParser.m in Sources */,
+				0BD18796112A000500ED0BDE /* SBJsonWriter.m in Sources */,
+				0BD18877112B008600ED0BDE /* CLController.m in Sources */,
+				0BD18E80112CB82C00ED0BDE /* WikiViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
