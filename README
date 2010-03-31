@@ -1,5 +1,8 @@
 The official Wikipedia iPhone app
 
+Core code originally written by Andreas Lengyel. Other contributions
+by Hampton Catlin.
+
 If you are building this for your own phone, then please note that
 you must modify the Wikipedia_Mobile-Info.plist file to build with
 your own credentials. 
