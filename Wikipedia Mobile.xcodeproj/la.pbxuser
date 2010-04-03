@@ -554,7 +554,7 @@
 		fRef = 28C286DF0D94DF7D0034E888 /* RootViewController.h */;
 		name = "RootViewController.h: 29";
 		rLen = 0;
-		rLoc = 1102;
+		rLoc = 1124;
 		rType = 0;
 		vrLen = 1234;
 		vrLoc = 0;
@@ -714,7 +714,7 @@
 		fRef = 28C286DF0D94DF7D0034E888 /* RootViewController.h */;
 		name = "RootViewController.h: 19";
 		rLen = 0;
-		rLoc = 581;
+		rLoc = 603;
 		rType = 0;
 		vrLen = 1192;
 		vrLoc = 0;
@@ -724,7 +724,7 @@
 		fRef = 28C286DF0D94DF7D0034E888 /* RootViewController.h */;
 		name = "RootViewController.h: 31";
 		rLen = 0;
-		rLoc = 1025;
+		rLoc = 1047;
 		rType = 0;
 		vrLen = 1251;
 		vrLoc = 28;
@@ -814,7 +814,7 @@
 		fRef = 28C286DF0D94DF7D0034E888 /* RootViewController.h */;
 		name = "RootViewController.h: 31";
 		rLen = 0;
-		rLoc = 1025;
+		rLoc = 1047;
 		rType = 0;
 		vrLen = 1233;
 		vrLoc = 0;
@@ -864,7 +864,7 @@
 		fRef = 28C286DF0D94DF7D0034E888 /* RootViewController.h */;
 		name = "RootViewController.h: 31";
 		rLen = 0;
-		rLoc = 1025;
+		rLoc = 1047;
 		rType = 0;
 		vrLen = 1233;
 		vrLoc = 0;
@@ -994,7 +994,7 @@
 		fRef = 28C286DF0D94DF7D0034E888 /* RootViewController.h */;
 		name = "RootViewController.h: 40";
 		rLen = 0;
-		rLoc = 1383;
+		rLoc = 1405;
 		rType = 0;
 		vrLen = 1170;
 		vrLoc = 313;
@@ -1004,7 +1004,7 @@
 		fRef = 28C286DF0D94DF7D0034E888 /* RootViewController.h */;
 		name = "RootViewController.h: 37";
 		rLen = 0;
-		rLoc = 1340;
+		rLoc = 1362;
 		rType = 0;
 		vrLen = 1142;
 		vrLoc = 313;
@@ -1099,7 +1099,7 @@
 		fRef = 28C286DF0D94DF7D0034E888 /* RootViewController.h */;
 		name = "RootViewController.h: 27";
 		rLen = 0;
-		rLoc = 787;
+		rLoc = 809;
 		rType = 0;
 		vrLen = 1252;
 		vrLoc = 94;
@@ -1386,7 +1386,7 @@
 		fRef = 28C286DF0D94DF7D0034E888 /* RootViewController.h */;
 		name = "RootViewController.h: 30";
 		rLen = 0;
-		rLoc = 922;
+		rLoc = 944;
 		rType = 0;
 		vrLen = 1225;
 		vrLoc = 0;
@@ -1406,7 +1406,7 @@
 		fRef = 28C286DF0D94DF7D0034E888 /* RootViewController.h */;
 		name = "RootViewController.h: 30";
 		rLen = 0;
-		rLoc = 922;
+		rLoc = 944;
 		rType = 0;
 		vrLen = 1225;
 		vrLoc = 0;
@@ -1426,7 +1426,7 @@
 		fRef = 28C286DF0D94DF7D0034E888 /* RootViewController.h */;
 		name = "RootViewController.h: 30";
 		rLen = 0;
-		rLoc = 922;
+		rLoc = 944;
 		rType = 0;
 		vrLen = 1225;
 		vrLoc = 0;
@@ -1436,7 +1436,7 @@
 		fRef = 28C286DF0D94DF7D0034E888 /* RootViewController.h */;
 		name = "RootViewController.h: 30";
 		rLen = 0;
-		rLoc = 922;
+		rLoc = 944;
 		rType = 0;
 		vrLen = 1225;
 		vrLoc = 0;
@@ -1666,7 +1666,7 @@
 		fRef = 28C286DF0D94DF7D0034E888 /* RootViewController.h */;
 		name = "RootViewController.h: 30";
 		rLen = 0;
-		rLoc = 922;
+		rLoc = 944;
 		rType = 0;
 		vrLen = 1225;
 		vrLoc = 0;
@@ -1676,7 +1676,7 @@
 		fRef = 28C286DF0D94DF7D0034E888 /* RootViewController.h */;
 		name = "RootViewController.h: 45";
 		rLen = 0;
-		rLoc = 1484;
+		rLoc = 1506;
 		rType = 0;
 		vrLen = 1167;
 		vrLoc = 359;
@@ -1696,7 +1696,7 @@
 		fRef = 28C286DF0D94DF7D0034E888 /* RootViewController.h */;
 		name = "RootViewController.h: 45";
 		rLen = 0;
-		rLoc = 1484;
+		rLoc = 1506;
 		rType = 0;
 		vrLen = 1167;
 		vrLoc = 359;
@@ -1706,7 +1706,7 @@
 		fRef = 28C286DF0D94DF7D0034E888 /* RootViewController.h */;
 		name = "RootViewController.h: 45";
 		rLen = 0;
-		rLoc = 1484;
+		rLoc = 1506;
 		rType = 0;
 		vrLen = 1167;
 		vrLoc = 359;
@@ -1976,7 +1976,7 @@
 		fRef = 28C286DF0D94DF7D0034E888 /* RootViewController.h */;
 		name = "RootViewController.h: 12";
 		rLen = 0;
-		rLoc = 213;
+		rLoc = 235;
 		rType = 0;
 		vrLen = 1242;
 		vrLoc = 0;
@@ -2446,7 +2446,7 @@
 		fRef = 28C286DF0D94DF7D0034E888 /* RootViewController.h */;
 		name = "RootViewController.h: 12";
 		rLen = 0;
-		rLoc = 213;
+		rLoc = 235;
 		rType = 0;
 		vrLen = 1209;
 		vrLoc = 0;
@@ -2456,7 +2456,7 @@
 		fRef = 28C286DF0D94DF7D0034E888 /* RootViewController.h */;
 		name = "RootViewController.h: 36";
 		rLen = 0;
-		rLoc = 1102;
+		rLoc = 1124;
 		rType = 0;
 		vrLen = 1246;
 		vrLoc = 153;
@@ -2466,7 +2466,7 @@
 		fRef = 28C286DF0D94DF7D0034E888 /* RootViewController.h */;
 		name = "RootViewController.h: 33";
 		rLen = 0;
-		rLoc = 934;
+		rLoc = 956;
 		rType = 0;
 		vrLen = 1257;
 		vrLoc = 0;
@@ -2506,7 +2506,7 @@
 		fRef = 28C286DF0D94DF7D0034E888 /* RootViewController.h */;
 		name = "RootViewController.h: 33";
 		rLen = 0;
-		rLoc = 934;
+		rLoc = 956;
 		rType = 0;
 		vrLen = 1257;
 		vrLoc = 0;
@@ -2806,7 +2806,7 @@
 		fRef = 28C286DF0D94DF7D0034E888 /* RootViewController.h */;
 		name = "RootViewController.h: 14";
 		rLen = 0;
-		rLoc = 370;
+		rLoc = 392;
 		rType = 0;
 		vrLen = 1290;
 		vrLoc = 153;
@@ -2816,7 +2816,7 @@
 		fRef = 28C286DF0D94DF7D0034E888 /* RootViewController.h */;
 		name = "RootViewController.h: 32";
 		rLen = 0;
-		rLoc = 934;
+		rLoc = 956;
 		rType = 0;
 		vrLen = 1246;
 		vrLoc = 153;
@@ -2856,7 +2856,7 @@
 		fRef = 28C286DF0D94DF7D0034E888 /* RootViewController.h */;
 		name = "RootViewController.h: 37";
 		rLen = 0;
-		rLoc = 1164;
+		rLoc = 1186;
 		rType = 0;
 		vrLen = 1162;
 		vrLoc = 486;
@@ -2956,7 +2956,7 @@
 		fRef = 28C286DF0D94DF7D0034E888 /* RootViewController.h */;
 		name = "RootViewController.h: 24";
 		rLen = 0;
-		rLoc = 599;
+		rLoc = 621;
 		rType = 0;
 		vrLen = 1194;
 		vrLoc = 463;
@@ -3768,7 +3768,7 @@
 		fRef = 28C286DF0D94DF7D0034E888 /* RootViewController.h */;
 		name = "RootViewController.h: 28";
 		rLen = 0;
-		rLoc = 787;
+		rLoc = 809;
 		rType = 0;
 		vrLen = 1315;
 		vrLoc = 0;
@@ -3788,7 +3788,7 @@
 		fRef = 28C286DF0D94DF7D0034E888 /* RootViewController.h */;
 		name = "RootViewController.h: 17";
 		rLen = 0;
-		rLoc = 506;
+		rLoc = 528;
 		rType = 0;
 		vrLen = 1315;
 		vrLoc = 0;
@@ -3798,7 +3798,7 @@
 		fRef = 28C286DF0D94DF7D0034E888 /* RootViewController.h */;
 		name = "RootViewController.h: 17";
 		rLen = 0;
-		rLoc = 514;
+		rLoc = 536;
 		rType = 0;
 		vrLen = 1315;
 		vrLoc = 0;
@@ -3818,7 +3818,7 @@
 		fRef = 28C286DF0D94DF7D0034E888 /* RootViewController.h */;
 		name = "RootViewController.h: 17";
 		rLen = 0;
-		rLoc = 514;
+		rLoc = 536;
 		rType = 0;
 		vrLen = 1282;
 		vrLoc = 0;
@@ -4003,6 +4003,543 @@
 		vrLen = 1275;
 		vrLoc = 9190;
 	};
+	0B3DD8681168032500222D0D /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28C286E00D94DF7D0034E888 /* RootViewController.m */;
+		name = "RootViewController.m: 176";
+		rLen = 0;
+		rLoc = 5242;
+		rType = 0;
+		vrLen = 1125;
+		vrLoc = 5374;
+	};
+	0B3DD8791168034000222D0D /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28C286E00D94DF7D0034E888 /* RootViewController.m */;
+		name = "RootViewController.m: 176";
+		rLen = 0;
+		rLoc = 5242;
+		rType = 0;
+		vrLen = 1125;
+		vrLoc = 5374;
+	};
+	0B3DD87A1168034B00222D0D /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28C286E00D94DF7D0034E888 /* RootViewController.m */;
+		name = "RootViewController.m: 325";
+		rLen = 0;
+		rLoc = 9917;
+		rType = 0;
+		vrLen = 1275;
+		vrLoc = 9190;
+	};
+	0B3DD87B1168034B00222D0D /* PlistBookmark */ = {
+		isa = PlistBookmark;
+		fRef = 8D1107310486CEB800E47090 /* Wikipedia_Mobile-Info.plist */;
+		fallbackIsa = PBXBookmark;
+		isK = 0;
+		kPath = (
+		);
+		name = "/Users/la/wikipedia-iphone/Wikipedia_Mobile-Info.plist";
+		rLen = 0;
+		rLoc = 9223372036854775807;
+	};
+	0B3DD87C1168034B00222D0D /* PlistBookmark */ = {
+		isa = PlistBookmark;
+		fRef = 8D1107310486CEB800E47090 /* Wikipedia_Mobile-Info.plist */;
+		fallbackIsa = PBXBookmark;
+		isK = 0;
+		kPath = (
+		);
+		name = "/Users/la/wikipedia-iphone/Wikipedia_Mobile-Info.plist";
+		rLen = 0;
+		rLoc = 9223372036854775807;
+	};
+	0B3DD8801168062200222D0D /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28C286E00D94DF7D0034E888 /* RootViewController.m */;
+		name = "RootViewController.m: 176";
+		rLen = 0;
+		rLoc = 5242;
+		rType = 0;
+		vrLen = 1175;
+		vrLoc = 5374;
+	};
+	0B3DD8811168062600222D0D /* PlistBookmark */ = {
+		isa = PlistBookmark;
+		fRef = 8D1107310486CEB800E47090 /* Wikipedia_Mobile-Info.plist */;
+		fallbackIsa = PBXBookmark;
+		isK = 0;
+		kPath = (
+		);
+		name = "/Users/la/wikipedia-iphone/Wikipedia_Mobile-Info.plist";
+		rLen = 0;
+		rLoc = 9223372036854775807;
+	};
+	0B3DD8821168062600222D0D /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28C286E00D94DF7D0034E888 /* RootViewController.m */;
+		name = "RootViewController.m: 325";
+		rLen = 0;
+		rLoc = 9917;
+		rType = 0;
+		vrLen = 1275;
+		vrLoc = 9190;
+	};
+	0B3DD8831168062600222D0D /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28C286E00D94DF7D0034E888 /* RootViewController.m */;
+		name = "RootViewController.m: 305";
+		rLen = 0;
+		rLoc = 9189;
+		rType = 0;
+		vrLen = 1192;
+		vrLoc = 8942;
+	};
+	0B3DD8841168075700222D0D /* WPToolbar.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {897, 507}}";
+			sepNavSelRange = "{220, 0}";
+			sepNavVisRange = "{0, 230}";
+		};
+	};
+	0B3DD8851168075700222D0D /* WPToolbar.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {897, 484}}";
+			sepNavSelRange = "{677, 0}";
+			sepNavVisRange = "{0, 686}";
+		};
+	};
+	0B3DD88C116807AB00222D0D /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28C286E00D94DF7D0034E888 /* RootViewController.m */;
+		name = "RootViewController.m: 176";
+		rLen = 0;
+		rLoc = 5242;
+		rType = 0;
+		vrLen = 1175;
+		vrLoc = 5374;
+	};
+	0B3DD88F116807B400222D0D /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 0B3DD8841168075700222D0D /* WPToolbar.h */;
+		name = "WPToolbar.h: 12";
+		rLen = 0;
+		rLoc = 218;
+		rType = 0;
+		vrLen = 230;
+		vrLoc = 0;
+	};
+	0B3DD890116807B400222D0D /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 0B3DD8851168075700222D0D /* WPToolbar.m */;
+		name = "WPToolbar.m: 25";
+		rLen = 0;
+		rLoc = 686;
+		rType = 0;
+		vrLen = 490;
+		vrLoc = 0;
+	};
+	0B3DD891116807B400222D0D /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28A0AAE50D9B0CCF005BE974 /* Wikipedia_Mobile_Prefix.pch */;
+		name = "Wikipedia_Mobile_Prefix.pch: 9";
+		rLen = 0;
+		rLoc = 247;
+		rType = 0;
+		vrLen = 405;
+		vrLoc = 0;
+	};
+	0B3DD892116807B400222D0D /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28C286E00D94DF7D0034E888 /* RootViewController.m */;
+		name = "RootViewController.m: 305";
+		rLen = 0;
+		rLoc = 9189;
+		rType = 0;
+		vrLen = 1348;
+		vrLoc = 946;
+	};
+	0B3DD893116807B400222D0D /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28C286DF0D94DF7D0034E888 /* RootViewController.h */;
+		name = "RootViewController.h: 17";
+		rLen = 0;
+		rLoc = 536;
+		rType = 0;
+		vrLen = 1282;
+		vrLoc = 0;
+	};
+	0B3DD894116807D600222D0D /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28C286DF0D94DF7D0034E888 /* RootViewController.h */;
+		name = "RootViewController.h: 20";
+		rLen = 0;
+		rLoc = 603;
+		rType = 0;
+		vrLen = 1282;
+		vrLoc = 0;
+	};
+	0B3DD895116807EA00222D0D /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28C286DF0D94DF7D0034E888 /* RootViewController.h */;
+		name = "RootViewController.h: 20";
+		rLen = 0;
+		rLoc = 603;
+		rType = 0;
+		vrLen = 1282;
+		vrLoc = 0;
+	};
+	0B3DD8981168084400222D0D /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28C286DF0D94DF7D0034E888 /* RootViewController.h */;
+		name = "RootViewController.h: 20";
+		rLen = 0;
+		rLoc = 603;
+		rType = 0;
+		vrLen = 1282;
+		vrLoc = 0;
+	};
+	0B3DD8991168084400222D0D /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28C286E00D94DF7D0034E888 /* RootViewController.m */;
+		name = "RootViewController.m: 16";
+		rLen = 0;
+		rLoc = 362;
+		rType = 0;
+		vrLen = 1008;
+		vrLoc = 0;
+	};
+	0B3DD89A1168084400222D0D /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 0B3DD8851168075700222D0D /* WPToolbar.m */;
+		name = "WPToolbar.m: 19";
+		rLen = 0;
+		rLoc = 674;
+		rType = 0;
+		vrLen = 488;
+		vrLoc = 0;
+	};
+	0B3DD89B1168084400222D0D /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 0B3DD8851168075700222D0D /* WPToolbar.m */;
+		name = "WPToolbar.m: 19";
+		rLen = 0;
+		rLoc = 674;
+		rType = 0;
+		vrLen = 488;
+		vrLoc = 0;
+	};
+	0B3DD89C1168085400222D0D /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28C286E00D94DF7D0034E888 /* RootViewController.m */;
+		name = "RootViewController.m: 177";
+		rLen = 0;
+		rLoc = 5242;
+		rType = 0;
+		vrLen = 1125;
+		vrLoc = 5396;
+	};
+	0B3DD89D1168085900222D0D /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28C286E00D94DF7D0034E888 /* RootViewController.m */;
+		name = "RootViewController.m: 177";
+		rLen = 0;
+		rLoc = 5242;
+		rType = 0;
+		vrLen = 1125;
+		vrLoc = 5396;
+	};
+	0B3DD8A01168086100222D0D /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 0B3DD8851168075700222D0D /* WPToolbar.m */;
+		name = "WPToolbar.m: 12";
+		rLen = 0;
+		rLoc = 199;
+		rType = 0;
+		vrLen = 468;
+		vrLoc = 0;
+	};
+	0B3DD8A11168086100222D0D /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 0B3DD8841168075700222D0D /* WPToolbar.h */;
+		name = "WPToolbar.h: 12";
+		rLen = 0;
+		rLoc = 218;
+		rType = 0;
+		vrLen = 230;
+		vrLoc = 0;
+	};
+	0B3DD8A21168087600222D0D /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 0B3DD8841168075700222D0D /* WPToolbar.h */;
+		name = "WPToolbar.h: 12";
+		rLen = 0;
+		rLoc = 218;
+		rType = 0;
+		vrLen = 230;
+		vrLoc = 0;
+	};
+	0B3DD8A31168087700222D0D /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28C286E00D94DF7D0034E888 /* RootViewController.m */;
+		name = "RootViewController.m: 177";
+		rLen = 0;
+		rLoc = 5242;
+		rType = 0;
+		vrLen = 1175;
+		vrLoc = 5396;
+	};
+	0B3DD8A41168087900222D0D /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 0B3DD8841168075700222D0D /* WPToolbar.h */;
+		name = "WPToolbar.h: 12";
+		rLen = 0;
+		rLoc = 220;
+		rType = 0;
+		vrLen = 230;
+		vrLoc = 0;
+	};
+	0B3DD8A71168088600222D0D /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 0B3DD8841168075700222D0D /* WPToolbar.h */;
+		name = "WPToolbar.h: 12";
+		rLen = 0;
+		rLoc = 220;
+		rType = 0;
+		vrLen = 230;
+		vrLoc = 0;
+	};
+	0B3DD8A81168088600222D0D /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28C286E00D94DF7D0034E888 /* RootViewController.m */;
+		name = "RootViewController.m: 15";
+		rLen = 0;
+		rLoc = 362;
+		rType = 0;
+		vrLen = 1033;
+		vrLoc = 0;
+	};
+	0B3DD8A91168088600222D0D /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28C286DF0D94DF7D0034E888 /* RootViewController.h */;
+		name = "RootViewController.h: 11";
+		rLen = 0;
+		rLoc = 235;
+		rType = 0;
+		vrLen = 1304;
+		vrLoc = 0;
+	};
+	0B3DD8AC116808B900222D0D /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28C286DF0D94DF7D0034E888 /* RootViewController.h */;
+		name = "RootViewController.h: 11";
+		rLen = 0;
+		rLoc = 235;
+		rType = 0;
+		vrLen = 1304;
+		vrLoc = 0;
+	};
+	0B3DD8AD116808B900222D0D /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 0B3DD8841168075700222D0D /* WPToolbar.h */;
+		name = "WPToolbar.h: 12";
+		rLen = 0;
+		rLoc = 220;
+		rType = 0;
+		vrLen = 230;
+		vrLoc = 0;
+	};
+	0B3DD8AE116808B900222D0D /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 0B3DD8851168075700222D0D /* WPToolbar.m */;
+		name = "WPToolbar.m: 15";
+		rLen = 0;
+		rLoc = 236;
+		rType = 0;
+		vrLen = 520;
+		vrLoc = 0;
+	};
+	0B3DD8B51168091A00222D0D /* PBXBookmark */ = {
+		isa = PBXBookmark;
+		fRef = 0B3DD5781167CEAE00222D0D /* UITexture2.png */;
+	};
+	0B3DD8B61168091A00222D0D /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 0B3DD8851168075700222D0D /* WPToolbar.m */;
+		name = "WPToolbar.m: 15";
+		rLen = 0;
+		rLoc = 236;
+		rType = 0;
+		vrLen = 520;
+		vrLoc = 0;
+	};
+	0B3DD8B71168091A00222D0D /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 0B3DD8851168075700222D0D /* WPToolbar.m */;
+		name = "WPToolbar.m: 21";
+		rLen = 0;
+		rLoc = 565;
+		rType = 0;
+		vrLen = 679;
+		vrLoc = 0;
+	};
+	0B3DD8BC1168098C00222D0D /* PBXBookmark */ = {
+		isa = PBXBookmark;
+		fRef = 0B3DD56C1167CE7A00222D0D /* UITexture.png */;
+	};
+	0B3DD8BD1168098C00222D0D /* PBXBookmark */ = {
+		isa = PBXBookmark;
+		fRef = 0B3DD5781167CEAE00222D0D /* UITexture2.png */;
+	};
+	0B3DD8BE1168098C00222D0D /* PBXBookmark */ = {
+		isa = PBXBookmark;
+		fRef = 0B3DD8B81168097F00222D0D /* UIToolbar.png */;
+	};
+	0B3DD8BF1168098C00222D0D /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 0B3DD8851168075700222D0D /* WPToolbar.m */;
+		name = "WPToolbar.m: 21";
+		rLen = 0;
+		rLoc = 528;
+		rType = 0;
+		vrLen = 679;
+		vrLoc = 0;
+	};
+	0B3DD8C01168098C00222D0D /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 0B3DD8851168075700222D0D /* WPToolbar.m */;
+		name = "WPToolbar.m: 21";
+		rLen = 0;
+		rLoc = 576;
+		rType = 0;
+		vrLen = 678;
+		vrLoc = 0;
+	};
+	0B3DD8C111680A0C00222D0D /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28C286E00D94DF7D0034E888 /* RootViewController.m */;
+		name = "RootViewController.m: 176";
+		rLen = 0;
+		rLoc = 5242;
+		rType = 0;
+		vrLen = 1163;
+		vrLoc = 5449;
+	};
+	0B3DD8C211680A1200222D0D /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 0B3DD8851168075700222D0D /* WPToolbar.m */;
+		name = "WPToolbar.m: 21";
+		rLen = 0;
+		rLoc = 576;
+		rType = 0;
+		vrLen = 678;
+		vrLoc = 0;
+	};
+	0B3DD8C711680B5600222D0D /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 0B3DD8851168075700222D0D /* WPToolbar.m */;
+		name = "WPToolbar.m: 21";
+		rLen = 0;
+		rLoc = 576;
+		rType = 0;
+		vrLen = 678;
+		vrLoc = 0;
+	};
+	0B3DD8C811680B5600222D0D /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 0B3DD8851168075700222D0D /* WPToolbar.m */;
+		name = "WPToolbar.m: 22";
+		rLen = 0;
+		rLoc = 590;
+		rType = 0;
+		vrLen = 682;
+		vrLoc = 0;
+	};
+	0B3DD8CB11680B6100222D0D /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 0B3DD8851168075700222D0D /* WPToolbar.m */;
+		name = "WPToolbar.m: 24";
+		rLen = 0;
+		rLoc = 677;
+		rType = 0;
+		vrLen = 686;
+		vrLoc = 0;
+	};
+	0B3DD8CC11680B7200222D0D /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28C286E00D94DF7D0034E888 /* RootViewController.m */;
+		name = "RootViewController.m: 176";
+		rLen = 0;
+		rLoc = 5242;
+		rType = 0;
+		vrLen = 1110;
+		vrLoc = 5449;
+	};
+	0B3DD8CD11680B7400222D0D /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 0B3DD8851168075700222D0D /* WPToolbar.m */;
+		name = "WPToolbar.m: 24";
+		rLen = 0;
+		rLoc = 677;
+		rType = 0;
+		vrLen = 686;
+		vrLoc = 0;
+	};
+	0B3DD8CE11680CA000222D0D /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 0B3DD8851168075700222D0D /* WPToolbar.m */;
+		name = "WPToolbar.m: 24";
+		rLen = 0;
+		rLoc = 677;
+		rType = 0;
+		vrLen = 686;
+		vrLoc = 0;
+	};
+	0B3DD8CF11680CA000222D0D /* PBXBookmark */ = {
+		isa = PBXBookmark;
+		fRef = 0BBBAF1811203DEC0056EF45 /* location.png */;
+	};
+	0B3DD8D011680CA000222D0D /* PBXBookmark */ = {
+		isa = PBXBookmark;
+		fRef = 0B79AEAA11344DB6006BA370 /* history.png */;
+	};
+	0B3DD8D111680CA000222D0D /* PBXBookmark */ = {
+		isa = PBXBookmark;
+		fRef = 0B418D9E1166AAAB0020B2D2 /* UIButtonBarArrowRight.png */;
+	};
+	0B3DD8D211680CA000222D0D /* PBXBookmark */ = {
+		isa = PBXBookmark;
+		fRef = 0B418D9F1166AAAB0020B2D2 /* UIButtonBarRefresh.png */;
+	};
+	0B3DD8D311680CA000222D0D /* PBXBookmark */ = {
+		isa = PBXBookmark;
+		fRef = 0B3DD56C1167CE7A00222D0D /* UITexture.png */;
+	};
+	0B3DD8D411680CA000222D0D /* PBXBookmark */ = {
+		isa = PBXBookmark;
+		fRef = 0B3DD5781167CEAE00222D0D /* UITexture2.png */;
+	};
+	0B3DD8D511680CA000222D0D /* PBXBookmark */ = {
+		isa = PBXBookmark;
+		fRef = 0B3DD8B81168097F00222D0D /* UIToolbar.png */;
+	};
+	0B3DD8D611680CA000222D0D /* PBXBookmark */ = {
+		isa = PBXBookmark;
+		fRef = 0B79B1A71134CDE6006BA370 /* Default.png */;
+	};
+	0B3DD8D711680CA000222D0D /* PBXBookmark */ = {
+		isa = PBXBookmark;
+		fRef = 0B418D9C1166AAAB0020B2D2 /* UIButtonBarSearch.png */;
+	};
+	0B3DD8D811680CA000222D0D /* PBXBookmark */ = {
+		isa = PBXBookmark;
+		fRef = 0B418D9D1166AAAB0020B2D2 /* UIButtonBarArrowLeft.png */;
+	};
+	0B3DD8D911680CA000222D0D /* PBXBookmark */ = {
+		isa = PBXBookmark;
+		fRef = 0B418D9D1166AAAB0020B2D2 /* UIButtonBarArrowLeft.png */;
+	};
 	0B418DBE1166AD620020B2D2 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
 		fRef = 0B79B1951134C962006BA370 /* README */;
@@ -4161,7 +4698,7 @@
 		fRef = 28C286DF0D94DF7D0034E888 /* RootViewController.h */;
 		name = "RootViewController.h: 29";
 		rLen = 0;
-		rLoc = 1102;
+		rLoc = 1124;
 		rType = 0;
 		vrLen = 1183;
 		vrLoc = 0;
@@ -4428,23 +4965,23 @@
 	};
 	28A0AAE50D9B0CCF005BE974 /* Wikipedia_Mobile_Prefix.pch */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {897, 425}}";
+			sepNavIntBoundsRect = "{{0, 0}, {897, 507}}";
 			sepNavSelRange = "{247, 0}";
 			sepNavVisRange = "{0, 405}";
 		};
 	};
 	28C286DF0D94DF7D0034E888 /* RootViewController.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1118, 663}}";
-			sepNavSelRange = "{514, 0}";
-			sepNavVisRange = "{0, 1282}";
+			sepNavIntBoundsRect = "{{0, 0}, {1118, 676}}";
+			sepNavSelRange = "{235, 0}";
+			sepNavVisRange = "{0, 1304}";
 		};
 	};
 	28C286E00D94DF7D0034E888 /* RootViewController.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {901, 5642}}";
-			sepNavSelRange = "{9917, 0}";
-			sepNavVisRange = "{9190, 1275}";
+			sepNavIntBoundsRect = "{{0, 0}, {1377, 5707}}";
+			sepNavSelRange = "{5242, 0}";
+			sepNavVisRange = "{5449, 1110}";
 			sepNavWindowFrame = "{{71, 108}, {823, 765}}";
 		};
 	};
@@ -4891,6 +5428,67 @@
 			0B3DD861116800A400222D0D /* PBXTextBookmark */ = 0B3DD861116800A400222D0D /* PBXTextBookmark */;
 			0B3DD862116800C000222D0D /* PBXTextBookmark */ = 0B3DD862116800C000222D0D /* PBXTextBookmark */;
 			0B3DD863116800C200222D0D /* PBXTextBookmark */ = 0B3DD863116800C200222D0D /* PBXTextBookmark */;
+			0B3DD8681168032500222D0D /* PBXTextBookmark */ = 0B3DD8681168032500222D0D /* PBXTextBookmark */;
+			0B3DD8791168034000222D0D /* PBXTextBookmark */ = 0B3DD8791168034000222D0D /* PBXTextBookmark */;
+			0B3DD87A1168034B00222D0D /* PBXTextBookmark */ = 0B3DD87A1168034B00222D0D /* PBXTextBookmark */;
+			0B3DD87B1168034B00222D0D /* PlistBookmark */ = 0B3DD87B1168034B00222D0D /* PlistBookmark */;
+			0B3DD87C1168034B00222D0D /* PlistBookmark */ = 0B3DD87C1168034B00222D0D /* PlistBookmark */;
+			0B3DD8801168062200222D0D /* PBXTextBookmark */ = 0B3DD8801168062200222D0D /* PBXTextBookmark */;
+			0B3DD8811168062600222D0D /* PlistBookmark */ = 0B3DD8811168062600222D0D /* PlistBookmark */;
+			0B3DD8821168062600222D0D /* PBXTextBookmark */ = 0B3DD8821168062600222D0D /* PBXTextBookmark */;
+			0B3DD8831168062600222D0D /* PBXTextBookmark */ = 0B3DD8831168062600222D0D /* PBXTextBookmark */;
+			0B3DD88C116807AB00222D0D /* PBXTextBookmark */ = 0B3DD88C116807AB00222D0D /* PBXTextBookmark */;
+			0B3DD88F116807B400222D0D /* PBXTextBookmark */ = 0B3DD88F116807B400222D0D /* PBXTextBookmark */;
+			0B3DD890116807B400222D0D /* PBXTextBookmark */ = 0B3DD890116807B400222D0D /* PBXTextBookmark */;
+			0B3DD891116807B400222D0D /* PBXTextBookmark */ = 0B3DD891116807B400222D0D /* PBXTextBookmark */;
+			0B3DD892116807B400222D0D /* PBXTextBookmark */ = 0B3DD892116807B400222D0D /* PBXTextBookmark */;
+			0B3DD893116807B400222D0D /* PBXTextBookmark */ = 0B3DD893116807B400222D0D /* PBXTextBookmark */;
+			0B3DD894116807D600222D0D /* PBXTextBookmark */ = 0B3DD894116807D600222D0D /* PBXTextBookmark */;
+			0B3DD895116807EA00222D0D /* PBXTextBookmark */ = 0B3DD895116807EA00222D0D /* PBXTextBookmark */;
+			0B3DD8981168084400222D0D /* PBXTextBookmark */ = 0B3DD8981168084400222D0D /* PBXTextBookmark */;
+			0B3DD8991168084400222D0D /* PBXTextBookmark */ = 0B3DD8991168084400222D0D /* PBXTextBookmark */;
+			0B3DD89A1168084400222D0D /* PBXTextBookmark */ = 0B3DD89A1168084400222D0D /* PBXTextBookmark */;
+			0B3DD89B1168084400222D0D /* PBXTextBookmark */ = 0B3DD89B1168084400222D0D /* PBXTextBookmark */;
+			0B3DD89C1168085400222D0D /* PBXTextBookmark */ = 0B3DD89C1168085400222D0D /* PBXTextBookmark */;
+			0B3DD89D1168085900222D0D /* PBXTextBookmark */ = 0B3DD89D1168085900222D0D /* PBXTextBookmark */;
+			0B3DD8A01168086100222D0D /* PBXTextBookmark */ = 0B3DD8A01168086100222D0D /* PBXTextBookmark */;
+			0B3DD8A11168086100222D0D /* PBXTextBookmark */ = 0B3DD8A11168086100222D0D /* PBXTextBookmark */;
+			0B3DD8A21168087600222D0D /* PBXTextBookmark */ = 0B3DD8A21168087600222D0D /* PBXTextBookmark */;
+			0B3DD8A31168087700222D0D /* PBXTextBookmark */ = 0B3DD8A31168087700222D0D /* PBXTextBookmark */;
+			0B3DD8A41168087900222D0D /* PBXTextBookmark */ = 0B3DD8A41168087900222D0D /* PBXTextBookmark */;
+			0B3DD8A71168088600222D0D /* PBXTextBookmark */ = 0B3DD8A71168088600222D0D /* PBXTextBookmark */;
+			0B3DD8A81168088600222D0D /* PBXTextBookmark */ = 0B3DD8A81168088600222D0D /* PBXTextBookmark */;
+			0B3DD8A91168088600222D0D /* PBXTextBookmark */ = 0B3DD8A91168088600222D0D /* PBXTextBookmark */;
+			0B3DD8AC116808B900222D0D /* PBXTextBookmark */ = 0B3DD8AC116808B900222D0D /* PBXTextBookmark */;
+			0B3DD8AD116808B900222D0D /* PBXTextBookmark */ = 0B3DD8AD116808B900222D0D /* PBXTextBookmark */;
+			0B3DD8AE116808B900222D0D /* PBXTextBookmark */ = 0B3DD8AE116808B900222D0D /* PBXTextBookmark */;
+			0B3DD8B51168091A00222D0D /* PBXBookmark */ = 0B3DD8B51168091A00222D0D /* PBXBookmark */;
+			0B3DD8B61168091A00222D0D /* PBXTextBookmark */ = 0B3DD8B61168091A00222D0D /* PBXTextBookmark */;
+			0B3DD8B71168091A00222D0D /* PBXTextBookmark */ = 0B3DD8B71168091A00222D0D /* PBXTextBookmark */;
+			0B3DD8BC1168098C00222D0D /* PBXBookmark */ = 0B3DD8BC1168098C00222D0D /* PBXBookmark */;
+			0B3DD8BD1168098C00222D0D /* PBXBookmark */ = 0B3DD8BD1168098C00222D0D /* PBXBookmark */;
+			0B3DD8BE1168098C00222D0D /* PBXBookmark */ = 0B3DD8BE1168098C00222D0D /* PBXBookmark */;
+			0B3DD8BF1168098C00222D0D /* PBXTextBookmark */ = 0B3DD8BF1168098C00222D0D /* PBXTextBookmark */;
+			0B3DD8C01168098C00222D0D /* PBXTextBookmark */ = 0B3DD8C01168098C00222D0D /* PBXTextBookmark */;
+			0B3DD8C111680A0C00222D0D /* PBXTextBookmark */ = 0B3DD8C111680A0C00222D0D /* PBXTextBookmark */;
+			0B3DD8C211680A1200222D0D /* PBXTextBookmark */ = 0B3DD8C211680A1200222D0D /* PBXTextBookmark */;
+			0B3DD8C711680B5600222D0D /* PBXTextBookmark */ = 0B3DD8C711680B5600222D0D /* PBXTextBookmark */;
+			0B3DD8C811680B5600222D0D /* PBXTextBookmark */ = 0B3DD8C811680B5600222D0D /* PBXTextBookmark */;
+			0B3DD8CB11680B6100222D0D /* PBXTextBookmark */ = 0B3DD8CB11680B6100222D0D /* PBXTextBookmark */;
+			0B3DD8CC11680B7200222D0D /* PBXTextBookmark */ = 0B3DD8CC11680B7200222D0D /* PBXTextBookmark */;
+			0B3DD8CD11680B7400222D0D /* PBXTextBookmark */ = 0B3DD8CD11680B7400222D0D /* PBXTextBookmark */;
+			0B3DD8CE11680CA000222D0D /* PBXTextBookmark */ = 0B3DD8CE11680CA000222D0D /* PBXTextBookmark */;
+			0B3DD8CF11680CA000222D0D /* PBXBookmark */ = 0B3DD8CF11680CA000222D0D /* PBXBookmark */;
+			0B3DD8D011680CA000222D0D /* PBXBookmark */ = 0B3DD8D011680CA000222D0D /* PBXBookmark */;
+			0B3DD8D111680CA000222D0D /* PBXBookmark */ = 0B3DD8D111680CA000222D0D /* PBXBookmark */;
+			0B3DD8D211680CA000222D0D /* PBXBookmark */ = 0B3DD8D211680CA000222D0D /* PBXBookmark */;
+			0B3DD8D311680CA000222D0D /* PBXBookmark */ = 0B3DD8D311680CA000222D0D /* PBXBookmark */;
+			0B3DD8D411680CA000222D0D /* PBXBookmark */ = 0B3DD8D411680CA000222D0D /* PBXBookmark */;
+			0B3DD8D511680CA000222D0D /* PBXBookmark */ = 0B3DD8D511680CA000222D0D /* PBXBookmark */;
+			0B3DD8D611680CA000222D0D /* PBXBookmark */ = 0B3DD8D611680CA000222D0D /* PBXBookmark */;
+			0B3DD8D711680CA000222D0D /* PBXBookmark */ = 0B3DD8D711680CA000222D0D /* PBXBookmark */;
+			0B3DD8D811680CA000222D0D /* PBXBookmark */ = 0B3DD8D811680CA000222D0D /* PBXBookmark */;
+			0B3DD8D911680CA000222D0D /* PBXBookmark */ = 0B3DD8D911680CA000222D0D /* PBXBookmark */;
 			0B418DBE1166AD620020B2D2 = 0B418DBE1166AD620020B2D2 /* PBXTextBookmark */;
 			0B418DBF1166AD620020B2D2 = 0B418DBF1166AD620020B2D2 /* PBXBookmark */;
 			0B418DC01166AD620020B2D2 = 0B418DC01166AD620020B2D2 /* PBXBookmark */;

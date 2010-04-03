@@ -187,7 +187,7 @@
 						<int key="NSvFlags">-2147483374</int>
 						<object class="NSMutableArray" key="NSSubviews">
 							<bool key="EncodedWithXMLCoder">YES</bool>
-							<object class="IBUIView" id="102935818">
+							<object class="IBUIView" id="865611218">
 								<reference key="NSNextResponder" ref="504846144"/>
 								<int key="NSvFlags">292</int>
 								<string key="NSFrameSize">{320, 43}</string>
@@ -208,7 +208,7 @@
 						<float key="IBUIRowHeight">44</float>
 						<float key="IBUISectionHeaderHeight">22</float>
 						<float key="IBUISectionFooterHeight">22</float>
-						<reference key="IBUITableHeaderView" ref="102935818"/>
+						<reference key="IBUITableHeaderView" ref="865611218"/>
 					</object>
 					<object class="IBUISearchBar" id="527259665">
 						<reference key="NSNextResponder" ref="527253757"/>
@@ -548,13 +548,13 @@
 						<reference key="object" ref="504846144"/>
 						<object class="NSMutableArray" key="children">
 							<bool key="EncodedWithXMLCoder">YES</bool>
-							<reference ref="102935818"/>
+							<reference ref="865611218"/>
 						</object>
 						<reference key="parent" ref="527253757"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">86</int>
-						<reference key="object" ref="102935818"/>
+						<reference key="object" ref="865611218"/>
 						<reference key="parent" ref="504846144"/>
 					</object>
 				</object>
@@ -566,6 +566,7 @@
 					<string>-1.CustomClassName</string>
 					<string>-2.CustomClassName</string>
 					<string>18.IBPluginDependency</string>
+					<string>19.CustomClassName</string>
 					<string>19.IBPluginDependency</string>
 					<string>22.IBPluginDependency</string>
 					<string>33.IBPluginDependency</string>
@@ -593,6 +594,7 @@
 					<string>RootViewController</string>
 					<string>UIResponder</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
+					<string>WPToolbar</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
@@ -603,7 +605,7 @@
 					<string>{{382, 200}, {320, 460}}</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
-					<string>{{786, 389}, {320, 460}}</string>
+					<string>{{759, 395}, {320, 460}}</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
@@ -697,6 +699,14 @@
 					<object class="IBClassDescriptionSource" key="sourceIdentifier">
 						<string key="majorKey">IBProjectSource</string>
 						<string key="minorKey">Classes/RootViewController.h</string>
+					</object>
+				</object>
+				<object class="IBPartialClassDescription">
+					<string key="className">WPToolbar</string>
+					<string key="superclassName">UIToolbar</string>
+					<object class="IBClassDescriptionSource" key="sourceIdentifier">
+						<string key="majorKey">IBProjectSource</string>
+						<string key="minorKey">WPToolbar.h</string>
 					</object>
 				</object>
 			</object>
