@@ -187,7 +187,7 @@
 						<int key="NSvFlags">-2147483374</int>
 						<object class="NSMutableArray" key="NSSubviews">
 							<bool key="EncodedWithXMLCoder">YES</bool>
-							<object class="IBUIView" id="575929575">
+							<object class="IBUIView" id="102935818">
 								<reference key="NSNextResponder" ref="504846144"/>
 								<int key="NSvFlags">292</int>
 								<string key="NSFrameSize">{320, 43}</string>
@@ -208,7 +208,7 @@
 						<float key="IBUIRowHeight">44</float>
 						<float key="IBUISectionHeaderHeight">22</float>
 						<float key="IBUISectionFooterHeight">22</float>
-						<reference key="IBUITableHeaderView" ref="575929575"/>
+						<reference key="IBUITableHeaderView" ref="102935818"/>
 					</object>
 					<object class="IBUISearchBar" id="527259665">
 						<reference key="NSNextResponder" ref="527253757"/>
@@ -548,13 +548,13 @@
 						<reference key="object" ref="504846144"/>
 						<object class="NSMutableArray" key="children">
 							<bool key="EncodedWithXMLCoder">YES</bool>
-							<reference ref="575929575"/>
+							<reference ref="102935818"/>
 						</object>
 						<reference key="parent" ref="527253757"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">86</int>
-						<reference key="object" ref="575929575"/>
+						<reference key="object" ref="102935818"/>
 						<reference key="parent" ref="504846144"/>
 					</object>
 				</object>

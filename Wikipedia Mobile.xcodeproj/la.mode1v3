@@ -279,7 +279,8 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>1</integer>
+									<integer>10</integer>
+									<integer>8</integer>
 									<integer>0</integer>
 								</array>
 							</array>
@@ -303,7 +304,7 @@
 							<real>261</real>
 						</array>
 						<key>RubberWindowFrame</key>
-						<string>139 121 1241 676 0 0 1440 878 </string>
+						<string>135 118 1241 676 0 0 1440 878 </string>
 					</dict>
 					<key>Module</key>
 					<string>PBXSmartGroupTreeModule</string>
@@ -321,7 +322,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>TODO</string>
+								<string>RootViewController.m</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -329,11 +330,11 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>TODO</string>
+										<string>RootViewController.m</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>0B3DD8421167FD8800222D0D</string>
+										<string>0B3DD863116800C200222D0D</string>
 										<key>history</key>
 										<array>
 											<string>0B2D8CB9111BFEC300328619</string>
@@ -353,23 +354,26 @@
 											<string>0B79B1B21134CE87006BA370</string>
 											<string>0BB244C6113B7CE200FE6F10</string>
 											<string>0B62916A1153EF94003FAD56</string>
-											<string>0B418DBF1166AD620020B2D2</string>
 											<string>0B418DC11166AD620020B2D2</string>
 											<string>0B418DC21166AD620020B2D2</string>
 											<string>0B3DD52C1167CCC100222D0D</string>
 											<string>0B3DD5701167CE8E00222D0D</string>
 											<string>0B3DD57D1167CEC800222D0D</string>
-											<string>0B3DD57E1167CEC800222D0D</string>
 											<string>0B3DD5F01167E03400222D0D</string>
 											<string>0B3DD7041167F12B00222D0D</string>
 											<string>0B3DD7D41167F87900222D0D</string>
 											<string>0B3DD7DC1167F8AE00222D0D</string>
 											<string>0B3DD7F91167F9D000222D0D</string>
 											<string>0B3DD7FD1167F9F900222D0D</string>
-											<string>0B3DD8301167FD5200222D0D</string>
 											<string>0B3DD8401167FD8800222D0D</string>
 											<string>0B3DD8411167FD8800222D0D</string>
-											<string>0B3DD82F1167FD5200222D0D</string>
+											<string>0B3DD8431167FDEA00222D0D</string>
+											<string>0B3DD8441167FDEA00222D0D</string>
+											<string>0B3DD8451167FDEA00222D0D</string>
+											<string>0B3DD8461167FDEA00222D0D</string>
+											<string>0B3DD8471167FDEA00222D0D</string>
+											<string>0B3DD8481167FDEA00222D0D</string>
+											<string>0B3DD8301167FD5200222D0D</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -383,7 +387,7 @@
 								<key>Frame</key>
 								<string>{{0, 0}, {958, 539}}</string>
 								<key>RubberWindowFrame</key>
-								<string>139 121 1241 676 0 0 1440 878 </string>
+								<string>135 118 1241 676 0 0 1440 878 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXNavigatorGroup</string>
@@ -403,7 +407,7 @@
 								<key>Frame</key>
 								<string>{{0, 544}, {958, 91}}</string>
 								<key>RubberWindowFrame</key>
-								<string>139 121 1241 676 0 0 1440 878 </string>
+								<string>135 118 1241 676 0 0 1440 878 </string>
 							</dict>
 							<key>Module</key>
 							<string>XCDetailModule</string>
@@ -575,7 +579,7 @@
 		<string>/Users/la/wikipedia-iphone/Wikipedia Mobile.xcodeproj</string>
 	</array>
 	<key>WindowString</key>
-	<string>139 121 1241 676 0 0 1440 878 </string>
+	<string>135 118 1241 676 0 0 1440 878 </string>
 	<key>WindowToolsV3</key>
 	<array>
 		<dict>

@@ -322,18 +322,19 @@
 	[self loadWikiEntry:[searchResults objectAtIndex:indexPath.row]];
 	
 	[tableView deselectRowAtIndexPath:indexPath animated:YES];
-	tableView.alpha = 0.0;
-	tableView.hidden = YES;
 	
 	searchBar.showsScopeBar = NO;
 	[searchBar sizeToFit];
 	[searchBar resignFirstResponder];
 	
+	tableView.alpha = 1.0;
 	shade.alpha = 0.6;
 	[UIView beginAnimations:nil context:NULL];
 	[UIView setAnimationDuration:0.2];
 	shade.alpha = 0.0;
+	tableView.alpha = 0.0;
 	[UIView commitAnimations];
+	tableView.hidden = YES;
 }
 
 #pragma mark toolbar
