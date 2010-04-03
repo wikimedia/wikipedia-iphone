@@ -18,14 +18,13 @@
 
 @implementation RootViewController
 
-@synthesize webView, activityIndicator, searchBar;
-@synthesize appDelegate, languageButton, pageTitle;
+@synthesize webView, activityIndicator, searchBar, searchResults;
+@synthesize appDelegate, pageTitle, shade, tableView;
 
 @synthesize managedObjectContext;
 
 - (void)viewWillAppear:(BOOL)animated {
-	appDelegate = (Wikipedia_MobileAppDelegate *)[[UIApplication sharedApplication] delegate];
-	languageButton.title = [[appDelegate.settings stringForKey:@"languageKey"] uppercaseString];
+	
 }
 
 - (void)loadStartPage {
@@ -42,6 +41,9 @@
 	
 	webView.scalesPageToFit = TRUE;
 	webView.multipleTouchEnabled = TRUE;
+	[webView setBackgroundColor:[UIColor colorWithPatternImage:[UIImage imageNamed:@"UITexture.png"]]];
+	searchBar.showsScopeBar = NO;
+	searchBar.frame = CGRectMake(0, 0, 320.0f, 44.0f);
 	
 	[self loadStartPage];
 	
@@ -171,8 +173,83 @@
 #pragma mark searchbar stuff
 
 - (void)searchBarTextDidBeginEditing:(UISearchBar *)_searchBar {
+	shade.alpha = 0.0;
+	shade.hidden = NO;
+	appDelegate = (Wikipedia_MobileAppDelegate *)[[UIApplication sharedApplication] delegate];
+	
+	searchBar.showsScopeBar = YES;
+	searchBar.selectedScopeButtonIndex = 0;
+	searchBar.scopeButtonTitles = [NSArray arrayWithObjects:[appDelegate.settings stringForKey:@"languageName"], @"Set Language", nil];
+	
+	[searchBar sizeToFit];
+	searchBar.frame = CGRectMake(0, 0, 320.0f, 88.0f);
+
+	[UIView beginAnimations:nil context:NULL];
+	[UIView setAnimationDuration:0.3];	
+	shade.alpha = 0.6;
+	[UIView commitAnimations];
+	
 	if (webView.loading) {
 		[webView stopLoading];
+	}
+}
+
+- (void)searchBar:(UISearchBar *)searchBar textDidChange:(NSString *)searchText {
+	searchText = [searchText stringByReplacingOccurrencesOfString:@" " withString:@"%20"];
+	
+	NSString *urlString = [NSString stringWithFormat:@"http://%@.wikipedia.org/w/api.php?action=opensearch&search=%@&format=json", [appDelegate.settings stringForKey:@"languageKey"], searchText];
+	NSURL *url = [NSURL URLWithString:urlString];
+	
+	NSURLRequest *request = [[NSURLRequest alloc] initWithURL:url];
+	NSURLConnection *connection = [[NSURLConnection alloc] initWithRequest:request delegate:self];
+	[connection release];
+	[request release];
+	
+	if ([searchText length] > 0) {
+		tableView.alpha = 1.0;
+		tableView.hidden = NO;
+	} else {
+		tableView.alpha = 0.0;
+		tableView.hidden = YES;
+	}
+	[tableView setContentOffset:CGPointMake(0, 0) animated:YES];
+}
+
+- (void)connection:(NSURLConnection *)connection didReceiveResponse:(NSURLResponse *)response {
+	
+}
+
+- (void)connection:(NSURLConnection *)connection didReceiveData:(NSData *)data 
+{
+	NSString *jsonString = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
+	NSArray *results = [jsonString JSONValue];
+	
+	searchResults = [NSMutableArray arrayWithArray:[results objectAtIndex:1]];
+	[tableView reloadData];
+	
+	[searchResults retain];
+}
+
+- (void)connectionDidFinishLoading:(NSURLConnection *)connection {
+	
+}
+
+- (void)connection:(NSURLConnection *)connection didFailWithError:(NSError *)error {
+	tableView.hidden = YES;
+}
+
+- (void)searchBarTextDidEndEditing:(UISearchBar *)searchBar {
+}
+
+- (void)searchBar:(UISearchBar *)_searchBar selectedScopeButtonIndexDidChange:(NSInteger)selectedScope {
+	if (selectedScope == 1) {
+		LanguageSwitcher *langSwitcher = [[LanguageSwitcher alloc] initWithNibName:@"LanguageSwitcher" bundle:nil];
+		langSwitcher.returnView = self;
+		[self.navigationController presentModalViewController:langSwitcher animated:YES];
+		[langSwitcher release];
+		if (webView.loading) {
+			[webView stopLoading];
+		}
 	}
 }
 
@@ -189,8 +266,74 @@
 }
 
 - (void)searchBarSearchButtonClicked:(UISearchBar *)_searchBar {
+	shade.alpha = 0.6;
+	[UIView beginAnimations:nil context:NULL];
+	[UIView setAnimationDuration:0.2];
+	shade.alpha = 0.0;
+	[UIView commitAnimations];
+	shade.hidden = YES;
+	
+	tableView.alpha = 0.0;
+	tableView.hidden = YES;
+	searchBar.showsScopeBar = NO;
+	[searchBar sizeToFit];
+	
 	[searchBar resignFirstResponder];
 	[self loadWikiEntry:searchBar.text];
+}
+
+- (IBAction)stopEditing {
+	shade.alpha = 0.6;
+	[UIView beginAnimations:nil context:NULL];
+	[UIView setAnimationDuration:0.2];
+	shade.alpha = 0.0;
+	[UIView commitAnimations];
+	
+	searchBar.showsScopeBar = NO;
+	[searchBar sizeToFit];
+	[searchBar resignFirstResponder];
+}
+
+#pragma mark table view
+
+- (void)scrollViewWillBeginDragging:(UIScrollView *)_tableView {
+	[searchBar resignFirstResponder];
+}
+
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)_tableView {
+	return 1;
+}
+
+- (NSInteger)tableView:(UITableView *)_tableView numberOfRowsInSection:(NSInteger)section {
+	return [searchResults count];
+}
+
+- (UITableViewCell *)tableView:(UITableView *)_tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+	static NSString *CellIdentifier = @"Cell";
+    UITableViewCell *cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
+	
+	cell.textLabel.text = [searchResults objectAtIndex:indexPath.row];
+	
+    return cell;
+}
+
+- (void)tableView:(UITableView *)_tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+	[self loadWikiEntry:[searchResults objectAtIndex:indexPath.row]];
+	
+	[tableView deselectRowAtIndexPath:indexPath animated:YES];
+	tableView.alpha = 0.0;
+	tableView.hidden = YES;
+	
+	searchBar.showsScopeBar = NO;
+	[searchBar sizeToFit];
+	[searchBar resignFirstResponder];
+	
+	shade.alpha = 0.6;
+	[UIView beginAnimations:nil context:NULL];
+	[UIView setAnimationDuration:0.2];
+	shade.alpha = 0.0;
+	[UIView commitAnimations];
 }
 
 #pragma mark toolbar
@@ -243,18 +386,12 @@
 	}
 }
 
-- (IBAction)switchLanguage {
-	LanguageSwitcher *langSwitcher = [[LanguageSwitcher alloc] initWithNibName:@"LanguageSwitcher" bundle:nil];
-	langSwitcher.returnView = self;
-	[self.navigationController presentModalViewController:langSwitcher animated:YES];
-	[langSwitcher release];
-	if (webView.loading) {
-		[webView stopLoading];
-	}
-}
-
 - (IBAction)goBack {
 	[webView goBack];
+}
+
+- (IBAction)goForward {
+	[webView goForward];
 }
 
 - (IBAction)nearbyButton {

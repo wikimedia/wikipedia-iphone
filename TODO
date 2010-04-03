@@ -2,8 +2,10 @@
 
 - WikiViewController needs to add viewed entries to history (simple fix). Also needs a bookmark button and similar features to the main view.
 
-- LanguageSwitcher needs more optimized code to redraw the table. Currently using an easier way that doesn't crash
-
-- LanguageSwitcher needs to reload the current page in the selected language (if available), not just the main page
-
 - Make bookmarks reorderable
+
+- Fix Map crash when closed before fully loaded
+
+- New Loader/progress bar
+
+- Update Default.png

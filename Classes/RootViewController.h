@@ -7,16 +7,19 @@
 //
 
 #import "Wikipedia_MobileAppDelegate.h"
+#import "JSON.h"
 
-@interface RootViewController : UIViewController <UISearchBarDelegate, UIWebViewDelegate, UIActionSheetDelegate> {
+@interface RootViewController : UIViewController <UISearchBarDelegate, UIWebViewDelegate, UIActionSheetDelegate, UITableViewDelegate, UITableViewDataSource> {
 	Wikipedia_MobileAppDelegate *appDelegate;
 	
 	UIWebView *webView;
 	UIActivityIndicatorView *activityIndicator;
 	IBOutlet UISearchBar *searchBar;
-	UIBarButtonItem *languageButton;
 	NSString *pageTitle;
+	UIView *shade;
+	UITableView *tableView;
 	
+	NSMutableArray *searchResults;
 	NSManagedObjectContext *managedObjectContext;
 }
 
@@ -25,19 +28,22 @@
 @property (nonatomic, retain) IBOutlet UIWebView *webView;
 @property (nonatomic, retain) IBOutlet UIActivityIndicatorView *activityIndicator;
 @property (nonatomic, retain) UISearchBar *searchBar;
-@property (nonatomic, retain) IBOutlet UIBarButtonItem *languageButton;
 @property (nonatomic, retain) NSString *pageTitle;
+@property (nonatomic, retain) IBOutlet UIView *shade;
+@property (nonatomic, retain) IBOutlet UITableView *tableView;
 
+@property (nonatomic, retain) NSMutableArray *searchResults;
 @property (nonatomic, retain) NSManagedObjectContext *managedObjectContext;	
 
 - (void)loadWikiEntry:(NSString *)url;
 - (void)loadURL:(NSString *)url;
 - (NSString *)currentURL;
-- (IBAction)switchLanguage;
 - (IBAction)goBack;
+- (IBAction)goForward;
 - (IBAction)nearbyButton;
 - (IBAction)addBookmark;
 - (IBAction)showHistory;
+- (IBAction)stopEditing;
 - (void)loadStartPage;
 - (void)reload;
 - (void)addRecentPage:(NSString *)pageName;

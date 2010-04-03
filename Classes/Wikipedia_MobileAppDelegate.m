@@ -24,6 +24,7 @@
     settings = [NSUserDefaults standardUserDefaults];
 	if ([settings stringForKey:@"languageKey"] == NULL) {
 		[settings setObject:@"en" forKey:@"languageKey"];
+		[settings setObject:@"English" forKey:@"languageName"];
 	}
 	
 	[window addSubview:[navigationController view]];
