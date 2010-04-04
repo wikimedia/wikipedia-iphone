@@ -57,17 +57,6 @@
 						<int key="IBUIDataDetectorTypes">3</int>
 						<bool key="IBUIDetectsPhoneNumbers">YES</bool>
 					</object>
-					<object class="IBUIActivityIndicatorView" id="120352865">
-						<reference key="NSNextResponder" ref="527253757"/>
-						<int key="NSvFlags">-2147483356</int>
-						<string key="NSFrame">{{143, 317}, {37, 37}}</string>
-						<reference key="NSSuperview" ref="527253757"/>
-						<bool key="IBUIOpaque">NO</bool>
-						<bool key="IBUIClearsContextBeforeDrawing">NO</bool>
-						<bool key="IBUIUserInteractionEnabled">NO</bool>
-						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
-						<int key="IBUIStyle">0</int>
-					</object>
 					<object class="IBUIToolbar" id="39995732">
 						<reference key="NSNextResponder" ref="527253757"/>
 						<int key="NSvFlags">266</int>
@@ -187,7 +176,7 @@
 						<int key="NSvFlags">-2147483374</int>
 						<object class="NSMutableArray" key="NSSubviews">
 							<bool key="EncodedWithXMLCoder">YES</bool>
-							<object class="IBUIView" id="865611218">
+							<object class="IBUIView" id="88384127">
 								<reference key="NSNextResponder" ref="504846144"/>
 								<int key="NSvFlags">292</int>
 								<string key="NSFrameSize">{320, 43}</string>
@@ -208,7 +197,7 @@
 						<float key="IBUIRowHeight">44</float>
 						<float key="IBUISectionHeaderHeight">22</float>
 						<float key="IBUISectionFooterHeight">22</float>
-						<reference key="IBUITableHeaderView" ref="865611218"/>
+						<reference key="IBUITableHeaderView" ref="88384127"/>
 					</object>
 					<object class="IBUISearchBar" id="527259665">
 						<reference key="NSNextResponder" ref="527253757"/>
@@ -245,31 +234,6 @@
 				<bool key="IBUIClearsContextBeforeDrawing">NO</bool>
 				<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 			</object>
-			<object class="IBUIView" id="510674638">
-				<nil key="NSNextResponder"/>
-				<int key="NSvFlags">292</int>
-				<object class="NSMutableArray" key="NSSubviews">
-					<bool key="EncodedWithXMLCoder">YES</bool>
-					<object class="IBUIProgressView" id="441745918">
-						<reference key="NSNextResponder" ref="510674638"/>
-						<int key="NSvFlags">292</int>
-						<string key="NSFrame">{{20, 430}, {280, 11}}</string>
-						<reference key="NSSuperview" ref="510674638"/>
-						<bool key="IBUIOpaque">NO</bool>
-						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
-						<int key="IBUIProgressViewStyle">1</int>
-					</object>
-				</object>
-				<string key="NSFrameSize">{320, 460}</string>
-				<object class="NSColor" key="IBUIBackgroundColor">
-					<int key="NSColorSpace">3</int>
-					<bytes key="NSWhite">MQA</bytes>
-					<object class="NSColorSpace" key="NSCustomColorSpace">
-						<int key="NSID">2</int>
-					</object>
-				</object>
-				<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
-			</object>
 		</object>
 		<object class="IBObjectContainer" key="IBDocument.Objects">
 			<object class="NSMutableArray" key="connectionRecords">
@@ -289,14 +253,6 @@
 						<reference key="destination" ref="585687071"/>
 					</object>
 					<int key="connectionID">21</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBCocoaTouchOutletConnection" key="connection">
-						<string key="label">activityIndicator</string>
-						<reference key="source" ref="841351856"/>
-						<reference key="destination" ref="120352865"/>
-					</object>
-					<int key="connectionID">23</int>
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBCocoaTouchOutletConnection" key="connection">
@@ -430,7 +386,6 @@
 						<object class="NSMutableArray" key="children">
 							<bool key="EncodedWithXMLCoder">YES</bool>
 							<reference ref="527259665"/>
-							<reference ref="120352865"/>
 							<reference ref="39995732"/>
 							<reference ref="585687071"/>
 							<reference ref="461105908"/>
@@ -466,11 +421,6 @@
 						<reference key="parent" ref="527253757"/>
 					</object>
 					<object class="IBObjectRecord">
-						<int key="objectID">22</int>
-						<reference key="object" ref="120352865"/>
-						<reference key="parent" ref="527253757"/>
-					</object>
-					<object class="IBObjectRecord">
 						<int key="objectID">33</int>
 						<reference key="object" ref="305521730"/>
 						<reference key="parent" ref="39995732"/>
@@ -494,20 +444,6 @@
 						<int key="objectID">52</int>
 						<reference key="object" ref="584284442"/>
 						<reference key="parent" ref="39995732"/>
-					</object>
-					<object class="IBObjectRecord">
-						<int key="objectID">57</int>
-						<reference key="object" ref="510674638"/>
-						<object class="NSMutableArray" key="children">
-							<bool key="EncodedWithXMLCoder">YES</bool>
-							<reference ref="441745918"/>
-						</object>
-						<reference key="parent" ref="0"/>
-					</object>
-					<object class="IBObjectRecord">
-						<int key="objectID">58</int>
-						<reference key="object" ref="441745918"/>
-						<reference key="parent" ref="510674638"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">60</int>
@@ -548,13 +484,13 @@
 						<reference key="object" ref="504846144"/>
 						<object class="NSMutableArray" key="children">
 							<bool key="EncodedWithXMLCoder">YES</bool>
-							<reference ref="865611218"/>
+							<reference ref="88384127"/>
 						</object>
 						<reference key="parent" ref="527253757"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">86</int>
-						<reference key="object" ref="865611218"/>
+						<reference key="object" ref="88384127"/>
 						<reference key="parent" ref="504846144"/>
 					</object>
 				</object>
@@ -566,17 +502,12 @@
 					<string>-1.CustomClassName</string>
 					<string>-2.CustomClassName</string>
 					<string>18.IBPluginDependency</string>
-					<string>19.CustomClassName</string>
 					<string>19.IBPluginDependency</string>
-					<string>22.IBPluginDependency</string>
 					<string>33.IBPluginDependency</string>
 					<string>36.IBPluginDependency</string>
 					<string>39.IBPluginDependency</string>
 					<string>47.IBPluginDependency</string>
 					<string>52.IBPluginDependency</string>
-					<string>57.IBEditorWindowLastContentRect</string>
-					<string>57.IBPluginDependency</string>
-					<string>58.IBPluginDependency</string>
 					<string>6.IBEditorWindowLastContentRect</string>
 					<string>6.IBPluginDependency</string>
 					<string>60.IBPluginDependency</string>
@@ -594,15 +525,10 @@
 					<string>RootViewController</string>
 					<string>UIResponder</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
-					<string>WPToolbar</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
-					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
-					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
-					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
-					<string>{{382, 200}, {320, 460}}</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<string>{{759, 395}, {320, 460}}</string>
@@ -681,7 +607,6 @@
 						<bool key="EncodedWithXMLCoder">YES</bool>
 						<object class="NSArray" key="dict.sortedKeys">
 							<bool key="EncodedWithXMLCoder">YES</bool>
-							<string>activityIndicator</string>
 							<string>searchBar</string>
 							<string>shade</string>
 							<string>tableView</string>
@@ -689,7 +614,6 @@
 						</object>
 						<object class="NSMutableArray" key="dict.values">
 							<bool key="EncodedWithXMLCoder">YES</bool>
-							<string>UIActivityIndicatorView</string>
 							<string>UISearchBar</string>
 							<string>UIView</string>
 							<string>UITableView</string>
@@ -699,14 +623,6 @@
 					<object class="IBClassDescriptionSource" key="sourceIdentifier">
 						<string key="majorKey">IBProjectSource</string>
 						<string key="minorKey">Classes/RootViewController.h</string>
-					</object>
-				</object>
-				<object class="IBPartialClassDescription">
-					<string key="className">WPToolbar</string>
-					<string key="superclassName">UIToolbar</string>
-					<object class="IBClassDescriptionSource" key="sourceIdentifier">
-						<string key="majorKey">IBProjectSource</string>
-						<string key="minorKey">WPToolbar.h</string>
 					</object>
 				</object>
 			</object>
@@ -832,14 +748,6 @@
 					</object>
 				</object>
 				<object class="IBPartialClassDescription">
-					<string key="className">UIActivityIndicatorView</string>
-					<string key="superclassName">UIView</string>
-					<object class="IBClassDescriptionSource" key="sourceIdentifier">
-						<string key="majorKey">IBFrameworkSource</string>
-						<string key="minorKey">UIKit.framework/Headers/UIActivityIndicatorView.h</string>
-					</object>
-				</object>
-				<object class="IBPartialClassDescription">
 					<string key="className">UIBarButtonItem</string>
 					<string key="superclassName">UIBarItem</string>
 					<object class="IBClassDescriptionSource" key="sourceIdentifier">
@@ -869,14 +777,6 @@
 					<object class="IBClassDescriptionSource" key="sourceIdentifier">
 						<string key="majorKey">IBFrameworkSource</string>
 						<string key="minorKey">UIKit.framework/Headers/UIControl.h</string>
-					</object>
-				</object>
-				<object class="IBPartialClassDescription">
-					<string key="className">UIProgressView</string>
-					<string key="superclassName">UIView</string>
-					<object class="IBClassDescriptionSource" key="sourceIdentifier">
-						<string key="majorKey">IBFrameworkSource</string>
-						<string key="minorKey">UIKit.framework/Headers/UIProgressView.h</string>
 					</object>
 				</object>
 				<object class="IBPartialClassDescription">
@@ -995,9 +895,9 @@
 			</object>
 			<object class="NSMutableArray" key="dict.values">
 				<bool key="EncodedWithXMLCoder">YES</bool>
-				<string>{16, 19}</string>
-				<string>{16, 19}</string>
-				<string>{18, 18}</string>
+				<string>{16, 21}</string>
+				<string>{16, 21}</string>
+				<string>{18, 20}</string>
 				<string>{20, 20}</string>
 			</object>
 		</object>

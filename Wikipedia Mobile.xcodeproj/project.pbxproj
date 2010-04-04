@@ -16,8 +16,7 @@
 		0B2D8CB1111BFDCE00328619 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B2D8CB0111BFDCE00328619 /* icon.png */; };
 		0B3DD56D1167CE7A00222D0D /* UITexture.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B3DD56C1167CE7A00222D0D /* UITexture.png */; };
 		0B3DD5791167CEAE00222D0D /* UITexture2.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B3DD5781167CEAE00222D0D /* UITexture2.png */; };
-		0B3DD8861168075700222D0D /* WPToolbar.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B3DD8851168075700222D0D /* WPToolbar.m */; };
-		0B3DD8B91168097F00222D0D /* UIToolbar.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B3DD8B81168097F00222D0D /* UIToolbar.png */; };
+		0B3DD91611680FFA00222D0D /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B3DD91511680FFA00222D0D /* MBProgressHUD.m */; };
 		0B418DA01166AAAB0020B2D2 /* UIButtonBarSearch.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B418D9C1166AAAB0020B2D2 /* UIButtonBarSearch.png */; };
 		0B418DA11166AAAB0020B2D2 /* UIButtonBarArrowLeft.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B418D9D1166AAAB0020B2D2 /* UIButtonBarArrowLeft.png */; };
 		0B418DA21166AAAB0020B2D2 /* UIButtonBarArrowRight.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B418D9E1166AAAB0020B2D2 /* UIButtonBarArrowRight.png */; };
@@ -67,9 +66,8 @@
 		0B2D8CB0111BFDCE00328619 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
 		0B3DD56C1167CE7A00222D0D /* UITexture.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = UITexture.png; sourceTree = "<group>"; };
 		0B3DD5781167CEAE00222D0D /* UITexture2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = UITexture2.png; sourceTree = "<group>"; };
-		0B3DD8841168075700222D0D /* WPToolbar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WPToolbar.h; sourceTree = "<group>"; };
-		0B3DD8851168075700222D0D /* WPToolbar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WPToolbar.m; sourceTree = "<group>"; };
-		0B3DD8B81168097F00222D0D /* UIToolbar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = UIToolbar.png; sourceTree = "<group>"; };
+		0B3DD91411680FFA00222D0D /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		0B3DD91511680FFA00222D0D /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
 		0B418D9C1166AAAB0020B2D2 /* UIButtonBarSearch.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = UIButtonBarSearch.png; sourceTree = "<group>"; };
 		0B418D9D1166AAAB0020B2D2 /* UIButtonBarArrowLeft.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = UIButtonBarArrowLeft.png; sourceTree = "<group>"; };
 		0B418D9E1166AAAB0020B2D2 /* UIButtonBarArrowRight.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = UIButtonBarArrowRight.png; sourceTree = "<group>"; };
@@ -221,8 +219,8 @@
 				29B97316FDCFA39411CA2CEA /* main.m */,
 				0BD18875112B008600ED0BDE /* CLController.h */,
 				0BD18876112B008600ED0BDE /* CLController.m */,
-				0B3DD8841168075700222D0D /* WPToolbar.h */,
-				0B3DD8851168075700222D0D /* WPToolbar.m */,
+				0B3DD91411680FFA00222D0D /* MBProgressHUD.h */,
+				0B3DD91511680FFA00222D0D /* MBProgressHUD.m */,
 			);
 			name = "Other Sources";
 			sourceTree = "<group>";
@@ -244,7 +242,6 @@
 				0B418D9F1166AAAB0020B2D2 /* UIButtonBarRefresh.png */,
 				0B3DD56C1167CE7A00222D0D /* UITexture.png */,
 				0B3DD5781167CEAE00222D0D /* UITexture2.png */,
-				0B3DD8B81168097F00222D0D /* UIToolbar.png */,
 				0B79B1A71134CDE6006BA370 /* Default.png */,
 				0BBBAF1811203DEC0056EF45 /* location.png */,
 				0B79AEAA11344DB6006BA370 /* history.png */,
@@ -336,7 +333,6 @@
 				0B418DA31166AAAB0020B2D2 /* UIButtonBarRefresh.png in Resources */,
 				0B3DD56D1167CE7A00222D0D /* UITexture.png in Resources */,
 				0B3DD5791167CEAE00222D0D /* UITexture2.png in Resources */,
-				0B3DD8B91168097F00222D0D /* UIToolbar.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -364,7 +360,7 @@
 				0BD18796112A000500ED0BDE /* SBJsonWriter.m in Sources */,
 				0BD18877112B008600ED0BDE /* CLController.m in Sources */,
 				0BD18E80112CB82C00ED0BDE /* WikiViewController.m in Sources */,
-				0B3DD8861168075700222D0D /* WPToolbar.m in Sources */,
+				0B3DD91611680FFA00222D0D /* MBProgressHUD.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

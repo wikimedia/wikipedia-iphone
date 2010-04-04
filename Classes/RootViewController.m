@@ -18,7 +18,7 @@
 
 @implementation RootViewController
 
-@synthesize webView, activityIndicator, searchBar, searchResults;
+@synthesize webView, searchBar, searchResults;
 @synthesize appDelegate, pageTitle, shade, tableView;
 
 @synthesize managedObjectContext;
@@ -92,8 +92,22 @@
 - (void)webViewDidStartLoad:(UIWebView *)webView {
 	[UIApplication sharedApplication].networkActivityIndicatorVisible = YES;
 	
-	[activityIndicator startAnimating];
-	activityIndicator.hidden = NO;
+	[self showLoadingHUD];
+	
+	timer = [NSTimer scheduledTimerWithTimeInterval:0.05
+											 target:self
+										   selector:@selector(handleTimer:)
+										   userInfo:nil
+											repeats:YES];	
+}
+
+- (void)handleTimer:(NSTimer *)timer
+{
+	if (HUD.progress < 1.0f) {
+		HUD.progress = HUD.progress + 0.01f;
+	} else {
+		HUD.progress = 0.0f;
+	}
 }
 
 - (void)webView:(UIWebView *)webView didFailLoadWithError:(NSError *)error {
@@ -102,8 +116,8 @@
 		NSLog(@"%@", errorString);
 		
 		[UIApplication sharedApplication].networkActivityIndicatorVisible = NO; 
-		[activityIndicator stopAnimating];
-		activityIndicator.hidden = YES;
+		[timer invalidate];
+		[HUD hide:YES];
 	}
 }
 
@@ -112,8 +126,8 @@
 	
 	pageTitle = [self.webView stringByEvaluatingJavaScriptFromString:@"document.title"]; 
 	
-	[activityIndicator stopAnimating];
-	activityIndicator.hidden = YES;
+	[timer invalidate];
+	[HUD hide:YES];
 	
 	if (![pageTitle isEqualToString:@"Wikipedia"]) {
 		[self addRecentPage:pageTitle];
@@ -406,6 +420,27 @@
 
 - (void)reload {
 	[webView reload];
+}
+
+#pragma mark HUD
+
+- (void)showLoadingHUD {
+    HUD = [[MBProgressHUD alloc] initWithView:self.view];
+	HUD.mode = MBProgressHUDModeDeterminate;
+	
+    [self.view addSubview:HUD];
+	HUD.delegate = self;
+	
+    HUD.labelText = @"Loading...";
+	
+    [HUD show:YES];
+	
+	HUD.progress = 0.0f;
+}
+
+- (void)hudWasHidden {
+    [HUD removeFromSuperview];
+    [HUD release];
 }
 
 #pragma mark memory/unload
