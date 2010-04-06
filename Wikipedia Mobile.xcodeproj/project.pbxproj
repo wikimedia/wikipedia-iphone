@@ -14,12 +14,18 @@
 		0B2D8B17111AD34500328619 /* wikipedia.xcdatamodel in Sources */ = {isa = PBXBuildFile; fileRef = 0B2D8B16111AD34500328619 /* wikipedia.xcdatamodel */; };
 		0B2D8C05111B1BAA00328619 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B2D8C04111B1BAA00328619 /* CoreData.framework */; };
 		0B2D8CB1111BFDCE00328619 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B2D8CB0111BFDCE00328619 /* icon.png */; };
+		0B3DD56D1167CE7A00222D0D /* UITexture.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B3DD56C1167CE7A00222D0D /* UITexture.png */; };
+		0B3DD5791167CEAE00222D0D /* UITexture2.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B3DD5781167CEAE00222D0D /* UITexture2.png */; };
+		0B3DD91611680FFA00222D0D /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B3DD91511680FFA00222D0D /* MBProgressHUD.m */; };
+		0B418DA01166AAAB0020B2D2 /* UIButtonBarSearch.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B418D9C1166AAAB0020B2D2 /* UIButtonBarSearch.png */; };
+		0B418DA11166AAAB0020B2D2 /* UIButtonBarArrowLeft.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B418D9D1166AAAB0020B2D2 /* UIButtonBarArrowLeft.png */; };
+		0B418DA21166AAAB0020B2D2 /* UIButtonBarArrowRight.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B418D9E1166AAAB0020B2D2 /* UIButtonBarArrowRight.png */; };
+		0B418DA31166AAAB0020B2D2 /* UIButtonBarRefresh.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B418D9F1166AAAB0020B2D2 /* UIButtonBarRefresh.png */; };
 		0B79AEAB11344DB6006BA370 /* history.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B79AEAA11344DB6006BA370 /* history.png */; };
 		0B79AF8F11349681006BA370 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B79AF8E11349681006BA370 /* SystemConfiguration.framework */; };
 		0B79B1841134C802006BA370 /* TODO in Resources */ = {isa = PBXBuildFile; fileRef = 0B79B1831134C802006BA370 /* TODO */; };
 		0B79B1961134C962006BA370 /* README in Resources */ = {isa = PBXBuildFile; fileRef = 0B79B1951134C962006BA370 /* README */; };
 		0B79B1A81134CDE6006BA370 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B79B1A71134CDE6006BA370 /* Default.png */; };
-		0BBBAEF9112026D60056EF45 /* back_btn.png in Resources */ = {isa = PBXBuildFile; fileRef = 0BBBAEF8112026D60056EF45 /* back_btn.png */; };
 		0BBBAF1911203DEC0056EF45 /* location.png in Resources */ = {isa = PBXBuildFile; fileRef = 0BBBAF1811203DEC0056EF45 /* location.png */; };
 		0BBBAF391120422C0056EF45 /* LanguageSwitcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BBBAF371120422C0056EF45 /* LanguageSwitcher.m */; };
 		0BBBAF3A1120422C0056EF45 /* LanguageSwitcher.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0BBBAF381120422C0056EF45 /* LanguageSwitcher.xib */; };
@@ -58,12 +64,19 @@
 		0B2D8B16111AD34500328619 /* wikipedia.xcdatamodel */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.xcdatamodel; path = wikipedia.xcdatamodel; sourceTree = "<group>"; };
 		0B2D8C04111B1BAA00328619 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		0B2D8CB0111BFDCE00328619 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		0B3DD56C1167CE7A00222D0D /* UITexture.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = UITexture.png; sourceTree = "<group>"; };
+		0B3DD5781167CEAE00222D0D /* UITexture2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = UITexture2.png; sourceTree = "<group>"; };
+		0B3DD91411680FFA00222D0D /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		0B3DD91511680FFA00222D0D /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		0B418D9C1166AAAB0020B2D2 /* UIButtonBarSearch.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = UIButtonBarSearch.png; sourceTree = "<group>"; };
+		0B418D9D1166AAAB0020B2D2 /* UIButtonBarArrowLeft.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = UIButtonBarArrowLeft.png; sourceTree = "<group>"; };
+		0B418D9E1166AAAB0020B2D2 /* UIButtonBarArrowRight.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = UIButtonBarArrowRight.png; sourceTree = "<group>"; };
+		0B418D9F1166AAAB0020B2D2 /* UIButtonBarRefresh.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = UIButtonBarRefresh.png; sourceTree = "<group>"; };
 		0B79AEAA11344DB6006BA370 /* history.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = history.png; sourceTree = "<group>"; };
 		0B79AF8E11349681006BA370 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		0B79B1831134C802006BA370 /* TODO */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = TODO; sourceTree = "<group>"; };
 		0B79B1951134C962006BA370 /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
 		0B79B1A71134CDE6006BA370 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
-		0BBBAEF8112026D60056EF45 /* back_btn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = back_btn.png; sourceTree = "<group>"; };
 		0BBBAF1811203DEC0056EF45 /* location.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = location.png; sourceTree = "<group>"; };
 		0BBBAF361120422C0056EF45 /* LanguageSwitcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LanguageSwitcher.h; sourceTree = "<group>"; };
 		0BBBAF371120422C0056EF45 /* LanguageSwitcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LanguageSwitcher.m; sourceTree = "<group>"; };
@@ -206,6 +219,8 @@
 				29B97316FDCFA39411CA2CEA /* main.m */,
 				0BD18875112B008600ED0BDE /* CLController.h */,
 				0BD18876112B008600ED0BDE /* CLController.m */,
+				0B3DD91411680FFA00222D0D /* MBProgressHUD.h */,
+				0B3DD91511680FFA00222D0D /* MBProgressHUD.m */,
 			);
 			name = "Other Sources";
 			sourceTree = "<group>";
@@ -221,9 +236,14 @@
 				28AD735F0D9D9599002E5188 /* MainWindow.xib */,
 				8D1107310486CEB800E47090 /* Wikipedia_Mobile-Info.plist */,
 				0B2D8B16111AD34500328619 /* wikipedia.xcdatamodel */,
+				0B418D9C1166AAAB0020B2D2 /* UIButtonBarSearch.png */,
+				0B418D9D1166AAAB0020B2D2 /* UIButtonBarArrowLeft.png */,
+				0B418D9E1166AAAB0020B2D2 /* UIButtonBarArrowRight.png */,
+				0B418D9F1166AAAB0020B2D2 /* UIButtonBarRefresh.png */,
+				0B3DD56C1167CE7A00222D0D /* UITexture.png */,
+				0B3DD5781167CEAE00222D0D /* UITexture2.png */,
 				0B79B1A71134CDE6006BA370 /* Default.png */,
 				0BBBAF1811203DEC0056EF45 /* location.png */,
-				0BBBAEF8112026D60056EF45 /* back_btn.png */,
 				0B79AEAA11344DB6006BA370 /* history.png */,
 				0B2D8CB0111BFDCE00328619 /* icon.png */,
 				0BBBAF58112070610056EF45 /* languages.plist */,
@@ -298,7 +318,6 @@
 				28F335F11007B36200424DE2 /* RootViewController.xib in Resources */,
 				0B2D8A6A111AB1CA00328619 /* ModalViewController.xib in Resources */,
 				0B2D8CB1111BFDCE00328619 /* icon.png in Resources */,
-				0BBBAEF9112026D60056EF45 /* back_btn.png in Resources */,
 				0BBBAF1911203DEC0056EF45 /* location.png in Resources */,
 				0BBBAF3A1120422C0056EF45 /* LanguageSwitcher.xib in Resources */,
 				0BBBAF59112070610056EF45 /* languages.plist in Resources */,
@@ -308,6 +327,12 @@
 				0B79B1841134C802006BA370 /* TODO in Resources */,
 				0B79B1961134C962006BA370 /* README in Resources */,
 				0B79B1A81134CDE6006BA370 /* Default.png in Resources */,
+				0B418DA01166AAAB0020B2D2 /* UIButtonBarSearch.png in Resources */,
+				0B418DA11166AAAB0020B2D2 /* UIButtonBarArrowLeft.png in Resources */,
+				0B418DA21166AAAB0020B2D2 /* UIButtonBarArrowRight.png in Resources */,
+				0B418DA31166AAAB0020B2D2 /* UIButtonBarRefresh.png in Resources */,
+				0B3DD56D1167CE7A00222D0D /* UITexture.png in Resources */,
+				0B3DD5791167CEAE00222D0D /* UITexture2.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -335,6 +360,7 @@
 				0BD18796112A000500ED0BDE /* SBJsonWriter.m in Sources */,
 				0BD18877112B008600ED0BDE /* CLController.m in Sources */,
 				0BD18E80112CB82C00ED0BDE /* WikiViewController.m in Sources */,
+				0B3DD91611680FFA00222D0D /* MBProgressHUD.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

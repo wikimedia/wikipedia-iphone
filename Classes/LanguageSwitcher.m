@@ -33,8 +33,12 @@
 }
 
 - (IBAction)dismissModalView {
+	returnView.appDelegate = (Wikipedia_MobileAppDelegate *)[[UIApplication sharedApplication] delegate];
+	returnView.searchBar.scopeButtonTitles = [NSArray arrayWithObjects:[returnView.appDelegate.settings stringForKey:@"languageName"], @"Set Language", nil];
+	returnView.searchBar.selectedScopeButtonIndex = 0;
+	
 	[self dismissModalViewControllerAnimated:YES];
-	[returnView loadStartPage];
+	//[returnView loadStartPage];
 }
 
 
@@ -126,6 +130,7 @@
 	
 	NSMutableDictionary *dictItem = [languagesArray objectAtIndex:indexPath.row];
 	[settings setObject:[dictItem valueForKey:@"path"] forKey:@"languageKey"];
+	[settings setObject:[dictItem valueForKey:@"language"] forKey:@"languageName"];
 }
 
 
