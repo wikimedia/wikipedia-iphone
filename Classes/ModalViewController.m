@@ -158,7 +158,6 @@
 		[dateFormat setDateFormat:@"MMM dd"];
 		
 		NSString *formattedDate = [dateFormat stringFromDate:[managedObject valueForKey:@"dateVisited"]];
-		
 		NSString *pageTitle = [[managedObject valueForKey:@"pageName"] description];
 		if (pageTitle.length > 22) {
 			pageTitle = [pageTitle stringByPaddingToLength:22 withString:nil startingAtIndex:0];
@@ -187,7 +186,7 @@
         // Delete the managed object for the given index path
 		NSManagedObjectContext *context = [fetchedResultsController managedObjectContext];
 		[context deleteObject:[fetchedResultsController objectAtIndexPath:indexPath]];
-
+		
 		// Save the context.
 		NSError *error = nil;
 		if (![context save:&error]) {
@@ -208,20 +207,23 @@
 
 
 // Override to support rearranging the table view.
-/*
+
 - (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath {
+
 }
-*/
 
 
 
-/*
 // Override to support conditional rearranging of the table view.
 - (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath {
     // Return NO if you do not want the item to be re-orderable.
-    return YES;
+	if (isBookmark) {
+		return YES;
+	} else {
+		return NO;
+	}
 }
-*/
+
 
 - (NSFetchedResultsController *)fetchedResultsController {    
 	// Create the fetch request for the entity.
@@ -243,7 +245,8 @@
 	// Edit the sort key as appropriate.
 	NSSortDescriptor *sortDescriptor;
 	if (isBookmark) {
-		sortDescriptor = [[NSSortDescriptor alloc] initWithKey:@"pageName" ascending:NO];
+		sortDescriptor = nil;
+		//sortDescriptor = [[NSSortDescriptor alloc] initWithKey:@"pageName" ascending:YES];
 	} else {
 		sortDescriptor = [[NSSortDescriptor alloc] initWithKey:@"dateVisited" ascending:NO];
 	}
@@ -348,14 +351,13 @@
 	[actionSheet release];
 }
 
-
-
 - (void)dealloc {
 	[fetchedResultsController release];
 	[managedObjectContext release];
     [super dealloc];
 }
 
+#pragma mark reorder entries
 
 @end
 

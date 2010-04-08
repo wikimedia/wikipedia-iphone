@@ -20,6 +20,7 @@
 	UITableView *tableView;
 	MBProgressHUD *HUD;
 	NSTimer *timer;
+	BOOL HUDvisible;
 	
 	NSMutableArray *searchResults;
 	NSManagedObjectContext *managedObjectContext;

@@ -2,6 +2,12 @@
 
 - WikiViewController needs to add viewed entries to history (simple fix). Also needs a bookmark button and similar features to the main view.
 
-- Make bookmarks reorderable
-
 - Fix Map crash when closed before fully loaded
+
+- Fix HUD timer last moment crash
+
+- Add custom user agent
+
+- update bundle ID
+
+- json results toolbar extends towards top

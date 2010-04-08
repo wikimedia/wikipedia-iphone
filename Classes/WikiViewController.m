@@ -8,10 +8,9 @@
 
 #import "WikiViewController.h"
 
-
 @implementation WikiViewController
 
-@synthesize wikiEntryURL, webView;
+@synthesize wikiEntryURL, webView, superView;
 
 /*
  // The designated initializer.  Override if you create the controller programmatically and want to perform customization that is not appropriate for viewDidLoad.
@@ -24,10 +23,14 @@
 */
 
 
+- (void)viewWillAppear:(BOOL)animated {
+}
+
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad {
     [super viewDidLoad];
-
+	[webView setBackgroundColor:[UIColor colorWithPatternImage:[UIImage imageNamed:@"UITexture2.png"]]];
+	
 	NSURLRequest *URLrequest = [NSURLRequest requestWithURL:wikiEntryURL];
 	
 	[webView loadRequest:URLrequest];
@@ -40,11 +43,13 @@
 - (void)webViewDidFinishLoad:(UIWebView *)webView {
 	[UIApplication sharedApplication].networkActivityIndicatorVisible = NO; 
 	
+#warning
 	//[self addRecentPage:pageTitle];
 }
 
 
-
+- (void)viewWillDisappear:(BOOL)animated {
+}
 
 /*
 // Override to allow orientations other than the default portrait orientation.

@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 #import "RootViewController.h"
+#import "RecentPage.h"
+#import "Bookmark.h"
 
 @interface ModalViewController : UIViewController <NSFetchedResultsControllerDelegate, UIActionSheetDelegate> {
 	UITableView *tableView;
@@ -19,7 +21,6 @@
 	BOOL isBookmark;
 	UISegmentedControl *bookmarkToggle;
 	UIBarButtonItem *editButton;
-	
 	RootViewController *returnView;
 }
 

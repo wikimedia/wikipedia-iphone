@@ -103,21 +103,25 @@
 
 - (void)handleTimer:(NSTimer *)timer
 {
-	if (HUD.progress < 1.0f) {
-		HUD.progress = HUD.progress + 0.01f;
-	} else {
-		HUD.progress = 0.0f;
+	if (HUDvisible) {
+		if (HUD.progress < 1.0f) {
+			HUD.progress = HUD.progress + 0.01f;
+		} else {
+			HUD.progress = 0.0f;
+		}
 	}
 }
 
 - (void)webView:(UIWebView *)webView didFailLoadWithError:(NSError *)error {
+	[timer invalidate];
 	if (error != nil) {
 		NSString *errorString = [NSString stringWithFormat:@"%@", error];
 		NSLog(@"%@", errorString);
 		
 		[UIApplication sharedApplication].networkActivityIndicatorVisible = NO; 
-		[timer invalidate];
-		[HUD hide:YES];
+		if (HUDvisible) {
+			[HUD hide:YES];
+		}
 	}
 }
 
@@ -127,9 +131,11 @@
 	pageTitle = [self.webView stringByEvaluatingJavaScriptFromString:@"document.title"]; 
 	
 	[timer invalidate];
-	[HUD hide:YES];
+	if (HUDvisible) {
+		[HUD hide:YES];
+	}
 	
-	if (![pageTitle isEqualToString:@"Wikipedia"]) {
+	if (![pageTitle isEqualToString:@"Wikipedia"] && ![pageTitle isEqualToString:nil]) {
 		[self addRecentPage:pageTitle];
 	}
 }
@@ -422,6 +428,12 @@
 	[webView reload];
 }
 
+/*
+- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation {
+	return UIInterfaceOrientationPortrait;
+}
+*/
+
 #pragma mark HUD
 
 - (void)showLoadingHUD {
@@ -434,11 +446,13 @@
     HUD.labelText = @"Loading...";
 	
     [HUD show:YES];
+	HUDvisible = YES;
 	
 	HUD.progress = 0.0f;
 }
 
 - (void)hudWasHidden {
+	HUDvisible = NO;
     [HUD removeFromSuperview];
     [HUD release];
 }

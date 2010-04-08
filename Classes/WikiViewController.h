@@ -7,14 +7,16 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "MapViewController.h"
 
 @interface WikiViewController : UIViewController <UIWebViewDelegate> {
 	NSURL *wikiEntryURL;
 	UIWebView *webView;
+	MapViewController *superView;
 }
 
 @property (nonatomic, retain) NSURL *wikiEntryURL;
 @property (nonatomic, retain) IBOutlet UIWebView *webView;
+@property (nonatomic, retain) MapViewController *superView;
 
 @end

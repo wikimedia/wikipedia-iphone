@@ -54,7 +54,7 @@
 
 @protocol AddressAnnotation;
 
-@synthesize mapView, annotations, navController;
+@synthesize mapView, annotations, navController, tableView, currentLocation, locationBtn;
 
 
 - (void)locationUpdate:(CLLocation *)location {
@@ -62,6 +62,8 @@
 	[locationController.locationManager stopUpdatingLocation];
 	
 	[self fetchWikiPagesWithLatitude:location.coordinate.latitude longitude:location.coordinate.longitude];
+	currentLocation.latitude = location.coordinate.latitude;
+	currentLocation.longitude = location.coordinate.longitude;
 }
 
 - (void)locationError:(NSError *)error {
@@ -74,7 +76,6 @@
 }
 
 - (void)viewWillAppear:(BOOL)animated {
-	//[navController setToolbarHidden:NO animated:NO];
 }
 
 - (void)viewDidLoad {
@@ -90,6 +91,7 @@
 }
 
 - (void)viewDidAppear:(BOOL)animated {
+	NSLog(@"viewDidAppear");
 }
 
 - (void)fetchWikiPagesWithLatitude:(float)latitude longitude:(float)longitude {
@@ -170,25 +172,42 @@
     return annotationView;
 }
 
-- (void)mapView:(MKMapView *)mapView annotationView:(MKAnnotationView *)view calloutAccessoryControlTapped:(UIControl *)control {
+- (void)mapView:(MKMapView *)wikiMapView annotationView:(MKAnnotationView *)view calloutAccessoryControlTapped:(UIControl *)control {
 	AddressAnnotation *annotation = (AddressAnnotation *)view.annotation;
 	
 	NSString *annotationURL = [NSString stringWithFormat:@"http://%@", annotation.mURL];
 	WikiViewController *wikiViewController = [[WikiViewController alloc] initWithNibName:@"WikiViewController" bundle:nil];
 	wikiViewController.wikiEntryURL = [NSURL URLWithString:annotationURL];
 	wikiViewController.title = annotation.title;
+	wikiViewController.superView = self;
 	[navController pushViewController:wikiViewController animated:YES];
+	
+	//UIBarButtonItem *item = [[UIBarButtonItem alloc] initWithTitle:nil style:UIBarButtonSystemItemAction target:self action:@selector(action)];
+	//[navController.navigationItem setRightBarButtonItem:item animated:YES];
+#warning
+
 	[wikiViewController release];
 }
 
 - (void)mapViewWillStartLoadingMap:(MKMapView *)wikiMapView {
-	[mapView removeAnnotations:annotations];
 }
 
-- (void)mapViewDidFinishLoadingMap:(MKMapView *)wikiMapView {
+- (void)mapView:(MKMapView *)wikiMapView regionWillChangeAnimated:(BOOL)animated {
+	
+}
+
+- (void)mapView:(MKMapView *)wikiMapView regionDidChangeAnimated:(BOOL)animated {
+	//if (wikiMapView.region.center.latitude
+#warning add region check here  + NSTimer delay
+	
+	[mapView removeAnnotations:annotations];
 	if (!firstLoad) {
 		[self refetchWikiPagesWithLatitude:mapView.region.center.latitude longitude:mapView.region.center.longitude];
 	}
+}
+
+- (void)mapViewDidFinishLoadingMap:(MKMapView *)wikiMapView {
+	
 }
 
 - (void)refetchWikiPagesWithLatitude:(float)latitude longitude:(float)longitude {
@@ -239,6 +258,70 @@
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
 }
 */
+
+#pragma mark List View
+
+- (IBAction)toggleMapAndListView:(id)tabs
+{
+	switch([tabs selectedSegmentIndex]+1)
+	{
+		case 1: {
+			tableView.hidden = YES;
+		}; break;			
+		case 2: {
+			[tableView reloadData];
+			tableView.hidden = NO;
+		}; break;
+		default: break;
+	}
+}
+
+#pragma mark Table view methods
+
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+    return 1;
+}
+
+
+// Customize the number of rows in the table view.
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return [annotations count];
+}
+
+
+// Customize the appearance of table view cells.
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+	static NSString *CellIdentifier = @"Cell";
+    UITableViewCell *cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:CellIdentifier];
+	
+	cell.textLabel.text = [[annotations objectAtIndex:indexPath.row] title];
+	cell.detailTextLabel.text = [[annotations objectAtIndex:indexPath.row] subtitle];
+	cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
+	
+    return cell;
+}
+
+
+- (void)tableView:(UITableView *)mTableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+	[self.tableView deselectRowAtIndexPath:indexPath animated:YES];
+	
+	AddressAnnotation *annotation = [annotations objectAtIndex:indexPath.row];
+	
+	NSString *annotationURL = [NSString stringWithFormat:@"http://%@", annotation.mURL];
+	WikiViewController *wikiViewController = [[WikiViewController alloc] initWithNibName:@"WikiViewController" bundle:nil];
+	wikiViewController.wikiEntryURL = [NSURL URLWithString:annotationURL];
+	wikiViewController.title = annotation.title;
+	wikiViewController.superView = self;
+	[navController pushViewController:wikiViewController animated:YES];
+	[wikiViewController release];
+}
+
+- (IBAction)centerCurrentLocation {
+	locationBtn.style = UIBarButtonItemStyleDone;
+	locationBtn.image = [UIImage imageNamed:@"location.png"];
+	[mapView setRegion:MKCoordinateRegionMake(currentLocation, MKCoordinateSpanMake(0.1f, 0.1f)) animated:YES];
+}
 
 - (IBAction)dismissModalView {
 	[self dismissModalViewControllerAnimated:YES];

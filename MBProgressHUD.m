@@ -168,7 +168,8 @@
 		[NSException raise:@"MBProgressHUDViewIsNillException" 
 					format:@"The view used in the MBProgressHUD initializer is nil."];
 	}
-	return [self initWithFrame:view.bounds];
+	CGRect HUDRect = CGRectMake(view.bounds.origin.x, view.bounds.origin.y+164.0f, view.bounds.size.width, view.bounds.size.height-350.0f);
+	return [self initWithFrame:HUDRect];
 }
 
 - (id)initWithFrame:(CGRect)frame {
