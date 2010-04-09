@@ -3,7 +3,3 @@
 
 - WikiViewController needs to add viewed entries to history (simple fix). 
 Also needs a bookmark button and similar features to the main view.
-
-- Fix memory leaks
-
-- fix mapview crash
