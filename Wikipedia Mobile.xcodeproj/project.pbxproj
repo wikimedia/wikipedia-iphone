@@ -23,8 +23,6 @@
 		0B418DA31166AAAB0020B2D2 /* UIButtonBarRefresh.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B418D9F1166AAAB0020B2D2 /* UIButtonBarRefresh.png */; };
 		0B79AEAB11344DB6006BA370 /* history.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B79AEAA11344DB6006BA370 /* history.png */; };
 		0B79AF8F11349681006BA370 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B79AF8E11349681006BA370 /* SystemConfiguration.framework */; };
-		0B79B1841134C802006BA370 /* TODO in Resources */ = {isa = PBXBuildFile; fileRef = 0B79B1831134C802006BA370 /* TODO */; };
-		0B79B1961134C962006BA370 /* README in Resources */ = {isa = PBXBuildFile; fileRef = 0B79B1951134C962006BA370 /* README */; };
 		0B79B1A81134CDE6006BA370 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B79B1A71134CDE6006BA370 /* Default.png */; };
 		0BBBAF1911203DEC0056EF45 /* location.png in Resources */ = {isa = PBXBuildFile; fileRef = 0BBBAF1811203DEC0056EF45 /* location.png */; };
 		0BBBAF391120422C0056EF45 /* LanguageSwitcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BBBAF371120422C0056EF45 /* LanguageSwitcher.m */; };
@@ -324,8 +322,6 @@
 				0BC60AE4112619380046CB59 /* MapViewController.xib in Resources */,
 				0BD18E81112CB82C00ED0BDE /* WikiViewController.xib in Resources */,
 				0B79AEAB11344DB6006BA370 /* history.png in Resources */,
-				0B79B1841134C802006BA370 /* TODO in Resources */,
-				0B79B1961134C962006BA370 /* README in Resources */,
 				0B79B1A81134CDE6006BA370 /* Default.png in Resources */,
 				0B418DA01166AAAB0020B2D2 /* UIButtonBarSearch.png in Resources */,
 				0B418DA11166AAAB0020B2D2 /* UIButtonBarArrowLeft.png in Resources */,

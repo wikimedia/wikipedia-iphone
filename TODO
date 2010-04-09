@@ -1,6 +1,8 @@
 - Expand MapViewController to support a list view. There is a hidden toolbar on its navigation controller with search and location buttons as well as a map/list switch not yet implemented
+# http://ws.geonames.org/wikipediaSearchJSON?formatted=true&q=london&maxRows=10&style=full
 
 - WikiViewController needs to add viewed entries to history (simple fix). Also needs a bookmark button and similar features to the main view.
+
 
 - Fix Map crash when closed before fully loaded
 
@@ -8,6 +10,3 @@
 
 - Add custom user agent
 
-- update bundle ID
-
-- json results toolbar extends towards top

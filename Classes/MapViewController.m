@@ -97,8 +97,8 @@
 - (void)fetchWikiPagesWithLatitude:(float)latitude longitude:(float)longitude {
 	SBJSON *parser = [[SBJSON alloc] init];
 	
-	NSString *urlString = [NSString stringWithFormat:@"http://ws.geonames.org/findNearbyWikipediaJSON?formatted=true&lat=%f&lng=%f&maxRows=500&style=full", latitude, longitude];
-  NSLog(@"Loading: %@", urlString);
+	NSString *urlString = [NSString stringWithFormat:@"http://ws.geonames.org/findNearbyWikipediaJSON?formatted=true&username=wikimedia&lat=%f&lng=%f&style=full", latitude, longitude];
+    NSLog(@"Loading: %@", urlString);
 	
 	NSURL *url = [NSURL URLWithString:urlString];
 	NSURLRequest *request = [[NSURLRequest alloc] initWithURL:url];
@@ -121,8 +121,7 @@
 	
 	annotations = [[NSMutableArray alloc] init];
 	
-	for (NSDictionary *item in items)
-	{
+	for (NSDictionary *item in items) {
 		AddressAnnotation *annotation;
 		
 		CLLocationCoordinate2D pointLocation;
@@ -214,7 +213,7 @@
 - (void)refetchWikiPagesWithLatitude:(float)latitude longitude:(float)longitude {
 	SBJSON *parser = [[SBJSON alloc] init];
 	
-	NSString *urlString = [NSString stringWithFormat:@"http://ws.geonames.org/findNearbyWikipediaJSON?formatted=true&lat=%f&lng=%f&maxRows=500&style=full", latitude, longitude];
+	NSString *urlString = [NSString stringWithFormat:@"http://ws.geonames.org/findNearbyWikipediaJSON?formatted=true&username=wikimedia&lat=%f&lng=%f&style=full", latitude, longitude];
 	NSLog(@"Loading: %@", urlString);
   
 	NSURL *url = [NSURL URLWithString:urlString];

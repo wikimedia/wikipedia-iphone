@@ -174,18 +174,7 @@
 					<object class="IBUITableView" id="504846144">
 						<reference key="NSNextResponder" ref="527253757"/>
 						<int key="NSvFlags">-2147483374</int>
-						<object class="NSMutableArray" key="NSSubviews">
-							<bool key="EncodedWithXMLCoder">YES</bool>
-							<object class="IBUIView" id="88384127">
-								<reference key="NSNextResponder" ref="504846144"/>
-								<int key="NSvFlags">292</int>
-								<string key="NSFrameSize">{320, 43}</string>
-								<reference key="NSSuperview" ref="504846144"/>
-								<reference key="IBUIBackgroundColor" ref="872912288"/>
-								<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
-							</object>
-						</object>
-						<string key="NSFrame">{{0, 44}, {320, 416}}</string>
+						<string key="NSFrame">{{0, 88}, {320, 372}}</string>
 						<reference key="NSSuperview" ref="527253757"/>
 						<reference key="IBUIBackgroundColor" ref="872912288"/>
 						<bool key="IBUIClipsSubviews">YES</bool>
@@ -197,7 +186,6 @@
 						<float key="IBUIRowHeight">44</float>
 						<float key="IBUISectionHeaderHeight">22</float>
 						<float key="IBUISectionFooterHeight">22</float>
-						<reference key="IBUITableHeaderView" ref="88384127"/>
 					</object>
 					<object class="IBUISearchBar" id="527259665">
 						<reference key="NSNextResponder" ref="527253757"/>
@@ -484,14 +472,8 @@
 						<reference key="object" ref="504846144"/>
 						<object class="NSMutableArray" key="children">
 							<bool key="EncodedWithXMLCoder">YES</bool>
-							<reference ref="88384127"/>
 						</object>
 						<reference key="parent" ref="527253757"/>
-					</object>
-					<object class="IBObjectRecord">
-						<int key="objectID">86</int>
-						<reference key="object" ref="88384127"/>
-						<reference key="parent" ref="504846144"/>
 					</object>
 				</object>
 			</object>
@@ -518,7 +500,6 @@
 					<string>77.IBPluginDependency</string>
 					<string>8.IBPluginDependency</string>
 					<string>82.IBPluginDependency</string>
-					<string>86.IBPluginDependency</string>
 				</object>
 				<object class="NSMutableArray" key="dict.values">
 					<bool key="EncodedWithXMLCoder">YES</bool>
@@ -532,7 +513,6 @@
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<string>{{607, 369}, {320, 460}}</string>
-					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>

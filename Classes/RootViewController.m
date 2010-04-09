@@ -30,7 +30,8 @@
 - (void)loadStartPage {
 	NSString *url = [NSString stringWithFormat:@"http://%@.m.wikipedia.org", [appDelegate.settings stringForKey:@"languageKey"]];
 	NSURL *_url = [NSURL URLWithString:url];
-	NSURLRequest *URLrequest = [NSURLRequest requestWithURL:_url];
+	NSMutableURLRequest *URLrequest = [NSMutableURLRequest requestWithURL:_url];
+	[URLrequest setValue:@"Wikipedia Mobile/2.0" forHTTPHeaderField:@"User_Agent"];
 	
 	[webView loadRequest:URLrequest];
 }
@@ -71,7 +72,8 @@
 - (void)loadURL:(NSString *)url {
 	NSURL *_url = [NSURL URLWithString:url];
 	
-	NSURLRequest *request = [[NSURLRequest alloc] initWithURL:_url];
+	NSMutableURLRequest *request = [[NSMutableURLRequest alloc] initWithURL:_url];
+	[request setValue:@"Wikipedia Mobile/2.0" forHTTPHeaderField:@"User_Agent"];
 	
 	[webView loadRequest:request];
 	[request release];
@@ -83,7 +85,8 @@
 	NSString *url = [NSString stringWithFormat:@"http://%@.m.wikipedia.org/wiki?search=%@", [appDelegate.settings stringForKey:@"languageKey"], query]; 
 	NSURL *_url = [NSURL URLWithString:url];
 		
-	NSURLRequest *request = [[NSURLRequest alloc] initWithURL:_url];
+	NSMutableURLRequest *request = [[NSMutableURLRequest alloc] initWithURL:_url];
+	[request setValue:@"Wikipedia Mobile/2.0" forHTTPHeaderField:@"User_Agent"];
 	
 	[webView loadRequest:request];
 	[request release];

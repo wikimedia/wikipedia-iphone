@@ -31,7 +31,8 @@
     [super viewDidLoad];
 	[webView setBackgroundColor:[UIColor colorWithPatternImage:[UIImage imageNamed:@"UITexture2.png"]]];
 	
-	NSURLRequest *URLrequest = [NSURLRequest requestWithURL:wikiEntryURL];
+	NSMutableURLRequest *URLrequest = [NSMutableURLRequest requestWithURL:wikiEntryURL];
+	[URLrequest setValue:@"Wikipedia Mobile/2.0" forHTTPHeaderField:@"User_Agent"];
 	
 	[webView loadRequest:URLrequest];
 }
