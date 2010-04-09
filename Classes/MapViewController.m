@@ -91,7 +91,6 @@
 }
 
 - (void)viewDidAppear:(BOOL)animated {
-	NSLog(@"viewDidAppear");
 }
 
 - (void)fetchWikiPagesWithLatitude:(float)latitude longitude:(float)longitude {
@@ -197,8 +196,8 @@
 }
 
 - (void)mapView:(MKMapView *)wikiMapView regionDidChangeAnimated:(BOOL)animated {
-	//if (wikiMapView.region.center.latitude
-#warning add region check here  + NSTimer delay
+
+#warning add region check here + NSTimer delay
 	
 	[mapView removeAnnotations:annotations];
 	if (!firstLoad) {
@@ -327,9 +326,11 @@
 }
 
 - (IBAction)dismissModalView {
+	[locationController.locationManager stopUpdatingLocation];
+	mapView.delegate = nil;
+	[mapView release];
 	[self dismissModalViewControllerAnimated:YES];
 	
-	[locationController.locationManager stopUpdatingLocation];
 	[UIApplication sharedApplication].networkActivityIndicatorVisible = NO;
 }
 
@@ -343,6 +344,7 @@
 
 - (void)viewDidUnload {
     [super viewDidUnload];
+	mapView.delegate = nil;
 	[mapView release];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;

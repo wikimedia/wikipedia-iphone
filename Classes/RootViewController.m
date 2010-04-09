@@ -122,9 +122,8 @@
 		NSLog(@"%@", errorString);
 		
 		[UIApplication sharedApplication].networkActivityIndicatorVisible = NO; 
-		if (HUDvisible) {
-			[HUD hide:YES];
-		}
+		
+		[HUD hide:YES];
 	}
 }
 
@@ -440,6 +439,7 @@
 #pragma mark HUD
 
 - (void)showLoadingHUD {
+	
     HUD = [[MBProgressHUD alloc] initWithView:self.view];
 	HUD.mode = MBProgressHUDModeDeterminate;
 	
@@ -457,7 +457,6 @@
 - (void)hudWasHidden {
 	HUDvisible = NO;
     [HUD removeFromSuperview];
-    [HUD release];
 }
 
 #pragma mark memory/unload
