@@ -7,10 +7,15 @@
 //
 
 #import "WikiViewController.h"
+#import "ModalViewController.h"
+#import "RecentPage.h"
+#import "Bookmark.h"
 
 @implementation WikiViewController
 
-@synthesize wikiEntryURL, webView, superView;
+@synthesize appDelegate, wikiEntryURL, webView, superView;
+@synthesize pageTitle;
+@synthesize managedObjectContext;
 
 /*
  // The designated initializer.  Override if you create the controller programmatically and want to perform customization that is not appropriate for viewDidLoad.
@@ -29,9 +34,13 @@
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad {
     [super viewDidLoad];
+	
+	appDelegate = (Wikipedia_MobileAppDelegate *)[[UIApplication sharedApplication] delegate];
+	self.managedObjectContext = appDelegate.managedObjectContext;
+	
 	[webView setBackgroundColor:[UIColor colorWithPatternImage:[UIImage imageNamed:@"UITexture2.png"]]];
 	
-	NSMutableURLRequest *URLrequest = [NSMutableURLRequest requestWithURL:wikiEntryURL];
+	NSMutableURLRequest *URLrequest = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:wikiEntryURL]];
 	[URLrequest setValue:@"Wikipedia Mobile/2.0" forHTTPHeaderField:@"User_Agent"];
 	
 	[webView loadRequest:URLrequest];
@@ -39,17 +48,35 @@
 
 - (void)webViewDidStartLoad:(UIWebView *)webView {
 	[UIApplication sharedApplication].networkActivityIndicatorVisible = YES;
+	
+	[self showLoadingHUD];
+}
+
+- (void)webView:(UIWebView *)webView didFailLoadWithError:(NSError *)error {
+	if (error != nil) {
+		NSString *errorString = [NSString stringWithFormat:@"%@", error];
+		NSLog(@"%@", errorString);
+		
+		[UIApplication sharedApplication].networkActivityIndicatorVisible = NO; 
+		[HUD hide:YES];
+	}
 }
 
 - (void)webViewDidFinishLoad:(UIWebView *)webView {
-	[UIApplication sharedApplication].networkActivityIndicatorVisible = NO; 
+	[UIApplication sharedApplication].networkActivityIndicatorVisible = NO;
 	
-#warning
-	//[self addRecentPage:pageTitle];
+	pageTitle = [self.webView stringByEvaluatingJavaScriptFromString:@"document.title"]; 
+	
+	[HUD hide:YES];
+	
+	if (![pageTitle isEqualToString:@"Wikipedia"] && ![pageTitle isEqualToString:nil]) {
+		[self addRecentPage:pageTitle];
+	}
 }
 
 
 - (void)viewWillDisappear:(BOOL)animated {
+	[HUD hide:YES];
 }
 
 /*
@@ -59,6 +86,85 @@
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
 }
 */
+
+- (void)addRecentPage:(NSString *)pageName {
+	RecentPage *recentPage = (RecentPage *)[NSEntityDescription insertNewObjectForEntityForName:@"RecentPage" inManagedObjectContext:managedObjectContext];
+	
+	[recentPage setValue:[NSDate date] forKey:@"dateVisited"];
+	[recentPage setValue:pageName forKey:@"pageName"];
+	[recentPage setValue:[self wikiEntryURL] forKey:@"pageURL"];
+	
+	NSError *error;
+	if (![managedObjectContext save:&error]) {
+	}
+}
+
+#pragma mark toolbar 
+
+- (IBAction)showHistory {
+	ModalViewController *modalView = [[ModalViewController alloc] initWithNibName:@"ModalViewController" bundle:nil];
+	modalView.managedObjectContext = appDelegate.managedObjectContext;
+	modalView.isBookmark = NO;
+	[self.navigationController presentModalViewController:modalView animated:YES];
+	[modalView release];
+	if (webView.loading) {
+		[webView stopLoading];
+	}
+}
+
+- (void)actionSheet:(UIActionSheet *)actionSheet clickedButtonAtIndex:(int)buttonIndex
+{		
+	if(buttonIndex == 0)
+	{
+		pageTitle = [self.webView stringByEvaluatingJavaScriptFromString:@"document.title"]; 
+		
+		if (pageTitle != nil) {
+			[self addBookmark:pageTitle];
+		}
+	}
+	[actionSheet release];
+}
+
+
+- (void)addBookmark:(NSString *)pageName {
+	Bookmark *bookmark = (Bookmark *)[NSEntityDescription insertNewObjectForEntityForName:@"Bookmark" inManagedObjectContext:managedObjectContext];
+	
+	[bookmark setValue:pageName forKey:@"pageName"];
+	[bookmark setValue:[self wikiEntryURL] forKey:@"pageURL"];
+	
+	NSError *error;
+	if (![managedObjectContext save:&error]) {
+	}
+}
+
+- (IBAction)addBookmark {
+	UIActionSheet *menu = [[UIActionSheet alloc]
+						   initWithTitle:nil
+						   delegate:self
+						   cancelButtonTitle:@"Cancel"
+						   destructiveButtonTitle:nil
+						   otherButtonTitles:@"Add Bookmark", nil];
+	menu.actionSheetStyle = UIActionSheetStyleDefault;
+	[menu showInView:self.view];
+}
+
+#pragma mark HUD
+
+- (void)showLoadingHUD {
+	HUD = [[MBProgressHUD alloc] initWithView:self.view];
+	HUD.mode = MBProgressHUDModeIndeterminate;
+	
+	[self.view addSubview:HUD];
+	HUD.delegate = self;
+	
+	HUD.labelText = @"Loading...";
+	
+	[HUD show:YES];
+}
+
+- (void)hudWasHidden {
+    [HUD removeFromSuperview];
+}
 
 - (void)didReceiveMemoryWarning {
     // Releases the view if it doesn't have a superview.

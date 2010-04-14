@@ -1,5 +1,25 @@
-- Expand MapViewController to support a list view. There is a hidden toolbar on its navigation controller with search and location buttons as well as a map/list switch not yet implemented
-# http://ws.geonames.org/wikipediaSearchJSON?formatted=true&q=london&maxRows=10&style=full
+RootViewController
 
-- WikiViewController needs to add viewed entries to history (simple fix). 
-Also needs a bookmark button and similar features to the main view.
+- fix live search crash on some chars (fid...)
+
+MapViewController
+
+- Fix location search
+
+- Fix map reloading code
+
+- Location button UI feedback
+
+- Fix segmented control states
+
+WikiViewController
+
+- Fix HUD frame
+
+Version 2.5
+
+- Use system language as default (code for this is in app delegate)
+
+- Landscape mode
+
+- Reorderable bookmarks

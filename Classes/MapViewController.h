@@ -10,7 +10,7 @@
 #import <MapKit/MapKit.h>
 #import "CLController.h"
 
-@interface MapViewController : UIViewController <MKMapViewDelegate, CLControllerDelegate, CLLocationManagerDelegate, UITableViewDelegate, UITableViewDataSource> {
+@interface MapViewController : UIViewController <MKMapViewDelegate, CLControllerDelegate, CLLocationManagerDelegate, UISearchBarDelegate, UITableViewDelegate, UITableViewDataSource> {
 	MKMapView *mapView;
 	CLController *locationController;
 	NSMutableArray *annotations;
@@ -19,6 +19,8 @@
 	UITableView *tableView;
 	CLLocationCoordinate2D currentLocation;
 	UIBarButtonItem *locationBtn;
+	UISegmentedControl *mapListSwitch;
+	UISearchBar *searchBar;
 }
 
 @property (nonatomic, retain) IBOutlet MKMapView *mapView;
@@ -27,6 +29,8 @@
 @property (nonatomic, retain) IBOutlet UITableView *tableView;
 @property (nonatomic) CLLocationCoordinate2D currentLocation;
 @property (nonatomic, retain) IBOutlet UIBarButtonItem *locationBtn;
+@property (nonatomic, retain) IBOutlet UISegmentedControl *mapListSwitch;
+@property (nonatomic, retain) IBOutlet UISearchBar *searchBar;
 
 - (IBAction)toggleMapAndListView:(id)tabs;
 - (IBAction)dismissModalView;
@@ -35,5 +39,6 @@
 - (void)locationError:(NSError *)error;
 - (void)fetchWikiPagesWithLatitude:(float)latitude longitude:(float)longitude;
 - (void)refetchWikiPagesWithLatitude:(float)latitude longitude:(float)longitude;
+- (void)fetchWikiPagesAtLocation:(NSString *)location;
 
 @end

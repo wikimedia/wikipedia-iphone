@@ -54,7 +54,7 @@
 
 @protocol AddressAnnotation;
 
-@synthesize mapView, annotations, navController, tableView, currentLocation, locationBtn;
+@synthesize mapView, annotations, navController, tableView, currentLocation, locationBtn, mapListSwitch, searchBar;
 
 
 - (void)locationUpdate:(CLLocation *)location {
@@ -83,6 +83,7 @@
 	[self.view addSubview:navController.view];
     [super viewDidLoad];
 	
+	mapListSwitch.enabled = NO;
 	firstLoad = YES;
 	locationController = [[CLController alloc] init];
 	locationController.delegate = self;
@@ -147,6 +148,7 @@
 	[request release];
 	[parser release];
 	firstLoad = NO;
+	mapListSwitch.enabled = YES;
 }
 
 - (MKAnnotationView *)mapView:(MKMapView *)wikiMapView viewForAnnotation:(id <MKAnnotation>)annotation {
@@ -176,14 +178,10 @@
 	
 	NSString *annotationURL = [NSString stringWithFormat:@"http://%@", annotation.mURL];
 	WikiViewController *wikiViewController = [[WikiViewController alloc] initWithNibName:@"WikiViewController" bundle:nil];
-	wikiViewController.wikiEntryURL = [NSURL URLWithString:annotationURL];
+	wikiViewController.wikiEntryURL = annotationURL;
 	wikiViewController.title = annotation.title;
 	wikiViewController.superView = self;
 	[navController pushViewController:wikiViewController animated:YES];
-	
-	//UIBarButtonItem *item = [[UIBarButtonItem alloc] initWithTitle:nil style:UIBarButtonSystemItemAction target:self action:@selector(action)];
-	//[navController.navigationItem setRightBarButtonItem:item animated:YES];
-#warning
 
 	[wikiViewController release];
 }
@@ -199,9 +197,9 @@
 
 #warning add region check here + NSTimer delay
 	
-	[mapView removeAnnotations:annotations];
+	//[mapView removeAnnotations:annotations];
 	if (!firstLoad) {
-		[self refetchWikiPagesWithLatitude:mapView.region.center.latitude longitude:mapView.region.center.longitude];
+		//[self refetchWikiPagesWithLatitude:mapView.region.center.latitude longitude:mapView.region.center.longitude];
 	}
 }
 
@@ -252,6 +250,69 @@
 	[request release];
 	[parser release];
 }
+
+#pragma mark searchBar
+
+- (void)scrollViewWillBeginDragging:(UIScrollView *)_tableView {
+	[searchBar resignFirstResponder];
+}
+
+- (void)searchBarSearchButtonClicked:(UISearchBar *)_searchBar {
+	[searchBar resignFirstResponder];
+	[self fetchWikiPagesAtLocation:searchBar.text];
+}
+
+- (void)fetchWikiPagesAtLocation:(NSString *)location {
+	SBJSON *parser = [[SBJSON alloc] init];
+	
+	NSString *urlString = [NSString stringWithFormat:@"http://ws.geonames.org/wikipediaSearchJSON?formatted=true&q=%@&maxRows=10&style=full", location];
+	NSLog(@"Loading: %@", urlString);
+	
+	NSURL *url = [NSURL URLWithString:urlString];
+	NSURLRequest *request = [[NSURLRequest alloc] initWithURL:url];
+	
+	NSData *response = [NSURLConnection sendSynchronousRequest:request returningResponse:nil error:nil];
+	NSString *jsonString = [[NSString alloc] initWithData:response encoding:NSUTF8StringEncoding];
+	
+	NSMutableArray *items = [[parser objectWithString:jsonString error:nil] objectForKey:@"geonames"];
+	
+	NSLog(@"Got back %i items from geo service", [items count]);
+	
+	annotations = [[NSMutableArray alloc] init];
+	
+	CLLocationCoordinate2D newCenter;
+	
+	for (NSDictionary *item in items) {
+		AddressAnnotation *annotation;
+		
+		CLLocationCoordinate2D pointLocation;
+		pointLocation.latitude = [[item valueForKey:@"lat"] floatValue];
+		pointLocation.longitude = [[item valueForKey:@"lng"] floatValue];
+		
+		newCenter.latitude = [[item valueForKey:@"lat"] floatValue];
+		newCenter.longitude = [[item valueForKey:@"lng"] floatValue];
+		
+		NSString *title = [item valueForKey:@"title"];
+		NSString *subtitle = [item valueForKey:@"summary"];
+		NSString *url = [item valueForKey:@"wikipediaUrl"];
+		
+		annotation = [[AddressAnnotation alloc] initWithCoordinate:pointLocation];
+		annotation.title = title;
+		annotation.subtitle = subtitle;
+		annotation.mURL = url;
+		[annotations addObject:annotation];
+		[annotation release];
+	}
+	
+	[mapView addAnnotations:annotations];
+ 	[mapView setCenterCoordinate:newCenter animated:NO];
+	
+	[jsonString release];
+	[request release];
+	[parser release];
+	[tableView reloadData];
+}
+
 
 /*
 // Override to allow orientations other than the default portrait orientation.
@@ -312,7 +373,7 @@
 	
 	NSString *annotationURL = [NSString stringWithFormat:@"http://%@", annotation.mURL];
 	WikiViewController *wikiViewController = [[WikiViewController alloc] initWithNibName:@"WikiViewController" bundle:nil];
-	wikiViewController.wikiEntryURL = [NSURL URLWithString:annotationURL];
+	wikiViewController.wikiEntryURL = annotationURL;
 	wikiViewController.title = annotation.title;
 	wikiViewController.superView = self;
 	[navController pushViewController:wikiViewController animated:YES];

@@ -28,7 +28,12 @@
 	}
 	
 	[window addSubview:[navigationController view]];
-    [window makeKeyAndVisible];
+	[window makeKeyAndVisible];
+	
+	NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+	NSArray *languages = [defaults objectForKey:@"AppleLanguages"];
+	NSString *currentLanguage = [languages objectAtIndex:0];
+	NSLog(@"langSetting: %@", currentLanguage);
 	
 	if ([self isDataSourceAvailable] == NO) {
 		UIAlertView *errorAlert = [[UIAlertView alloc] initWithTitle:@"Error: No Internet Connection" message:@"This application requires internet access." delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];

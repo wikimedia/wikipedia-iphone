@@ -121,8 +121,12 @@
 		NSString *errorString = [NSString stringWithFormat:@"%@", error];
 		NSLog(@"%@", errorString);
 		
-		[UIApplication sharedApplication].networkActivityIndicatorVisible = NO; 
+		if (error.code == -1003) {
+			UIAlertView *errorAlert = [[UIAlertView alloc] initWithTitle:@"Can't find host" message:@"Wikipedia could not be located. Please check your internet connection." delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
+			[errorAlert show];
+		}
 		
+		[UIApplication sharedApplication].networkActivityIndicatorVisible = NO; 
 		[HUD hide:YES];
 	}
 }
@@ -131,6 +135,9 @@
 	[UIApplication sharedApplication].networkActivityIndicatorVisible = NO; 
 	
 	pageTitle = [self.webView stringByEvaluatingJavaScriptFromString:@"document.title"]; 
+	if (![pageTitle isEqualToString:@"Wikipedia"]) {
+		[searchBar setText:pageTitle];
+	}
 	
 	[timer invalidate];
 	if (HUDvisible) {
@@ -346,6 +353,7 @@
 	[tableView deselectRowAtIndexPath:indexPath animated:YES];
 	
 	searchBar.showsScopeBar = NO;
+	[searchBar setText:[searchResults objectAtIndex:indexPath.row]];
 	[searchBar sizeToFit];
 	[searchBar resignFirstResponder];
 	
