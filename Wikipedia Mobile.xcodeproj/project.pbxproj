@@ -49,6 +49,7 @@
 		90533B561187AA7600108DF7 /* MapViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 90533B551187AA7600108DF7 /* MapViewController.xib */; };
 		90533B581187AA7600108DF7 /* WikiViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 90533B571187AA7600108DF7 /* WikiViewController.xib */; };
 		90533B5A1187AA7600108DF7 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 90533B591187AA7600108DF7 /* MainWindow.xib */; };
+		90533BAD1187AFE800108DF7 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 90533BAC1187AFE800108DF7 /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -122,6 +123,7 @@
 		90533B6D1187AADC00108DF7 /* Dutch */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Dutch; path = Classes/Dutch.lproj/MapViewController.xib; sourceTree = "<group>"; };
 		90533B711187AB0100108DF7 /* Dutch */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Dutch; path = Classes/Dutch.lproj/WikiViewController.xib; sourceTree = "<group>"; };
 		90533B721187AB0900108DF7 /* Dutch */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Dutch; path = Dutch.lproj/MainWindow.xib; sourceTree = "<group>"; };
+		90533BAC1187AFE800108DF7 /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,6 +157,7 @@
 				0BC60AE1112619380046CB59 /* MapViewController.m */,
 				0BD18E7D112CB82C00ED0BDE /* WikiViewController.h */,
 				0BD18E7E112CB82C00ED0BDE /* WikiViewController.m */,
+				90533BAC1187AFE800108DF7 /* Localizable.strings */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -336,6 +339,7 @@
 				0B418DA31166AAAB0020B2D2 /* UIButtonBarRefresh.png in Resources */,
 				0B3DD56D1167CE7A00222D0D /* UITexture.png in Resources */,
 				0B3DD5791167CEAE00222D0D /* UITexture2.png in Resources */,
+				90533BAD1187AFE800108DF7 /* Localizable.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
