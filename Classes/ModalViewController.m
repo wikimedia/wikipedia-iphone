@@ -25,9 +25,9 @@
 
 - (void)viewWillAppear:(BOOL)animated {
 	if (!isBookmark) {
-		navigationBar.title = @"History";
+		navigationBar.title = NSLocalizedString(@"History", @"History");
 		
-		UIBarButtonItem *clearAll = [[UIBarButtonItem alloc] initWithTitle:@"Clear"
+		UIBarButtonItem *clearAll = [[UIBarButtonItem alloc] initWithTitle:NSLocalizedString(@"Clear", @"Clear")
 																	 style:UIBarButtonItemStylePlain
 																	target:self
 																	action:@selector(clearHistorySheet)];
@@ -40,7 +40,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 	
-	editButton = [[UIBarButtonItem alloc] initWithTitle:@"Edit"
+	editButton = [[UIBarButtonItem alloc] initWithTitle:NSLocalizedString(@"Edit", @"Edit")
  											   style:UIBarButtonItemStylePlain
    											  target:self
 											  action:@selector(enterEditMode)];
@@ -100,7 +100,7 @@
 #pragma mark Table view methods
 
 - (IBAction)enterEditMode {
-	UIBarButtonItem *editingButton = [[UIBarButtonItem alloc] initWithTitle:@"Edit"
+	UIBarButtonItem *editingButton = [[UIBarButtonItem alloc] initWithTitle:NSLocalizedString(@"Edit", @"Edit")
 												  style:UIBarButtonItemStyleDone
 												 target:self
 												 action:@selector(exitEditModeWithButtonSwap)];
@@ -302,14 +302,14 @@
 	{
 		case 0: {
 			isBookmark = YES;
-			navigationBar.title = @"Bookmarks";
+			navigationBar.title = NSLocalizedString(@"Bookmarks", @"Bookmarks");
 			[navigationBar setLeftBarButtonItem:editButton animated:YES];
 		}; break;
 		case 1: {
 			isBookmark = NO;
-			navigationBar.title = @"History";
+			navigationBar.title = NSLocalizedString(@"History", @"History");
 			
-			UIBarButtonItem *clearAll = [[UIBarButtonItem alloc] initWithTitle:@"Clear"
+			UIBarButtonItem *clearAll = [[UIBarButtonItem alloc] initWithTitle:NSLocalizedString(@"Clear", @"Clear")
 														  style:UIBarButtonItemStylePlain
 														 target:self
 														 action:@selector(clearHistorySheet)];
@@ -335,8 +335,8 @@
 	UIActionSheet *menu = [[UIActionSheet alloc]
 						   initWithTitle:nil
 						   delegate:self
-						   cancelButtonTitle:@"Cancel"
-						   destructiveButtonTitle:@"Clear History"
+						   cancelButtonTitle:NSLocalizedString(@"Cancel", @"Cancel")
+						   destructiveButtonTitle:NSLocalizedString(@"Clear History", @"Clear History")
 						   otherButtonTitles:nil, nil];
 	menu.actionSheetStyle = UIActionSheetStyleBlackTranslucent;
 	[menu showInView:self.view];

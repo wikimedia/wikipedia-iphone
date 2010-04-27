@@ -141,9 +141,9 @@
 	UIActionSheet *menu = [[UIActionSheet alloc]
 						   initWithTitle:nil
 						   delegate:self
-						   cancelButtonTitle:@"Cancel"
+						   cancelButtonTitle:NSLocalizedString(@"Cancel", @"Cancel")
 						   destructiveButtonTitle:nil
-						   otherButtonTitles:@"Add Bookmark", nil];
+						   otherButtonTitles:NSLocalizedString(@"Add Bookmark", @"Add Bookmark"), nil];
 	menu.actionSheetStyle = UIActionSheetStyleDefault;
 	[menu showInView:self.view];
 }
@@ -157,7 +157,7 @@
 	[self.view addSubview:HUD];
 	HUD.delegate = self;
 	
-	HUD.labelText = @"Loading...";
+	HUD.labelText = NSLocalizedString(@"Loading...", @"Loading...");
 	
 	[HUD show:YES];
 }

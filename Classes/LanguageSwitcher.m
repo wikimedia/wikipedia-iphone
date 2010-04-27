@@ -34,7 +34,7 @@
 
 - (IBAction)dismissModalView {
 	returnView.appDelegate = (Wikipedia_MobileAppDelegate *)[[UIApplication sharedApplication] delegate];
-	returnView.searchBar.scopeButtonTitles = [NSArray arrayWithObjects:[returnView.appDelegate.settings stringForKey:@"languageName"], @"Set Language", nil];
+	returnView.searchBar.scopeButtonTitles = [NSArray arrayWithObjects:[returnView.appDelegate.settings stringForKey:@"languageName"], NSLocalizedString(@"Set Language", @"Set Language"), nil];
 	returnView.searchBar.selectedScopeButtonIndex = 0;
 	
 	[self dismissModalViewControllerAnimated:YES];

@@ -122,7 +122,7 @@
 		NSLog(@"%@", errorString);
 		
 		if (error.code == -1003) {
-			UIAlertView *errorAlert = [[UIAlertView alloc] initWithTitle:@"Can't find host" message:@"Wikipedia could not be located. Please check your internet connection." delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
+			UIAlertView *errorAlert = [[UIAlertView alloc] initWithTitle:NSLocalizedString(@"Can't find host", @"Can't find host") message:NSLocalizedString(@"Wikipedia could not be located. Please check your internet connection.", @"Wikipedia could not be located. Please check your internet connection.") delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
 			[errorAlert show];
 		}
 		
@@ -208,7 +208,7 @@
 	
 	searchBar.showsScopeBar = YES;
 	searchBar.selectedScopeButtonIndex = 0;
-	searchBar.scopeButtonTitles = [NSArray arrayWithObjects:[appDelegate.settings stringForKey:@"languageName"], @"Set Language", nil];
+	searchBar.scopeButtonTitles = [NSArray arrayWithObjects:[appDelegate.settings stringForKey:@"languageName"], NSLocalizedString(@"Set Language", @"Set Language"), nil];
 	
 	[searchBar sizeToFit];
 	searchBar.frame = CGRectMake(0, 0, 320.0f, 88.0f);
@@ -385,9 +385,9 @@
 	UIActionSheet *menu = [[UIActionSheet alloc]
 						   initWithTitle:nil
 						   delegate:self
-						   cancelButtonTitle:@"Cancel"
+						   cancelButtonTitle:NSLocalizedString(@"Cancel", @"Cancel")
 						   destructiveButtonTitle:nil
-						   otherButtonTitles:@"Add Bookmark", nil];
+						   otherButtonTitles:NSLocalizedString(@"Add Bookmark", @"Add Bookmark"), nil];
 	menu.actionSheetStyle = UIActionSheetStyleDefault;
 	[menu showInView:self.view];
 }
@@ -454,7 +454,7 @@
     [self.view addSubview:HUD];
 	HUD.delegate = self;
 	
-    HUD.labelText = @"Loading...";
+    HUD.labelText = NSLocalizedString(@"Loading...", @"Loading...");
 	
     [HUD show:YES];
 	HUDvisible = YES;
