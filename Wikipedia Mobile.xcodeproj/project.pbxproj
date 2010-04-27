@@ -10,7 +10,6 @@
 		0B280E761122A80300D8D39B /* RecentPage.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B280E751122A80300D8D39B /* RecentPage.m */; };
 		0B280F221122EB4000D8D39B /* Bookmark.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B280F211122EB4000D8D39B /* Bookmark.m */; };
 		0B2D8A69111AB1CA00328619 /* ModalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B2D8A67111AB1CA00328619 /* ModalViewController.m */; };
-		0B2D8A6A111AB1CA00328619 /* ModalViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0B2D8A68111AB1CA00328619 /* ModalViewController.xib */; };
 		0B2D8B17111AD34500328619 /* wikipedia.xcdatamodel in Sources */ = {isa = PBXBuildFile; fileRef = 0B2D8B16111AD34500328619 /* wikipedia.xcdatamodel */; };
 		0B2D8C05111B1BAA00328619 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B2D8C04111B1BAA00328619 /* CoreData.framework */; };
 		0B2D8CB1111BFDCE00328619 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B2D8CB0111BFDCE00328619 /* icon.png */; };
@@ -26,10 +25,8 @@
 		0B79B1A81134CDE6006BA370 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B79B1A71134CDE6006BA370 /* Default.png */; };
 		0BBBAF1911203DEC0056EF45 /* location.png in Resources */ = {isa = PBXBuildFile; fileRef = 0BBBAF1811203DEC0056EF45 /* location.png */; };
 		0BBBAF391120422C0056EF45 /* LanguageSwitcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BBBAF371120422C0056EF45 /* LanguageSwitcher.m */; };
-		0BBBAF3A1120422C0056EF45 /* LanguageSwitcher.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0BBBAF381120422C0056EF45 /* LanguageSwitcher.xib */; };
 		0BBBAF59112070610056EF45 /* languages.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0BBBAF58112070610056EF45 /* languages.plist */; };
 		0BC60AE3112619380046CB59 /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BC60AE1112619380046CB59 /* MapViewController.m */; };
-		0BC60AE4112619380046CB59 /* MapViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0BC60AE2112619380046CB59 /* MapViewController.xib */; };
 		0BC60B0811261B220046CB59 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BC60B0711261B220046CB59 /* MapKit.framework */; };
 		0BD186E71128DEC200ED0BDE /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BD186E61128DEC100ED0BDE /* CoreLocation.framework */; };
 		0BD18791112A000500ED0BDE /* NSObject+SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BD18786112A000500ED0BDE /* NSObject+SBJSON.m */; };
@@ -40,15 +37,18 @@
 		0BD18796112A000500ED0BDE /* SBJsonWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BD18790112A000500ED0BDE /* SBJsonWriter.m */; };
 		0BD18877112B008600ED0BDE /* CLController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BD18876112B008600ED0BDE /* CLController.m */; };
 		0BD18E80112CB82C00ED0BDE /* WikiViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BD18E7E112CB82C00ED0BDE /* WikiViewController.m */; };
-		0BD18E81112CB82C00ED0BDE /* WikiViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0BD18E7F112CB82C00ED0BDE /* WikiViewController.xib */; };
 		1D3623260D0F684500981E51 /* Wikipedia_MobileAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* Wikipedia_MobileAppDelegate.m */; };
 		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
 		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
 		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
 		2892E4100DC94CBA00A64D0F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2892E40F0DC94CBA00A64D0F /* CoreGraphics.framework */; };
-		28AD73600D9D9599002E5188 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD735F0D9D9599002E5188 /* MainWindow.xib */; };
 		28C286E10D94DF7D0034E888 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28C286E00D94DF7D0034E888 /* RootViewController.m */; };
-		28F335F11007B36200424DE2 /* RootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28F335F01007B36200424DE2 /* RootViewController.xib */; };
+		90533B501187AA7600108DF7 /* RootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 90533B4F1187AA7600108DF7 /* RootViewController.xib */; };
+		90533B521187AA7600108DF7 /* ModalViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 90533B511187AA7600108DF7 /* ModalViewController.xib */; };
+		90533B541187AA7600108DF7 /* LanguageSwitcher.xib in Resources */ = {isa = PBXBuildFile; fileRef = 90533B531187AA7600108DF7 /* LanguageSwitcher.xib */; };
+		90533B561187AA7600108DF7 /* MapViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 90533B551187AA7600108DF7 /* MapViewController.xib */; };
+		90533B581187AA7600108DF7 /* WikiViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 90533B571187AA7600108DF7 /* WikiViewController.xib */; };
+		90533B5A1187AA7600108DF7 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 90533B591187AA7600108DF7 /* MainWindow.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,7 +58,7 @@
 		0B280F211122EB4000D8D39B /* Bookmark.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Bookmark.m; sourceTree = "<group>"; };
 		0B2D8A66111AB1CA00328619 /* ModalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModalViewController.h; sourceTree = "<group>"; };
 		0B2D8A67111AB1CA00328619 /* ModalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModalViewController.m; sourceTree = "<group>"; };
-		0B2D8A68111AB1CA00328619 /* ModalViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = ModalViewController.xib; path = Classes/ModalViewController.xib; sourceTree = "<group>"; };
+		0B2D8A68111AB1CA00328619 /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = Classes/English.lproj/ModalViewController.xib; sourceTree = "<group>"; };
 		0B2D8B16111AD34500328619 /* wikipedia.xcdatamodel */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.xcdatamodel; path = wikipedia.xcdatamodel; sourceTree = "<group>"; };
 		0B2D8C04111B1BAA00328619 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		0B2D8CB0111BFDCE00328619 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
@@ -78,11 +78,11 @@
 		0BBBAF1811203DEC0056EF45 /* location.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = location.png; sourceTree = "<group>"; };
 		0BBBAF361120422C0056EF45 /* LanguageSwitcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LanguageSwitcher.h; sourceTree = "<group>"; };
 		0BBBAF371120422C0056EF45 /* LanguageSwitcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LanguageSwitcher.m; sourceTree = "<group>"; };
-		0BBBAF381120422C0056EF45 /* LanguageSwitcher.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = LanguageSwitcher.xib; path = Classes/LanguageSwitcher.xib; sourceTree = "<group>"; };
+		0BBBAF381120422C0056EF45 /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = Classes/English.lproj/LanguageSwitcher.xib; sourceTree = "<group>"; };
 		0BBBAF58112070610056EF45 /* languages.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = languages.plist; sourceTree = "<group>"; };
 		0BC60AE0112619380046CB59 /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
 		0BC60AE1112619380046CB59 /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
-		0BC60AE2112619380046CB59 /* MapViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = MapViewController.xib; path = Classes/MapViewController.xib; sourceTree = "<group>"; };
+		0BC60AE2112619380046CB59 /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = Classes/English.lproj/MapViewController.xib; sourceTree = "<group>"; };
 		0BC60B0711261B220046CB59 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		0BD186E61128DEC100ED0BDE /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		0BD18784112A000500ED0BDE /* JSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSON.h; sourceTree = "<group>"; };
@@ -102,7 +102,7 @@
 		0BD18876112B008600ED0BDE /* CLController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLController.m; sourceTree = "<group>"; };
 		0BD18E7D112CB82C00ED0BDE /* WikiViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WikiViewController.h; sourceTree = "<group>"; };
 		0BD18E7E112CB82C00ED0BDE /* WikiViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WikiViewController.m; sourceTree = "<group>"; };
-		0BD18E7F112CB82C00ED0BDE /* WikiViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = WikiViewController.xib; path = Classes/WikiViewController.xib; sourceTree = "<group>"; };
+		0BD18E7F112CB82C00ED0BDE /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = Classes/English.lproj/WikiViewController.xib; sourceTree = "<group>"; };
 		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1D3623240D0F684500981E51 /* Wikipedia_MobileAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Wikipedia_MobileAppDelegate.h; path = Classes/Wikipedia_MobileAppDelegate.h; sourceTree = "<group>"; };
 		1D3623250D0F684500981E51 /* Wikipedia_MobileAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Wikipedia_MobileAppDelegate.m; path = Classes/Wikipedia_MobileAppDelegate.m; sourceTree = "<group>"; };
@@ -110,12 +110,18 @@
 		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		2892E40F0DC94CBA00A64D0F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		28A0AAE50D9B0CCF005BE974 /* Wikipedia_Mobile_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Wikipedia_Mobile_Prefix.pch; sourceTree = "<group>"; };
-		28AD735F0D9D9599002E5188 /* MainWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
+		28AD735F0D9D9599002E5188 /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/MainWindow.xib; sourceTree = "<group>"; };
 		28C286DF0D94DF7D0034E888 /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
 		28C286E00D94DF7D0034E888 /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
-		28F335F01007B36200424DE2 /* RootViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RootViewController.xib; sourceTree = "<group>"; };
+		28F335F01007B36200424DE2 /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/RootViewController.xib; sourceTree = "<group>"; };
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* Wikipedia_Mobile-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Wikipedia_Mobile-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
+		90533B6A1187AABD00108DF7 /* Dutch */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Dutch; path = Dutch.lproj/RootViewController.xib; sourceTree = "<group>"; };
+		90533B6B1187AAC900108DF7 /* Dutch */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Dutch; path = Classes/Dutch.lproj/ModalViewController.xib; sourceTree = "<group>"; };
+		90533B6C1187AAD200108DF7 /* Dutch */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Dutch; path = Classes/Dutch.lproj/LanguageSwitcher.xib; sourceTree = "<group>"; };
+		90533B6D1187AADC00108DF7 /* Dutch */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Dutch; path = Classes/Dutch.lproj/MapViewController.xib; sourceTree = "<group>"; };
+		90533B711187AB0100108DF7 /* Dutch */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Dutch; path = Classes/Dutch.lproj/WikiViewController.xib; sourceTree = "<group>"; };
+		90533B721187AB0900108DF7 /* Dutch */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Dutch; path = Dutch.lproj/MainWindow.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -226,12 +232,12 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				28F335F01007B36200424DE2 /* RootViewController.xib */,
-				0B2D8A68111AB1CA00328619 /* ModalViewController.xib */,
-				0BBBAF381120422C0056EF45 /* LanguageSwitcher.xib */,
-				0BC60AE2112619380046CB59 /* MapViewController.xib */,
-				0BD18E7F112CB82C00ED0BDE /* WikiViewController.xib */,
-				28AD735F0D9D9599002E5188 /* MainWindow.xib */,
+				90533B4F1187AA7600108DF7 /* RootViewController.xib */,
+				90533B511187AA7600108DF7 /* ModalViewController.xib */,
+				90533B531187AA7600108DF7 /* LanguageSwitcher.xib */,
+				90533B551187AA7600108DF7 /* MapViewController.xib */,
+				90533B571187AA7600108DF7 /* WikiViewController.xib */,
+				90533B591187AA7600108DF7 /* MainWindow.xib */,
 				8D1107310486CEB800E47090 /* Wikipedia_Mobile-Info.plist */,
 				0B2D8B16111AD34500328619 /* wikipedia.xcdatamodel */,
 				0B418D9C1166AAAB0020B2D2 /* UIButtonBarSearch.png */,
@@ -297,6 +303,7 @@
 				French,
 				German,
 				en,
+				Dutch,
 			);
 			mainGroup = 29B97314FDCFA39411CA2CEA /* CustomTemplate */;
 			projectDirPath = "";
@@ -312,15 +319,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				28AD73600D9D9599002E5188 /* MainWindow.xib in Resources */,
-				28F335F11007B36200424DE2 /* RootViewController.xib in Resources */,
-				0B2D8A6A111AB1CA00328619 /* ModalViewController.xib in Resources */,
+				90533B5A1187AA7600108DF7 /* MainWindow.xib in Resources */,
+				90533B501187AA7600108DF7 /* RootViewController.xib in Resources */,
+				90533B521187AA7600108DF7 /* ModalViewController.xib in Resources */,
 				0B2D8CB1111BFDCE00328619 /* icon.png in Resources */,
 				0BBBAF1911203DEC0056EF45 /* location.png in Resources */,
-				0BBBAF3A1120422C0056EF45 /* LanguageSwitcher.xib in Resources */,
+				90533B541187AA7600108DF7 /* LanguageSwitcher.xib in Resources */,
 				0BBBAF59112070610056EF45 /* languages.plist in Resources */,
-				0BC60AE4112619380046CB59 /* MapViewController.xib in Resources */,
-				0BD18E81112CB82C00ED0BDE /* WikiViewController.xib in Resources */,
+				90533B561187AA7600108DF7 /* MapViewController.xib in Resources */,
+				90533B581187AA7600108DF7 /* WikiViewController.xib in Resources */,
 				0B79AEAB11344DB6006BA370 /* history.png in Resources */,
 				0B79B1A81134CDE6006BA370 /* Default.png in Resources */,
 				0B418DA01166AAAB0020B2D2 /* UIButtonBarSearch.png in Resources */,
@@ -361,6 +368,63 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		90533B4F1187AA7600108DF7 /* RootViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				28F335F01007B36200424DE2 /* English */,
+				90533B6A1187AABD00108DF7 /* Dutch */,
+			);
+			name = RootViewController.xib;
+			sourceTree = "<group>";
+		};
+		90533B511187AA7600108DF7 /* ModalViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0B2D8A68111AB1CA00328619 /* English */,
+				90533B6B1187AAC900108DF7 /* Dutch */,
+			);
+			name = ModalViewController.xib;
+			sourceTree = "<group>";
+		};
+		90533B531187AA7600108DF7 /* LanguageSwitcher.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0BBBAF381120422C0056EF45 /* English */,
+				90533B6C1187AAD200108DF7 /* Dutch */,
+			);
+			name = LanguageSwitcher.xib;
+			sourceTree = "<group>";
+		};
+		90533B551187AA7600108DF7 /* MapViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0BC60AE2112619380046CB59 /* English */,
+				90533B6D1187AADC00108DF7 /* Dutch */,
+			);
+			name = MapViewController.xib;
+			sourceTree = "<group>";
+		};
+		90533B571187AA7600108DF7 /* WikiViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0BD18E7F112CB82C00ED0BDE /* English */,
+				90533B711187AB0100108DF7 /* Dutch */,
+			);
+			name = WikiViewController.xib;
+			sourceTree = "<group>";
+		};
+		90533B591187AA7600108DF7 /* MainWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				28AD735F0D9D9599002E5188 /* English */,
+				90533B721187AB0900108DF7 /* Dutch */,
+			);
+			name = MainWindow.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		1D6058940D05DD3E006BFB54 /* Debug */ = {
