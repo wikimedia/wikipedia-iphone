@@ -1,3 +1,5 @@
 build
 build/* !.gitignore
 .DS_Store
+Wikipedia Mobile.xcodeproj/project.xcworkspace
+Wikipedia Mobile.xcodeproj/xcuserdata

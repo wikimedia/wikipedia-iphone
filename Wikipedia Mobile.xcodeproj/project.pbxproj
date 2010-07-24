@@ -20,6 +20,7 @@
 		0B418DA11166AAAB0020B2D2 /* UIButtonBarArrowLeft.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B418D9D1166AAAB0020B2D2 /* UIButtonBarArrowLeft.png */; };
 		0B418DA21166AAAB0020B2D2 /* UIButtonBarArrowRight.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B418D9E1166AAAB0020B2D2 /* UIButtonBarArrowRight.png */; };
 		0B418DA31166AAAB0020B2D2 /* UIButtonBarRefresh.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B418D9F1166AAAB0020B2D2 /* UIButtonBarRefresh.png */; };
+		0B6AD60E11FB067400B3A5B6 /* icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B6AD60D11FB067400B3A5B6 /* icon@2x.png */; };
 		0B79AEAB11344DB6006BA370 /* history.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B79AEAA11344DB6006BA370 /* history.png */; };
 		0B79AF8F11349681006BA370 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B79AF8E11349681006BA370 /* SystemConfiguration.framework */; };
 		0B79B1A81134CDE6006BA370 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B79B1A71134CDE6006BA370 /* Default.png */; };
@@ -65,6 +66,9 @@
 		0B418D9D1166AAAB0020B2D2 /* UIButtonBarArrowLeft.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = UIButtonBarArrowLeft.png; sourceTree = "<group>"; };
 		0B418D9E1166AAAB0020B2D2 /* UIButtonBarArrowRight.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = UIButtonBarArrowRight.png; sourceTree = "<group>"; };
 		0B418D9F1166AAAB0020B2D2 /* UIButtonBarRefresh.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = UIButtonBarRefresh.png; sourceTree = "<group>"; };
+		0B6AD5FE11FB045500B3A5B6 /* hu */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = hu; path = Localizable.strings; sourceTree = "<group>"; };
+		0B6AD60C11FB04DA00B3A5B6 /* Dutch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = Dutch; path = Dutch.lproj/Localizable.strings; sourceTree = SOURCE_ROOT; };
+		0B6AD60D11FB067400B3A5B6 /* icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon@2x.png"; sourceTree = "<group>"; };
 		0B79AEAA11344DB6006BA370 /* history.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = history.png; sourceTree = "<group>"; };
 		0B79AF8E11349681006BA370 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		0B79B1831134C802006BA370 /* TODO */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = TODO; sourceTree = "<group>"; };
@@ -165,6 +169,32 @@
 			name = Model;
 			sourceTree = "<group>";
 		};
+		0B6AD5EA11FB042A00B3A5B6 /* Dutch.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				0B6AD60B11FB04DA00B3A5B6 /* Localizable.strings */,
+			);
+			name = Dutch.lproj;
+			path = "Xcode4/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.0.sdk/Users/la/wikipedia-iphone/Dutch.lproj";
+			sourceTree = SDKROOT;
+		};
+		0B6AD5F911FB043F00B3A5B6 /* Localization */ = {
+			isa = PBXGroup;
+			children = (
+				0B6AD5FA11FB045500B3A5B6 /* hu.lproj */,
+				0B6AD5EA11FB042A00B3A5B6 /* Dutch.lproj */,
+			);
+			name = Localization;
+			sourceTree = "<group>";
+		};
+		0B6AD5FA11FB045500B3A5B6 /* hu.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				0B6AD5FD11FB045500B3A5B6 /* Localizable.strings */,
+			);
+			path = hu.lproj;
+			sourceTree = "<group>";
+		};
 		0BD18783112A000500ED0BDE /* JSON */ = {
 			isa = PBXGroup;
 			children = (
@@ -198,6 +228,7 @@
 			children = (
 				0B79B1831134C802006BA370 /* TODO */,
 				0B79B1951134C962006BA370 /* README */,
+				0B6AD5F911FB043F00B3A5B6 /* Localization */,
 				0B280E711122A7DD00D8D39B /* Model */,
 				080E96DDFE201D6D7F000001 /* Classes */,
 				29B97315FDCFA39411CA2CEA /* Other Sources */,
@@ -245,6 +276,7 @@
 				0BBBAF1811203DEC0056EF45 /* location.png */,
 				0B79AEAA11344DB6006BA370 /* history.png */,
 				0B2D8CB0111BFDCE00328619 /* icon.png */,
+				0B6AD60D11FB067400B3A5B6 /* icon@2x.png */,
 				0BBBAF58112070610056EF45 /* languages.plist */,
 			);
 			name = Resources;
@@ -300,6 +332,7 @@
 				German,
 				en,
 				Dutch,
+				hu,
 			);
 			mainGroup = 29B97314FDCFA39411CA2CEA /* CustomTemplate */;
 			projectDirPath = "";
@@ -328,6 +361,7 @@
 				0B418DA31166AAAB0020B2D2 /* UIButtonBarRefresh.png in Resources */,
 				0B3DD56D1167CE7A00222D0D /* UITexture.png in Resources */,
 				0B3DD5791167CEAE00222D0D /* UITexture2.png in Resources */,
+				0B6AD60E11FB067400B3A5B6 /* icon@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -362,6 +396,22 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		0B6AD5FD11FB045500B3A5B6 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0B6AD5FE11FB045500B3A5B6 /* hu */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		0B6AD60B11FB04DA00B3A5B6 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0B6AD60C11FB04DA00B3A5B6 /* Dutch */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 		0B95228711D7E986003946F1 /* WikiViewController.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
