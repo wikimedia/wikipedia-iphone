@@ -210,7 +210,6 @@
 			<array>
 				<string>active-combo-popup</string>
 				<string>action</string>
-				<string>active-platform-popup</string>
 				<string>NSToolbarFlexibleSpaceItem</string>
 				<string>debugger-enable-breakpoints</string>
 				<string>buildOrClean</string>
@@ -218,7 +217,6 @@
 				<string>clean-target</string>
 				<string>com.apple.ide.PBXToolbarStopButton</string>
 				<string>get-info</string>
-				<string>servicesModuleCVS</string>
 				<string>NSToolbarFlexibleSpaceItem</string>
 				<string>com.apple.pbx.toolbar.searchfield</string>
 			</array>
@@ -281,7 +279,8 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>1</integer>
+									<integer>10</integer>
+									<integer>8</integer>
 									<integer>0</integer>
 								</array>
 							</array>
@@ -325,7 +324,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>TODO</string>
+								<string>RootViewController.m</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -333,11 +332,11 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>TODO</string>
+										<string>RootViewController.m</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>0B54F7AB1175DFE8007724EF</string>
+										<string>0BD86AD411FA1D72005F6AFA</string>
 										<key>history</key>
 										<array>
 											<string>0B2D8CB9111BFEC300328619</string>
@@ -376,9 +375,9 @@
 											<string>0B54F6F61175D195007724EF</string>
 											<string>0B54F7001175D1CD007724EF</string>
 											<string>0B54F7411175D75D007724EF</string>
-											<string>0B54F7A31175DBBC007724EF</string>
 											<string>0B54F7A41175DBBC007724EF</string>
-											<string>0B54F7A51175DBBC007724EF</string>
+											<string>0BD86AD211FA1D72005F6AFA</string>
+											<string>0BD86AD311FA1D72005F6AFA</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -390,14 +389,14 @@
 							<key>GeometryConfiguration</key>
 							<dict>
 								<key>Frame</key>
-								<string>{{0, 0}, {958, 546}}</string>
+								<string>{{0, 0}, {958, 543}}</string>
 								<key>RubberWindowFrame</key>
 								<string>125 126 1241 676 0 0 1440 878 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXNavigatorGroup</string>
 							<key>Proportion</key>
-							<string>546pt</string>
+							<string>543pt</string>
 						</dict>
 						<dict>
 							<key>ContentConfiguration</key>
@@ -410,14 +409,14 @@
 							<key>GeometryConfiguration</key>
 							<dict>
 								<key>Frame</key>
-								<string>{{0, 551}, {958, 84}}</string>
+								<string>{{0, 548}, {958, 87}}</string>
 								<key>RubberWindowFrame</key>
 								<string>125 126 1241 676 0 0 1440 878 </string>
 							</dict>
 							<key>Module</key>
 							<string>XCDetailModule</string>
 							<key>Proportion</key>
-							<string>84pt</string>
+							<string>87pt</string>
 						</dict>
 					</array>
 					<key>Proportion</key>
@@ -436,9 +435,9 @@
 			</array>
 			<key>TableOfContents</key>
 			<array>
-				<string>0B54F67211752D38007724EF</string>
+				<string>0BD86ACF11FA1D43005F6AFA</string>
 				<string>1CE0B1FE06471DED0097A5F4</string>
-				<string>0B54F67311752D38007724EF</string>
+				<string>0BD86AD011FA1D43005F6AFA</string>
 				<string>1CE0B20306471E060097A5F4</string>
 				<string>1CE0B20506471E060097A5F4</string>
 			</array>
@@ -563,11 +562,11 @@
 	<key>ToolbarConfigUserDefaultsMinorVersion</key>
 	<string>2</string>
 	<key>ToolbarDisplayMode</key>
-	<integer>1</integer>
+	<integer>2</integer>
 	<key>ToolbarIsVisible</key>
 	<true/>
 	<key>ToolbarSizeMode</key>
-	<integer>2</integer>
+	<integer>1</integer>
 	<key>Type</key>
 	<string>Perspectives</string>
 	<key>UpdateMessage</key>
@@ -576,12 +575,8 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
-		<string>1C530D57069F1CE1000CFCEE</string>
-		<string>0B54F6981175C69D007724EF</string>
-		<string>0B54F6991175C69D007724EF</string>
-		<string>1C78EAAD065D492600B07095</string>
-		<string>1CD10A99069EF8BA00B06720</string>
 		<string>0B2D881A11199D4A00328619</string>
+		<string>/Users/la/wikipedia-iphone/Wikipedia Mobile.xcodeproj</string>
 	</array>
 	<key>WindowString</key>
 	<string>125 126 1241 676 0 0 1440 878 </string>
@@ -605,7 +600,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CD0528F0623707200166675</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>Wikipedia_MobileAppDelegate.m</string>
+								<string></string>
 								<key>StatusBarVisibility</key>
 								<true/>
 							</dict>
@@ -622,8 +617,6 @@
 							<string>508pt</string>
 						</dict>
 						<dict>
-							<key>BecomeActive</key>
-							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
@@ -663,7 +656,7 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>0B2D881A11199D4A00328619</string>
-				<string>0B54F67411752D38007724EF</string>
+				<string>0BD86AD111FA1D43005F6AFA</string>
 				<string>1CD0528F0623707200166675</string>
 				<string>XCMainBuildResultsModuleGUID</string>
 			</array>

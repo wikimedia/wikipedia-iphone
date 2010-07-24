@@ -44,12 +44,7 @@
 		2892E4100DC94CBA00A64D0F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2892E40F0DC94CBA00A64D0F /* CoreGraphics.framework */; };
 		28C286E10D94DF7D0034E888 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28C286E00D94DF7D0034E888 /* RootViewController.m */; };
 		90533B501187AA7600108DF7 /* RootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 90533B4F1187AA7600108DF7 /* RootViewController.xib */; };
-		90533B521187AA7600108DF7 /* ModalViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 90533B511187AA7600108DF7 /* ModalViewController.xib */; };
-		90533B541187AA7600108DF7 /* LanguageSwitcher.xib in Resources */ = {isa = PBXBuildFile; fileRef = 90533B531187AA7600108DF7 /* LanguageSwitcher.xib */; };
-		90533B561187AA7600108DF7 /* MapViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 90533B551187AA7600108DF7 /* MapViewController.xib */; };
-		90533B581187AA7600108DF7 /* WikiViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 90533B571187AA7600108DF7 /* WikiViewController.xib */; };
 		90533B5A1187AA7600108DF7 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 90533B591187AA7600108DF7 /* MainWindow.xib */; };
-		90533BAD1187AFE800108DF7 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 90533BAC1187AFE800108DF7 /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -59,7 +54,6 @@
 		0B280F211122EB4000D8D39B /* Bookmark.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Bookmark.m; sourceTree = "<group>"; };
 		0B2D8A66111AB1CA00328619 /* ModalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModalViewController.h; sourceTree = "<group>"; };
 		0B2D8A67111AB1CA00328619 /* ModalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModalViewController.m; sourceTree = "<group>"; };
-		0B2D8A68111AB1CA00328619 /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = Classes/English.lproj/ModalViewController.xib; sourceTree = "<group>"; };
 		0B2D8B16111AD34500328619 /* wikipedia.xcdatamodel */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.xcdatamodel; path = wikipedia.xcdatamodel; sourceTree = "<group>"; };
 		0B2D8C04111B1BAA00328619 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		0B2D8CB0111BFDCE00328619 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
@@ -76,14 +70,20 @@
 		0B79B1831134C802006BA370 /* TODO */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = TODO; sourceTree = "<group>"; };
 		0B79B1951134C962006BA370 /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
 		0B79B1A71134CDE6006BA370 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		0B95228811D7E986003946F1 /* Dutch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = Dutch; path = Dutch.lproj/WikiViewController.xib; sourceTree = "<group>"; };
+		0B95228911D7E98E003946F1 /* English */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = English; path = English.lproj/WikiViewController.xib; sourceTree = "<group>"; };
+		0B95228B11D7E9A2003946F1 /* English */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = English; path = English.lproj/LanguageSwitcher.xib; sourceTree = "<group>"; };
+		0B95228D11D7E9A2003946F1 /* English */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = English; path = English.lproj/MapViewController.xib; sourceTree = "<group>"; };
+		0B95228F11D7E9A2003946F1 /* English */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = English; path = English.lproj/ModalViewController.xib; sourceTree = "<group>"; };
+		0B95229011D7E9AC003946F1 /* Dutch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = Dutch; path = Dutch.lproj/LanguageSwitcher.xib; sourceTree = "<group>"; };
+		0B95229111D7E9B3003946F1 /* Dutch */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Dutch; path = Dutch.lproj/MapViewController.xib; sourceTree = "<group>"; };
+		0B95229211D7E9B8003946F1 /* Dutch */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Dutch; path = Dutch.lproj/ModalViewController.xib; sourceTree = "<group>"; };
 		0BBBAF1811203DEC0056EF45 /* location.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = location.png; sourceTree = "<group>"; };
 		0BBBAF361120422C0056EF45 /* LanguageSwitcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LanguageSwitcher.h; sourceTree = "<group>"; };
 		0BBBAF371120422C0056EF45 /* LanguageSwitcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LanguageSwitcher.m; sourceTree = "<group>"; };
-		0BBBAF381120422C0056EF45 /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = Classes/English.lproj/LanguageSwitcher.xib; sourceTree = "<group>"; };
 		0BBBAF58112070610056EF45 /* languages.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = languages.plist; sourceTree = "<group>"; };
 		0BC60AE0112619380046CB59 /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
 		0BC60AE1112619380046CB59 /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
-		0BC60AE2112619380046CB59 /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = Classes/English.lproj/MapViewController.xib; sourceTree = "<group>"; };
 		0BC60B0711261B220046CB59 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		0BD186E61128DEC100ED0BDE /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		0BD18784112A000500ED0BDE /* JSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSON.h; sourceTree = "<group>"; };
@@ -103,7 +103,6 @@
 		0BD18876112B008600ED0BDE /* CLController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLController.m; sourceTree = "<group>"; };
 		0BD18E7D112CB82C00ED0BDE /* WikiViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WikiViewController.h; sourceTree = "<group>"; };
 		0BD18E7E112CB82C00ED0BDE /* WikiViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WikiViewController.m; sourceTree = "<group>"; };
-		0BD18E7F112CB82C00ED0BDE /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = Classes/English.lproj/WikiViewController.xib; sourceTree = "<group>"; };
 		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1D3623240D0F684500981E51 /* Wikipedia_MobileAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Wikipedia_MobileAppDelegate.h; path = Classes/Wikipedia_MobileAppDelegate.h; sourceTree = "<group>"; };
 		1D3623250D0F684500981E51 /* Wikipedia_MobileAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Wikipedia_MobileAppDelegate.m; path = Classes/Wikipedia_MobileAppDelegate.m; sourceTree = "<group>"; };
@@ -114,16 +113,10 @@
 		28AD735F0D9D9599002E5188 /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/MainWindow.xib; sourceTree = "<group>"; };
 		28C286DF0D94DF7D0034E888 /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
 		28C286E00D94DF7D0034E888 /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
-		28F335F01007B36200424DE2 /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/RootViewController.xib; sourceTree = "<group>"; };
+		28F335F01007B36200424DE2 /* English */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = English; path = English.lproj/RootViewController.xib; sourceTree = "<group>"; };
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* Wikipedia_Mobile-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Wikipedia_Mobile-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
-		90533B6A1187AABD00108DF7 /* Dutch */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Dutch; path = Dutch.lproj/RootViewController.xib; sourceTree = "<group>"; };
-		90533B6B1187AAC900108DF7 /* Dutch */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Dutch; path = Classes/Dutch.lproj/ModalViewController.xib; sourceTree = "<group>"; };
-		90533B6C1187AAD200108DF7 /* Dutch */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Dutch; path = Classes/Dutch.lproj/LanguageSwitcher.xib; sourceTree = "<group>"; };
-		90533B6D1187AADC00108DF7 /* Dutch */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Dutch; path = Classes/Dutch.lproj/MapViewController.xib; sourceTree = "<group>"; };
-		90533B711187AB0100108DF7 /* Dutch */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Dutch; path = Classes/Dutch.lproj/WikiViewController.xib; sourceTree = "<group>"; };
-		90533B721187AB0900108DF7 /* Dutch */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Dutch; path = Dutch.lproj/MainWindow.xib; sourceTree = "<group>"; };
-		90533BAC1187AFE800108DF7 /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = SOURCE_ROOT; };
+		90533B6A1187AABD00108DF7 /* Dutch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = Dutch; path = Dutch.lproj/RootViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -157,7 +150,6 @@
 				0BC60AE1112619380046CB59 /* MapViewController.m */,
 				0BD18E7D112CB82C00ED0BDE /* WikiViewController.h */,
 				0BD18E7E112CB82C00ED0BDE /* WikiViewController.m */,
-				90533BAC1187AFE800108DF7 /* Localizable.strings */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -235,11 +227,11 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				0B95228A11D7E9A2003946F1 /* LanguageSwitcher.xib */,
+				0B95228C11D7E9A2003946F1 /* MapViewController.xib */,
+				0B95228E11D7E9A2003946F1 /* ModalViewController.xib */,
+				0B95228711D7E986003946F1 /* WikiViewController.xib */,
 				90533B4F1187AA7600108DF7 /* RootViewController.xib */,
-				90533B511187AA7600108DF7 /* ModalViewController.xib */,
-				90533B531187AA7600108DF7 /* LanguageSwitcher.xib */,
-				90533B551187AA7600108DF7 /* MapViewController.xib */,
-				90533B571187AA7600108DF7 /* WikiViewController.xib */,
 				90533B591187AA7600108DF7 /* MainWindow.xib */,
 				8D1107310486CEB800E47090 /* Wikipedia_Mobile-Info.plist */,
 				0B2D8B16111AD34500328619 /* wikipedia.xcdatamodel */,
@@ -299,6 +291,7 @@
 			isa = PBXProject;
 			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "Wikipedia Mobile" */;
 			compatibilityVersion = "Xcode 3.1";
+			developmentRegion = English;
 			hasScannedForEncodings = 1;
 			knownRegions = (
 				English,
@@ -324,13 +317,9 @@
 			files = (
 				90533B5A1187AA7600108DF7 /* MainWindow.xib in Resources */,
 				90533B501187AA7600108DF7 /* RootViewController.xib in Resources */,
-				90533B521187AA7600108DF7 /* ModalViewController.xib in Resources */,
 				0B2D8CB1111BFDCE00328619 /* icon.png in Resources */,
 				0BBBAF1911203DEC0056EF45 /* location.png in Resources */,
-				90533B541187AA7600108DF7 /* LanguageSwitcher.xib in Resources */,
 				0BBBAF59112070610056EF45 /* languages.plist in Resources */,
-				90533B561187AA7600108DF7 /* MapViewController.xib in Resources */,
-				90533B581187AA7600108DF7 /* WikiViewController.xib in Resources */,
 				0B79AEAB11344DB6006BA370 /* history.png in Resources */,
 				0B79B1A81134CDE6006BA370 /* Default.png in Resources */,
 				0B418DA01166AAAB0020B2D2 /* UIButtonBarSearch.png in Resources */,
@@ -339,7 +328,6 @@
 				0B418DA31166AAAB0020B2D2 /* UIButtonBarRefresh.png in Resources */,
 				0B3DD56D1167CE7A00222D0D /* UITexture.png in Resources */,
 				0B3DD5791167CEAE00222D0D /* UITexture2.png in Resources */,
-				90533BAD1187AFE800108DF7 /* Localizable.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -374,6 +362,42 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		0B95228711D7E986003946F1 /* WikiViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0B95228811D7E986003946F1 /* Dutch */,
+				0B95228911D7E98E003946F1 /* English */,
+			);
+			name = WikiViewController.xib;
+			sourceTree = "<group>";
+		};
+		0B95228A11D7E9A2003946F1 /* LanguageSwitcher.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0B95228B11D7E9A2003946F1 /* English */,
+				0B95229011D7E9AC003946F1 /* Dutch */,
+			);
+			name = LanguageSwitcher.xib;
+			sourceTree = "<group>";
+		};
+		0B95228C11D7E9A2003946F1 /* MapViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0B95228D11D7E9A2003946F1 /* English */,
+				0B95229111D7E9B3003946F1 /* Dutch */,
+			);
+			name = MapViewController.xib;
+			sourceTree = "<group>";
+		};
+		0B95228E11D7E9A2003946F1 /* ModalViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0B95228F11D7E9A2003946F1 /* English */,
+				0B95229211D7E9B8003946F1 /* Dutch */,
+			);
+			name = ModalViewController.xib;
+			sourceTree = "<group>";
+		};
 		90533B4F1187AA7600108DF7 /* RootViewController.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -383,47 +407,10 @@
 			name = RootViewController.xib;
 			sourceTree = "<group>";
 		};
-		90533B511187AA7600108DF7 /* ModalViewController.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				0B2D8A68111AB1CA00328619 /* English */,
-				90533B6B1187AAC900108DF7 /* Dutch */,
-			);
-			name = ModalViewController.xib;
-			sourceTree = "<group>";
-		};
-		90533B531187AA7600108DF7 /* LanguageSwitcher.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				0BBBAF381120422C0056EF45 /* English */,
-				90533B6C1187AAD200108DF7 /* Dutch */,
-			);
-			name = LanguageSwitcher.xib;
-			sourceTree = "<group>";
-		};
-		90533B551187AA7600108DF7 /* MapViewController.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				0BC60AE2112619380046CB59 /* English */,
-				90533B6D1187AADC00108DF7 /* Dutch */,
-			);
-			name = MapViewController.xib;
-			sourceTree = "<group>";
-		};
-		90533B571187AA7600108DF7 /* WikiViewController.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				0BD18E7F112CB82C00ED0BDE /* English */,
-				90533B711187AB0100108DF7 /* Dutch */,
-			);
-			name = WikiViewController.xib;
-			sourceTree = "<group>";
-		};
 		90533B591187AA7600108DF7 /* MainWindow.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
 				28AD735F0D9D9599002E5188 /* English */,
-				90533B721187AB0900108DF7 /* Dutch */,
 			);
 			name = MainWindow.xib;
 			sourceTree = "<group>";
@@ -440,8 +427,11 @@
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = Wikipedia_Mobile_Prefix.pch;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INFOPLIST_FILE = "Wikipedia_Mobile-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 3.0;
 				PRODUCT_NAME = "Wikipedia Mobile";
+				SDKROOT = iphonesimulator4.0;
 			};
 			name = Debug;
 		};
@@ -449,11 +439,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				COPY_PHASE_STRIP = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = Wikipedia_Mobile_Prefix.pch;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INFOPLIST_FILE = "Wikipedia_Mobile-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 3.0;
 				PRODUCT_NAME = "Wikipedia Mobile";
+				SDKROOT = iphonesimulator4.0;
 			};
 			name = Release;
 		};
@@ -463,10 +457,11 @@
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				PREBINDING = NO;
-				SDKROOT = iphoneos3.1.2;
+				SDKROOT = iphoneos4.0;
 			};
 			name = Debug;
 		};
@@ -476,10 +471,11 @@
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				PREBINDING = NO;
-				SDKROOT = iphoneos3.1.2;
+				SDKROOT = iphoneos4.0;
 			};
 			name = Release;
 		};
