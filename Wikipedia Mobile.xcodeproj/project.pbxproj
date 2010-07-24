@@ -38,6 +38,16 @@
 		0BD18796112A000500ED0BDE /* SBJsonWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BD18790112A000500ED0BDE /* SBJsonWriter.m */; };
 		0BD18877112B008600ED0BDE /* CLController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BD18876112B008600ED0BDE /* CLController.m */; };
 		0BD18E80112CB82C00ED0BDE /* WikiViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BD18E7E112CB82C00ED0BDE /* WikiViewController.m */; };
+		0BD48DA211FB091C0072BEEB /* UITabBarBookmarksTemplate@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0BD48DA111FB091C0072BEEB /* UITabBarBookmarksTemplate@2x.png */; };
+		0BD48DAA11FB0A360072BEEB /* history@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0BD48DA411FB0A360072BEEB /* history@2x.png */; };
+		0BD48DAB11FB0A360072BEEB /* UIButtonBarArrowLeft@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0BD48DA511FB0A360072BEEB /* UIButtonBarArrowLeft@2x.png */; };
+		0BD48DAC11FB0A360072BEEB /* UIButtonBarArrowRight@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0BD48DA611FB0A360072BEEB /* UIButtonBarArrowRight@2x.png */; };
+		0BD48DAD11FB0A360072BEEB /* UIButtonBarRefresh@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0BD48DA711FB0A360072BEEB /* UIButtonBarRefresh@2x.png */; };
+		0BD48DAE11FB0A360072BEEB /* UIButtonBarSearch@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0BD48DA811FB0A360072BEEB /* UIButtonBarSearch@2x.png */; };
+		0BD48DAF11FB0A360072BEEB /* UITabBarBookmarksTemplate.png in Resources */ = {isa = PBXBuildFile; fileRef = 0BD48DA911FB0A360072BEEB /* UITabBarBookmarksTemplate.png */; };
+		0BD48DB211FB0A6B0072BEEB /* UITexture@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0BD48DB011FB0A6B0072BEEB /* UITexture@2x.png */; };
+		0BD48DB311FB0A6B0072BEEB /* UITexture2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0BD48DB111FB0A6B0072BEEB /* UITexture2@2x.png */; };
+		0BD48DB711FB0B9A0072BEEB /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0BD48DB611FB0B9A0072BEEB /* Default@2x.png */; };
 		1D3623260D0F684500981E51 /* Wikipedia_MobileAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* Wikipedia_MobileAppDelegate.m */; };
 		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
 		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
@@ -107,6 +117,16 @@
 		0BD18876112B008600ED0BDE /* CLController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLController.m; sourceTree = "<group>"; };
 		0BD18E7D112CB82C00ED0BDE /* WikiViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WikiViewController.h; sourceTree = "<group>"; };
 		0BD18E7E112CB82C00ED0BDE /* WikiViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WikiViewController.m; sourceTree = "<group>"; };
+		0BD48DA111FB091C0072BEEB /* UITabBarBookmarksTemplate@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "UITabBarBookmarksTemplate@2x.png"; sourceTree = "<group>"; };
+		0BD48DA411FB0A360072BEEB /* history@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "history@2x.png"; sourceTree = "<group>"; };
+		0BD48DA511FB0A360072BEEB /* UIButtonBarArrowLeft@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "UIButtonBarArrowLeft@2x.png"; sourceTree = "<group>"; };
+		0BD48DA611FB0A360072BEEB /* UIButtonBarArrowRight@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "UIButtonBarArrowRight@2x.png"; sourceTree = "<group>"; };
+		0BD48DA711FB0A360072BEEB /* UIButtonBarRefresh@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "UIButtonBarRefresh@2x.png"; sourceTree = "<group>"; };
+		0BD48DA811FB0A360072BEEB /* UIButtonBarSearch@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "UIButtonBarSearch@2x.png"; sourceTree = "<group>"; };
+		0BD48DA911FB0A360072BEEB /* UITabBarBookmarksTemplate.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = UITabBarBookmarksTemplate.png; sourceTree = "<group>"; };
+		0BD48DB011FB0A6B0072BEEB /* UITexture@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "UITexture@2x.png"; sourceTree = "<group>"; };
+		0BD48DB111FB0A6B0072BEEB /* UITexture2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "UITexture2@2x.png"; sourceTree = "<group>"; };
+		0BD48DB611FB0B9A0072BEEB /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1D3623240D0F684500981E51 /* Wikipedia_MobileAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Wikipedia_MobileAppDelegate.h; path = Classes/Wikipedia_MobileAppDelegate.h; sourceTree = "<group>"; };
 		1D3623250D0F684500981E51 /* Wikipedia_MobileAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Wikipedia_MobileAppDelegate.m; path = Classes/Wikipedia_MobileAppDelegate.m; sourceTree = "<group>"; };
@@ -267,16 +287,26 @@
 				8D1107310486CEB800E47090 /* Wikipedia_Mobile-Info.plist */,
 				0B2D8B16111AD34500328619 /* wikipedia.xcdatamodel */,
 				0B418D9C1166AAAB0020B2D2 /* UIButtonBarSearch.png */,
+				0BD48DA811FB0A360072BEEB /* UIButtonBarSearch@2x.png */,
 				0B418D9D1166AAAB0020B2D2 /* UIButtonBarArrowLeft.png */,
+				0BD48DA511FB0A360072BEEB /* UIButtonBarArrowLeft@2x.png */,
 				0B418D9E1166AAAB0020B2D2 /* UIButtonBarArrowRight.png */,
+				0BD48DA611FB0A360072BEEB /* UIButtonBarArrowRight@2x.png */,
 				0B418D9F1166AAAB0020B2D2 /* UIButtonBarRefresh.png */,
+				0BD48DA711FB0A360072BEEB /* UIButtonBarRefresh@2x.png */,
 				0B3DD56C1167CE7A00222D0D /* UITexture.png */,
+				0BD48DB011FB0A6B0072BEEB /* UITexture@2x.png */,
 				0B3DD5781167CEAE00222D0D /* UITexture2.png */,
+				0BD48DB111FB0A6B0072BEEB /* UITexture2@2x.png */,
 				0B79B1A71134CDE6006BA370 /* Default.png */,
+				0BD48DB611FB0B9A0072BEEB /* Default@2x.png */,
 				0BBBAF1811203DEC0056EF45 /* location.png */,
 				0B79AEAA11344DB6006BA370 /* history.png */,
+				0BD48DA411FB0A360072BEEB /* history@2x.png */,
 				0B2D8CB0111BFDCE00328619 /* icon.png */,
 				0B6AD60D11FB067400B3A5B6 /* icon@2x.png */,
+				0BD48DA911FB0A360072BEEB /* UITabBarBookmarksTemplate.png */,
+				0BD48DA111FB091C0072BEEB /* UITabBarBookmarksTemplate@2x.png */,
 				0BBBAF58112070610056EF45 /* languages.plist */,
 			);
 			name = Resources;
@@ -362,6 +392,16 @@
 				0B3DD56D1167CE7A00222D0D /* UITexture.png in Resources */,
 				0B3DD5791167CEAE00222D0D /* UITexture2.png in Resources */,
 				0B6AD60E11FB067400B3A5B6 /* icon@2x.png in Resources */,
+				0BD48DA211FB091C0072BEEB /* UITabBarBookmarksTemplate@2x.png in Resources */,
+				0BD48DAA11FB0A360072BEEB /* history@2x.png in Resources */,
+				0BD48DAB11FB0A360072BEEB /* UIButtonBarArrowLeft@2x.png in Resources */,
+				0BD48DAC11FB0A360072BEEB /* UIButtonBarArrowRight@2x.png in Resources */,
+				0BD48DAD11FB0A360072BEEB /* UIButtonBarRefresh@2x.png in Resources */,
+				0BD48DAE11FB0A360072BEEB /* UIButtonBarSearch@2x.png in Resources */,
+				0BD48DAF11FB0A360072BEEB /* UITabBarBookmarksTemplate.png in Resources */,
+				0BD48DB211FB0A6B0072BEEB /* UITexture@2x.png in Resources */,
+				0BD48DB311FB0A6B0072BEEB /* UITexture2@2x.png in Resources */,
+				0BD48DB711FB0B9A0072BEEB /* Default@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -168,6 +168,8 @@
 		cell.detailTextLabel.font = [UIFont systemFontOfSize:14.0f];
 	}
 	
+	cell.imageView.image = [UIImage imageNamed:@"UITabBarBookmarksTemplate.png"];
+    
     return cell;
 }
 
