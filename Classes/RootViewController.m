@@ -123,7 +123,7 @@
 		NSLog(@"%@", errorString);
 		
 		if (error.code == -1003) {
-			UIAlertView *errorAlert = [[UIAlertView alloc] initWithTitle:NSLocalizedString(@"Can't find host", @"Can't find host") message:NSLocalizedString(@"Wikipedia could not be located. Please check your internet connection.", @"Wikipedia could not be located. Please check your internet connection.") delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
+			UIAlertView *errorAlert = [[UIAlertView alloc] initWithTitle:NSLocalizedString(@"Can't find host", @"Can't find host") message:NSLocalizedString(@"Wikipedia could not be located. Please check your internet connection.", @"Wikipedia could not be located. Please check your internet connection.") delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
 			[errorAlert show];
 		}
 		

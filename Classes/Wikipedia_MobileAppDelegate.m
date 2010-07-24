@@ -36,7 +36,7 @@
 	NSLog(@"langSetting: %@", currentLanguage);
 	
 	if ([self isDataSourceAvailable] == NO) {
-		UIAlertView *errorAlert = [[UIAlertView alloc] initWithTitle:NSLocalizedString(@"Error: No Internet Connection", @"Error: No Internet Connection") message:NSLocalizedString(@"This application requires internet access.", @"This application requires internet access.") delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
+		UIAlertView *errorAlert = [[UIAlertView alloc] initWithTitle:NSLocalizedString(@"Error: No Internet Connection", @"Error: No Internet Connection") message:NSLocalizedString(@"This application requires internet access.", @"This application requires internet access.") delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
 		[errorAlert show];
 	}
 }
@@ -67,7 +67,7 @@
     if (managedObjectContext != nil) {
         if ([managedObjectContext hasChanges] && ![managedObjectContext save:&error]) {
 			NSString *errorString = [NSString stringWithFormat:@"%@ - %@", error, [error userInfo]];
-			UIAlertView *errorAlert = [[UIAlertView alloc] initWithTitle:NSLocalizedString(@"Database Error", @"Database Error") message:errorString delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
+			UIAlertView *errorAlert = [[UIAlertView alloc] initWithTitle:NSLocalizedString(@"Database Error", @"Database Error") message:errorString delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
 			[errorAlert show];
         } 
     }
@@ -155,7 +155,7 @@
     persistentStoreCoordinator = [[NSPersistentStoreCoordinator alloc] initWithManagedObjectModel:[self managedObjectModel]];
     if (![persistentStoreCoordinator addPersistentStoreWithType:NSSQLiteStoreType configuration:nil URL:storeUrl options:nil error:&error]) {
 		NSString *errorString = [NSString stringWithFormat:@"%@ - %@", error, [error userInfo]];
-		UIAlertView *errorAlert = [[UIAlertView alloc] initWithTitle:NSLocalizedString(@"Database Error", @"Database Error") message:errorString delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
+		UIAlertView *errorAlert = [[UIAlertView alloc] initWithTitle:NSLocalizedString(@"Database Error", @"Database Error") message:errorString delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
 		[errorAlert show];
     }    
 	
