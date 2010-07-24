@@ -16,9 +16,11 @@ WikiViewController
 
 - Fix HUD frame
 
-Version 2.5
+Version 2.1 
 
-- Use system language as default (code for this is in app delegate)
+- Multitasking crash when relaunched (Xcode 4 bug, test on actual device)
+
+- Use system language as default for wiki (code for this is in app delegate)
 
 - Landscape mode
 
