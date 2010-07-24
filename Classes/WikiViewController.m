@@ -38,7 +38,7 @@
 	appDelegate = (Wikipedia_MobileAppDelegate *)[[UIApplication sharedApplication] delegate];
 	self.managedObjectContext = appDelegate.managedObjectContext;
 	
-	[webView setBackgroundColor:[UIColor colorWithPatternImage:[UIImage imageNamed:@"UITexture2.png"]]];
+	[webView setBackgroundColor:[UIColor colorWithPatternImage:[UIImage imageWithContentsOfFile:@"UITexture2.png"]]];
 	
 	NSMutableURLRequest *URLrequest = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:wikiEntryURL]];
 	[URLrequest setValue:@"Wikipedia Mobile/2.0" forHTTPHeaderField:@"User_Agent"];

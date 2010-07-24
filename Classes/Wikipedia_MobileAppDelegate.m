@@ -73,6 +73,25 @@
     }
 }
 
+#pragma mark - 
+#pragma mark Multitasking support
+
+- (void)applicationDidBecomeActive:(UIApplication *)application {
+    
+}
+
+- (void)applicationWillResignActive:(UIApplication *)application {
+    
+}
+
+- (void)applicationDidEnterBackground:(UIApplication *)application {
+    
+}
+
+- (void)applicationWillEnterForeground:(UIApplication *)application {
+    
+}
+
 
 #pragma mark -
 #pragma mark Memory management

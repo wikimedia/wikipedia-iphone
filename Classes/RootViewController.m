@@ -42,7 +42,8 @@
 	
 	webView.scalesPageToFit = TRUE;
 	webView.multipleTouchEnabled = TRUE;
-	[webView setBackgroundColor:[UIColor colorWithPatternImage:[UIImage imageNamed:@"UITexture.png"]]];
+	[webView setBackgroundColor:[UIColor colorWithPatternImage:
+                                 [UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"UITexture@2x" ofType:@"png"]]]];
 	searchBar.showsScopeBar = NO;
 	searchBar.frame = CGRectMake(0, 0, 320.0f, 44.0f);
 	
