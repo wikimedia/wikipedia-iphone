@@ -3,7 +3,7 @@
 //  Wikipedia Mobile
 //
 //  Created by Andreas Lengyel on 2/3/10.
-//  Copyright __MyCompanyName__ 2010. All rights reserved.
+//  Copyright Wikimedia Foundation 2010. All rights reserved.
 //
 
 #import "RootViewController.h"

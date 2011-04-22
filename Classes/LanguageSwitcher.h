@@ -3,7 +3,7 @@
 //  Wikipedia Mobile
 //
 //  Created by Andreas Lengyel on 2/8/10.
-//  Copyright 2010 __MyCompanyName__. All rights reserved.
+//  Copyright 2010 Wikimedia Foundation. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
