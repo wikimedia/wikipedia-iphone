@@ -54,6 +54,10 @@
 		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
 		2892E4100DC94CBA00A64D0F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2892E40F0DC94CBA00A64D0F /* CoreGraphics.framework */; };
 		28C286E10D94DF7D0034E888 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28C286E00D94DF7D0034E888 /* RootViewController.m */; };
+		59275BDB13693B980053611D /* LanguageSwitcher.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0B95228A11D7E9A2003946F1 /* LanguageSwitcher.xib */; };
+		59275BE613693BAF0053611D /* MapViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0B95228C11D7E9A2003946F1 /* MapViewController.xib */; };
+		59275BE713693BAF0053611D /* ModalViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0B95228E11D7E9A2003946F1 /* ModalViewController.xib */; };
+		59275BE813693BAF0053611D /* WikiViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0B95228711D7E986003946F1 /* WikiViewController.xib */; };
 		90533B501187AA7600108DF7 /* RootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 90533B4F1187AA7600108DF7 /* RootViewController.xib */; };
 		90533B5A1187AA7600108DF7 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 90533B591187AA7600108DF7 /* MainWindow.xib */; };
 /* End PBXBuildFile section */
@@ -402,6 +406,10 @@
 				0BD48DB211FB0A6B0072BEEB /* UITexture@2x.png in Resources */,
 				0BD48DB311FB0A6B0072BEEB /* UITexture2@2x.png in Resources */,
 				0BD48DB711FB0B9A0072BEEB /* Default@2x.png in Resources */,
+				59275BDB13693B980053611D /* LanguageSwitcher.xib in Resources */,
+				59275BE613693BAF0053611D /* MapViewController.xib in Resources */,
+				59275BE713693BAF0053611D /* ModalViewController.xib in Resources */,
+				59275BE813693BAF0053611D /* WikiViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
