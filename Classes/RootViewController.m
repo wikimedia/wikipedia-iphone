@@ -98,11 +98,13 @@
 	
 	[self showLoadingHUD];
 	
+	[timer release];
 	timer = [NSTimer scheduledTimerWithTimeInterval:0.05
 											 target:self
 										   selector:@selector(handleTimer:)
 										   userInfo:nil
 											repeats:YES];	
+	[timer retain];
 }
 
 - (void)handleTimer:(NSTimer *)timer
