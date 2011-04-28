@@ -104,9 +104,9 @@ AAMAAAABAAEAAAFTAAMAAAAEAAACAgAAAAAACAAIAAgACAABAAEAAQABA</bytes>
 							<bool key="EncodedWithXMLCoder">YES</bool>
 							<object class="IBUINavigationItem" id="33870050">
 								<reference key="IBUINavigationBar" ref="706472634"/>
-								<string key="IBUITitle">М╛МъВ╠Р▌Тш</string>
+								<string key="IBUITitle">шиАшкЮуБошинхоЪ</string>
 								<object class="IBUIBarButtonItem" key="IBUIRightBarButtonItem" id="717638811">
-									<string key="IBUITitle">КоЧ╣</string>
+									<string key="IBUITitle">хоМф║Ж</string>
 									<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 									<int key="IBUIStyle">2</int>
 									<reference key="IBUINavigationItem" ref="33870050"/>

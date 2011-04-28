@@ -86,7 +86,7 @@
 											<int key="IBUIContentMode">3</int>
 											<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 											<string key="IBText"/>
-											<string key="IBPlaceholder">�ʂ̏ꏊ������</string>
+											<string key="IBPlaceholder">別の場所を検索</string>
 											<object class="IBUITextInputTraits" key="IBTextInputTraits">
 												<int key="IBUIAutocapitalizationType">1</int>
 												<int key="IBUIAutocorrectionType">1</int>
@@ -128,8 +128,8 @@
 											<int key="IBSelectedSegmentIndex">0</int>
 											<object class="NSArray" key="IBSegmentTitles">
 												<bool key="EncodedWithXMLCoder">YES</bool>
-												<string>�n�}</string>
-												<string>�ꗗ</string>
+												<string>地図</string>
+												<string>一覧</string>
 											</object>
 											<object class="NSMutableArray" key="IBSegmentWidths">
 												<bool key="EncodedWithXMLCoder">YES</bool>
@@ -191,7 +191,7 @@
 						<reference key="IBUIToolbarItems" ref="0"/>
 						<object class="IBUINavigationItem" key="IBUINavigationItem" id="1043867998">
 							<reference key="IBUINavigationBar"/>
-							<string key="IBUITitle">�ߏ�</string>
+							<string key="IBUITitle">周辺</string>
 							<object class="IBUIBarButtonItem" key="IBUIRightBarButtonItem" id="615846016">
 								<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 								<int key="IBUIStyle">2</int>

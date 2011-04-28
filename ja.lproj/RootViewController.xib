@@ -207,7 +207,7 @@
 						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 						<string key="IBText"/>
 						<string key="IBPrompt"/>
-						<string key="IBPlaceholder">МЯНї</string>
+						<string key="IBPlaceholder">цдЬч┤в</string>
 						<bool key="IBShowsBookmarkButton">YES</bool>
 						<object class="IBUITextInputTraits" key="IBTextInputTraits">
 							<int key="IBUIAutocapitalizationType">1</int>
@@ -215,8 +215,8 @@
 						</object>
 						<object class="NSArray" key="IBScopeButtonTitles">
 							<bool key="EncodedWithXMLCoder">YES</bool>
-							<string>У·Ц{Мъ</string>
-							<string>М╛МъВ╠Р▌Тш</string>
+							<string>цЧецЬмшкЮ</string>
+							<string>шиАшкЮуБошинхоЪ</string>
 						</object>
 						<bool key="IBShowsScopeBar">YES</bool>
 					</object>

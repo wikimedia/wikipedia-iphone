@@ -75,9 +75,9 @@
 							<bool key="EncodedWithXMLCoder">YES</bool>
 							<object class="IBUINavigationItem" id="372253102">
 								<reference key="IBUINavigationBar" ref="725912478"/>
-								<string key="IBUITitle">ƒuƒbƒNƒ}[ƒN</string>
+								<string key="IBUITitle">ãƒ–ãƒƒã‚¯ãƒžãƒ¼ã‚¯</string>
 								<object class="IBUIBarButtonItem" key="IBUIRightBarButtonItem" id="149834675">
-									<string key="IBUITitle">Š®—¹</string>
+									<string key="IBUITitle">å®Œäº†</string>
 									<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 									<int key="IBUIStyle">2</int>
 									<reference key="IBUINavigationItem" ref="372253102"/>
@@ -104,8 +104,8 @@
 								<int key="IBSelectedSegmentIndex">0</int>
 								<object class="NSArray" key="IBSegmentTitles">
 									<bool key="EncodedWithXMLCoder">YES</bool>
-									<string>ƒuƒbƒNƒ}[ƒN</string>
-									<string>—š—ð</string>
+									<string>ãƒ–ãƒƒã‚¯ãƒžãƒ¼ã‚¯</string>
+									<string>å±¥æ­´</string>
 								</object>
 								<object class="NSMutableArray" key="IBSegmentWidths">
 									<bool key="EncodedWithXMLCoder">YES</bool>
