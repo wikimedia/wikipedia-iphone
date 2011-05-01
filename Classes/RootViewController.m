@@ -81,7 +81,7 @@
 }
 
 - (void)loadWikiEntry:(NSString *)query {
-	query = [query stringByReplacingOccurrencesOfString:@" " withString:@"%20"];
+	query = [query stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
 	
 	NSString *url = [NSString stringWithFormat:@"http://%@.m.wikipedia.org/wiki?search=%@", [appDelegate.settings stringForKey:@"languageKey"], query]; 
 	NSURL *_url = [NSURL URLWithString:url];
@@ -98,11 +98,13 @@
 	
 	[self showLoadingHUD];
 	
+	[timer release];
 	timer = [NSTimer scheduledTimerWithTimeInterval:0.05
 											 target:self
 										   selector:@selector(handleTimer:)
 										   userInfo:nil
 											repeats:YES];	
+	[timer retain];
 }
 
 - (void)handleTimer:(NSTimer *)timer
@@ -225,7 +227,7 @@
 }
 
 - (void)searchBar:(UISearchBar *)searchBar textDidChange:(NSString *)searchText {
-	searchText = [searchText stringByReplacingOccurrencesOfString:@" " withString:@"%20"];
+	searchText = [searchText stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
 	
 	NSString *urlString = [NSString stringWithFormat:@"http://%@.wikipedia.org/w/api.php?action=opensearch&search=%@&format=json", [appDelegate.settings stringForKey:@"languageKey"], searchText];
 	NSURL *url = [NSURL URLWithString:urlString];
