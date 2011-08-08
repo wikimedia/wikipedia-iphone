@@ -54,11 +54,11 @@
 		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
 		2892E4100DC94CBA00A64D0F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2892E40F0DC94CBA00A64D0F /* CoreGraphics.framework */; };
 		28C286E10D94DF7D0034E888 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28C286E00D94DF7D0034E888 /* RootViewController.m */; };
+		4915D0E013F093260073EC55 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4915D0DE13F093260073EC55 /* Localizable.strings */; };
 		59275BDB13693B980053611D /* LanguageSwitcher.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0B95228A11D7E9A2003946F1 /* LanguageSwitcher.xib */; };
 		59275BE613693BAF0053611D /* MapViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0B95228C11D7E9A2003946F1 /* MapViewController.xib */; };
 		59275BE713693BAF0053611D /* ModalViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0B95228E11D7E9A2003946F1 /* ModalViewController.xib */; };
 		59275BE813693BAF0053611D /* WikiViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0B95228711D7E986003946F1 /* WikiViewController.xib */; };
-		59E3B51D136952020066D77F /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 59E3B51B136952020066D77F /* Localizable.strings */; };
 		90533B501187AA7600108DF7 /* RootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 90533B4F1187AA7600108DF7 /* RootViewController.xib */; };
 		90533B5A1187AA7600108DF7 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 90533B591187AA7600108DF7 /* MainWindow.xib */; };
 /* End PBXBuildFile section */
@@ -81,8 +81,6 @@
 		0B418D9D1166AAAB0020B2D2 /* UIButtonBarArrowLeft.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = UIButtonBarArrowLeft.png; sourceTree = "<group>"; };
 		0B418D9E1166AAAB0020B2D2 /* UIButtonBarArrowRight.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = UIButtonBarArrowRight.png; sourceTree = "<group>"; };
 		0B418D9F1166AAAB0020B2D2 /* UIButtonBarRefresh.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = UIButtonBarRefresh.png; sourceTree = "<group>"; };
-		0B6AD5FE11FB045500B3A5B6 /* hu */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = hu; path = Localizable.strings; sourceTree = "<group>"; };
-		0B6AD60C11FB04DA00B3A5B6 /* Dutch */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Dutch; path = Dutch.lproj/Localizable.strings; sourceTree = SOURCE_ROOT; };
 		0B6AD60D11FB067400B3A5B6 /* icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon@2x.png"; sourceTree = "<group>"; };
 		0B79AEAA11344DB6006BA370 /* history.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = history.png; sourceTree = "<group>"; };
 		0B79AF8E11349681006BA370 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
@@ -144,11 +142,14 @@
 		28C286E00D94DF7D0034E888 /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
 		28F335F01007B36200424DE2 /* English */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = English; path = English.lproj/RootViewController.xib; sourceTree = "<group>"; };
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		4915D0DF13F093260073EC55 /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/Localizable.strings; sourceTree = "<group>"; };
+		4915D0E213F093480073EC55 /* hu */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = hu; path = hu.lproj/Localizable.strings; sourceTree = "<group>"; };
+		4915D0E313F093520073EC55 /* Dutch */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Dutch; path = Dutch.lproj/Localizable.strings; sourceTree = "<group>"; };
+		4915D0E413F093790073EC55 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Localizable.strings; sourceTree = "<group>"; };
 		59E3B4CA13694DD30066D77F /* ja */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = ja; path = ja.lproj/RootViewController.xib; sourceTree = "<group>"; };
 		59E3B4D213694E2C0066D77F /* ja */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = ja; path = ja.lproj/MapViewController.xib; sourceTree = "<group>"; };
 		59E3B4D513694E3E0066D77F /* ja */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = ja; path = ja.lproj/LanguageSwitcher.xib; sourceTree = "<group>"; };
 		59E3B4D813694E650066D77F /* ja */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = ja; path = ja.lproj/ModalViewController.xib; sourceTree = "<group>"; };
-		59E3B51C136952020066D77F /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Localizable.strings; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* Wikipedia_Mobile-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Wikipedia_Mobile-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
 		90533B6A1187AABD00108DF7 /* Dutch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = Dutch; path = Dutch.lproj/RootViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -199,30 +200,12 @@
 			name = Model;
 			sourceTree = "<group>";
 		};
-		0B6AD5EA11FB042A00B3A5B6 /* Dutch.lproj */ = {
-			isa = PBXGroup;
-			children = (
-				0B6AD60B11FB04DA00B3A5B6 /* Localizable.strings */,
-			);
-			path = Dutch.lproj;
-			sourceTree = "<group>";
-		};
 		0B6AD5F911FB043F00B3A5B6 /* Localization */ = {
 			isa = PBXGroup;
 			children = (
-				59E3B51E1369523E0066D77F /* ja.lproj */,
-				0B6AD5FA11FB045500B3A5B6 /* hu.lproj */,
-				0B6AD5EA11FB042A00B3A5B6 /* Dutch.lproj */,
+				4915D0DE13F093260073EC55 /* Localizable.strings */,
 			);
 			name = Localization;
-			sourceTree = "<group>";
-		};
-		0B6AD5FA11FB045500B3A5B6 /* hu.lproj */ = {
-			isa = PBXGroup;
-			children = (
-				0B6AD5FD11FB045500B3A5B6 /* Localizable.strings */,
-			);
-			path = hu.lproj;
 			sourceTree = "<group>";
 		};
 		0BD18783112A000500ED0BDE /* JSON */ = {
@@ -336,14 +319,6 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		59E3B51E1369523E0066D77F /* ja.lproj */ = {
-			isa = PBXGroup;
-			children = (
-				59E3B51B136952020066D77F /* Localizable.strings */,
-			);
-			name = ja.lproj;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -425,7 +400,7 @@
 				59275BE613693BAF0053611D /* MapViewController.xib in Resources */,
 				59275BE713693BAF0053611D /* ModalViewController.xib in Resources */,
 				59275BE813693BAF0053611D /* WikiViewController.xib in Resources */,
-				59E3B51D136952020066D77F /* Localizable.strings in Resources */,
+				4915D0E013F093260073EC55 /* Localizable.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -460,22 +435,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		0B6AD5FD11FB045500B3A5B6 /* Localizable.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				0B6AD5FE11FB045500B3A5B6 /* hu */,
-			);
-			name = Localizable.strings;
-			sourceTree = "<group>";
-		};
-		0B6AD60B11FB04DA00B3A5B6 /* Localizable.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				0B6AD60C11FB04DA00B3A5B6 /* Dutch */,
-			);
-			name = Localizable.strings;
-			sourceTree = "<group>";
-		};
 		0B95228711D7E986003946F1 /* WikiViewController.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -515,10 +474,13 @@
 			name = ModalViewController.xib;
 			sourceTree = "<group>";
 		};
-		59E3B51B136952020066D77F /* Localizable.strings */ = {
+		4915D0DE13F093260073EC55 /* Localizable.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				59E3B51C136952020066D77F /* ja */,
+				4915D0DF13F093260073EC55 /* English */,
+				4915D0E213F093480073EC55 /* hu */,
+				4915D0E313F093520073EC55 /* Dutch */,
+				4915D0E413F093790073EC55 /* ja */,
 			);
 			name = Localizable.strings;
 			sourceTree = "<group>";
