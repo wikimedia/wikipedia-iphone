@@ -32,8 +32,10 @@
 																	target:self
 																	action:@selector(clearHistorySheet)];
 		
+                [clearAll autorelease];
 		[navigationBar setLeftBarButtonItem:clearAll animated:YES];
 		bookmarkToggle.selectedSegmentIndex = 1;
+                
 	}
 }
 
@@ -105,6 +107,7 @@
 												 target:self
 												 action:@selector(exitEditModeWithButtonSwap)];
 	
+        [editingButton autorelease];
 	[navigationBar setLeftBarButtonItem:editingButton animated:NO];
 	
 	[tableView setEditing:YES animated:YES];
@@ -140,7 +143,7 @@
     
     static NSString *CellIdentifier = @"Cell";
     
-    UITableViewCell *cell = [self.tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    UITableViewCell *cell;
     
 	if (isBookmark) {
 		cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier] autorelease];
@@ -166,6 +169,8 @@
 		cell.textLabel.text = pageTitle;
 		cell.detailTextLabel.text = formattedDate;
 		cell.detailTextLabel.font = [UIFont systemFontOfSize:14.0f];
+                
+                [dateFormat release];
 	}
 	
 	cell.imageView.image = [UIImage imageNamed:@"UITabBarBookmarksTemplate.png"];
@@ -316,7 +321,8 @@
 														 target:self
 														 action:@selector(clearHistorySheet)];
 			
-			[navigationBar setLeftBarButtonItem:clearAll animated:YES];
+			[clearAll autorelease];
+                        [navigationBar setLeftBarButtonItem:clearAll animated:YES];
 		}; break;
 		default: break;
 	}
@@ -342,6 +348,7 @@
 						   otherButtonTitles:nil, nil];
 	menu.actionSheetStyle = UIActionSheetStyleBlackTranslucent;
 	[menu showInView:self.view];
+        [menu release];
 }
 
 - (void)actionSheet:(UIActionSheet *)actionSheet clickedButtonAtIndex:(int)buttonIndex
@@ -350,7 +357,6 @@
 	{
 		[self clearHistory];
 	}
-	[actionSheet release];
 }
 
 - (void)dealloc {

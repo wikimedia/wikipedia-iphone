@@ -127,6 +127,7 @@
 		if (error.code == -1003) {
 			UIAlertView *errorAlert = [[UIAlertView alloc] initWithTitle:NSLocalizedString(@"Can't find host", @"Can't find host") message:NSLocalizedString(@"Wikipedia could not be located. Please check your internet connection.", @"Wikipedia could not be located. Please check your internet connection.") delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
 			[errorAlert show];
+                        [errorAlert release];
 		}
 		
 		[UIApplication sharedApplication].networkActivityIndicatorVisible = NO; 
@@ -255,11 +256,16 @@
 {
 	NSString *jsonString = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
 	NSArray *results = [jsonString JSONValue];
-	
-	searchResults = [NSMutableArray arrayWithArray:[results objectAtIndex:1]];
-	[tableView reloadData];
-	
-	[searchResults retain];
+        
+	if (results && [results count] >= 1) {
+            searchResults = [NSMutableArray arrayWithArray:[results objectAtIndex:1]];
+        } else {
+            searchResults = [NSMutableArray array];
+        }
+        [searchResults retain];
+        [jsonString release];
+        
+       	[tableView reloadData];
 }
 
 - (void)connectionDidFinishLoading:(NSURLConnection *)connection {
@@ -342,12 +348,12 @@
 
 - (UITableViewCell *)tableView:(UITableView *)_tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
-	static NSString *CellIdentifier = @"Cell";
-    UITableViewCell *cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
+        static NSString *CellIdentifier = @"Cell";
+        UITableViewCell *cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
 	
 	cell.textLabel.text = [searchResults objectAtIndex:indexPath.row];
 	
-    return cell;
+    return [cell autorelease];
 }
 
 - (void)tableView:(UITableView *)_tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -391,8 +397,10 @@
 						   cancelButtonTitle:NSLocalizedString(@"Cancel", @"Cancel")
 						   destructiveButtonTitle:nil
 						   otherButtonTitles:NSLocalizedString(@"Add Bookmark", @"Add Bookmark"), nil];
+
 	menu.actionSheetStyle = UIActionSheetStyleDefault;
 	[menu showInView:self.view];
+        [menu release];
 }
 
 - (void)actionSheet:(UIActionSheet *)actionSheet clickedButtonAtIndex:(int)buttonIndex
@@ -405,7 +413,6 @@
 			[self addBookmark:pageTitle];
 		}
 	}
-	[actionSheet release];
 }
 
 
@@ -465,9 +472,9 @@
 	HUD.progress = 0.0f;
 }
 
-- (void)hudWasHidden {
-	HUDvisible = NO;
-    [HUD removeFromSuperview];
+- (void)hudWasHidden:(MBProgressHUD *)hud {
+    HUDvisible = NO;
+    [hud removeFromSuperview];
 }
 
 #pragma mark memory/unload

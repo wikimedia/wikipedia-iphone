@@ -122,7 +122,6 @@
 			[self addBookmark:pageTitle];
 		}
 	}
-	[actionSheet release];
 }
 
 
@@ -146,6 +145,7 @@
 						   otherButtonTitles:NSLocalizedString(@"Add Bookmark", @"Add Bookmark"), nil];
 	menu.actionSheetStyle = UIActionSheetStyleDefault;
 	[menu showInView:self.view];
+        [menu release];
 }
 
 #pragma mark HUD
@@ -162,8 +162,8 @@
 	[HUD show:YES];
 }
 
-- (void)hudWasHidden {
-    [HUD removeFromSuperview];
+- (void)hudWasHidden:(MBProgressHUD *)aHUD {
+    [aHUD removeFromSuperview];
 }
 
 - (void)didReceiveMemoryWarning {
