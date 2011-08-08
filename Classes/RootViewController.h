@@ -14,7 +14,11 @@
 	Wikipedia_MobileAppDelegate *appDelegate;
 	
 	UIWebView *webView;
-	IBOutlet UISearchBar *searchBar;
+	UISearchBar *searchBar;
+	UIToolbar *toolBar;
+	UIBarButtonItem *backButton;
+	UIBarButtonItem *forwardButton;
+        
 	NSString *pageTitle;
 	UIView *shade;
 	UITableView *tableView;
@@ -29,7 +33,10 @@
 @property (nonatomic, retain) Wikipedia_MobileAppDelegate *appDelegate;
 
 @property (nonatomic, retain) IBOutlet UIWebView *webView;
-@property (nonatomic, retain) UISearchBar *searchBar;
+@property (nonatomic, retain) IBOutlet UISearchBar *searchBar;
+@property (nonatomic, retain) IBOutlet UIToolbar *toolBar;
+@property (nonatomic, retain) IBOutlet UIBarButtonItem *backButton;
+@property (nonatomic, retain) IBOutlet UIBarButtonItem *forwardButton;
 @property (nonatomic, retain) NSString *pageTitle;
 @property (nonatomic, retain) IBOutlet UIView *shade;
 @property (nonatomic, retain) IBOutlet UITableView *tableView;

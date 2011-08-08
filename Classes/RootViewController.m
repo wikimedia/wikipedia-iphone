@@ -18,7 +18,7 @@
 
 @implementation RootViewController
 
-@synthesize webView, searchBar, searchResults;
+@synthesize webView, searchBar, searchResults, toolBar, backButton, forwardButton;
 @synthesize appDelegate, pageTitle, shade, tableView;
 
 @synthesize managedObjectContext;
@@ -47,6 +47,9 @@
 	searchBar.showsScopeBar = NO;
 	searchBar.frame = CGRectMake(0, 0, 320.0f, 44.0f);
 	
+        backButton.enabled = NO;
+        forwardButton.enabled = NO;
+        
 	[self loadStartPage];
 	
 	self.managedObjectContext = appDelegate.managedObjectContext;
@@ -118,7 +121,9 @@
 	}
 }
 
-- (void)webView:(UIWebView *)webView didFailLoadWithError:(NSError *)error {
+#pragma mark WebViewDelegate
+
+- (void)webView:(UIWebView *)awebView didFailLoadWithError:(NSError *)error {
 	[timer invalidate];
 	if (error != nil) {
 		NSString *errorString = [NSString stringWithFormat:@"%@", error];
@@ -133,9 +138,12 @@
 		[UIApplication sharedApplication].networkActivityIndicatorVisible = NO; 
 		[HUD hide:YES];
 	}
+
+        self.backButton.enabled = awebView.canGoBack;
+        self.forwardButton.enabled = awebView.canGoForward;
 }
 
-- (void)webViewDidFinishLoad:(UIWebView *)webView {
+- (void)webViewDidFinishLoad:(UIWebView *)awebView {
 	[UIApplication sharedApplication].networkActivityIndicatorVisible = NO; 
 	
 	pageTitle = [self.webView stringByEvaluatingJavaScriptFromString:@"document.title"]; 
@@ -151,6 +159,9 @@
 	if (![pageTitle isEqualToString:@"Wikipedia"] && ![pageTitle isEqualToString:nil]) {
 		[self addRecentPage:pageTitle];
 	}
+        
+        self.backButton.enabled = awebView.canGoBack;
+        self.forwardButton.enabled = awebView.canGoForward;
 }
 
 - (void)addRecentPage:(NSString *)pageName {
