@@ -16,6 +16,9 @@
 
 	NSString *wikiEntryURL;
 	UIWebView *webView;
+        UIToolbar *toolbar;
+        UIBarButtonItem *backButton;
+        UIBarButtonItem *forwardButton;
 	MapViewController *superView;
 	NSString *pageTitle;
 	MBProgressHUD *HUD;
@@ -27,6 +30,9 @@
 
 @property (nonatomic, retain) NSString *wikiEntryURL;
 @property (nonatomic, retain) NSString *pageTitle;
+@property (nonatomic, retain) IBOutlet UIToolbar *toolbar;
+@property (nonatomic, retain) IBOutlet UIBarButtonItem *backButton;
+@property (nonatomic, retain) IBOutlet UIBarButtonItem *forwardButton;
 @property (nonatomic, retain) IBOutlet UIWebView *webView;
 @property (nonatomic, retain) MapViewController *superView;
 

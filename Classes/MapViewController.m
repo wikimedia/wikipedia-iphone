@@ -221,7 +221,7 @@
 	
 	NSMutableArray *items = [[parser objectWithString:jsonString error:nil] objectForKey:@"geonames"];
   
-  NSLog(@"Got back %i items from geo service", [items count]);
+	NSLog(@"Got back %i items from geo service", [items count]);
 	
 	annotations = [[NSMutableArray alloc] init];
 	
@@ -280,7 +280,7 @@
 	
 	annotations = [[NSMutableArray alloc] init];
 	
-	CLLocationCoordinate2D newCenter;
+	CLLocationCoordinate2D newCenter = CLLocationCoordinate2DMake(0,0);
 	
 	for (NSDictionary *item in items) {
 		AddressAnnotation *annotation;
@@ -356,13 +356,13 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
 	static NSString *CellIdentifier = @"Cell";
-    UITableViewCell *cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:CellIdentifier];
+	UITableViewCell *cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:CellIdentifier];
 	
 	cell.textLabel.text = [[annotations objectAtIndex:indexPath.row] title];
 	cell.detailTextLabel.text = [[annotations objectAtIndex:indexPath.row] subtitle];
 	cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
 	
-    return cell;
+	return [cell autorelease];
 }
 
 

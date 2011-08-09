@@ -13,7 +13,7 @@
 
 @implementation WikiViewController
 
-@synthesize appDelegate, wikiEntryURL, webView, superView;
+@synthesize appDelegate, wikiEntryURL, webView, superView, toolbar, backButton, forwardButton;
 @synthesize pageTitle;
 @synthesize managedObjectContext;
 
@@ -39,9 +39,11 @@
 	self.managedObjectContext = appDelegate.managedObjectContext;
 	
 	[webView setBackgroundColor:[UIColor colorWithPatternImage:[UIImage imageWithContentsOfFile:@"UITexture2.png"]]];
+        backButton.enabled = NO;
+        forwardButton.enabled = NO;
 	
 	NSMutableURLRequest *URLrequest = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:wikiEntryURL]];
-	[URLrequest setValue:@"Wikipedia Mobile/2.0" forHTTPHeaderField:@"User_Agent"];
+	[URLrequest setValue:@"Wikipedia Mobile/2.0" forHTTPHeaderField:@"User-Agent"];
 	
 	[webView loadRequest:URLrequest];
 }
@@ -52,7 +54,7 @@
 	[self showLoadingHUD];
 }
 
-- (void)webView:(UIWebView *)webView didFailLoadWithError:(NSError *)error {
+- (void)webView:(UIWebView *)awebView didFailLoadWithError:(NSError *)error {
 	if (error != nil) {
 		NSString *errorString = [NSString stringWithFormat:@"%@", error];
 		NSLog(@"%@", errorString);
@@ -60,9 +62,12 @@
 		[UIApplication sharedApplication].networkActivityIndicatorVisible = NO; 
 		[HUD hide:YES];
 	}
+        
+        self.backButton.enabled = awebView.canGoBack;
+        self.forwardButton.enabled = awebView.canGoForward;
 }
 
-- (void)webViewDidFinishLoad:(UIWebView *)webView {
+- (void)webViewDidFinishLoad:(UIWebView *)awebView {
 	[UIApplication sharedApplication].networkActivityIndicatorVisible = NO;
 	
 	pageTitle = [self.webView stringByEvaluatingJavaScriptFromString:@"document.title"]; 
@@ -72,6 +77,9 @@
 	if (![pageTitle isEqualToString:@"Wikipedia"] && ![pageTitle isEqualToString:nil]) {
 		[self addRecentPage:pageTitle];
 	}
+        
+        self.backButton.enabled = awebView.canGoBack;
+        self.forwardButton.enabled = awebView.canGoForward;
 }
 
 
@@ -122,7 +130,6 @@
 			[self addBookmark:pageTitle];
 		}
 	}
-	[actionSheet release];
 }
 
 
@@ -146,6 +153,7 @@
 						   otherButtonTitles:NSLocalizedString(@"Add Bookmark", @"Add Bookmark"), nil];
 	menu.actionSheetStyle = UIActionSheetStyleDefault;
 	[menu showInView:self.view];
+        [menu release];
 }
 
 #pragma mark HUD
@@ -162,8 +170,8 @@
 	[HUD show:YES];
 }
 
-- (void)hudWasHidden {
-    [HUD removeFromSuperview];
+- (void)hudWasHidden:(MBProgressHUD *)aHUD {
+    [aHUD removeFromSuperview];
 }
 
 - (void)didReceiveMemoryWarning {

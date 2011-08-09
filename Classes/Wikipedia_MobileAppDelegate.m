@@ -38,6 +38,7 @@
 	if ([self isDataSourceAvailable] == NO) {
 		UIAlertView *errorAlert = [[UIAlertView alloc] initWithTitle:NSLocalizedString(@"Error: No Internet Connection", @"Error: No Internet Connection") message:NSLocalizedString(@"This application requires internet access.", @"This application requires internet access.") delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
 		[errorAlert show];
+                [errorAlert release];
 	}
 }
 
@@ -69,6 +70,7 @@
 			NSString *errorString = [NSString stringWithFormat:@"%@ - %@", error, [error userInfo]];
 			UIAlertView *errorAlert = [[UIAlertView alloc] initWithTitle:NSLocalizedString(@"Database Error", @"Database Error") message:errorString delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
 			[errorAlert show];
+                        [errorAlert release];
         } 
     }
 }
@@ -157,6 +159,7 @@
 		NSString *errorString = [NSString stringWithFormat:@"%@ - %@", error, [error userInfo]];
 		UIAlertView *errorAlert = [[UIAlertView alloc] initWithTitle:NSLocalizedString(@"Database Error", @"Database Error") message:errorString delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
 		[errorAlert show];
+                [errorAlert release];
     }    
 	
     return persistentStoreCoordinator;
