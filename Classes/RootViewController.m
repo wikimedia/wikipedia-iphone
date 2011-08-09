@@ -18,7 +18,7 @@
 
 @implementation RootViewController
 
-@synthesize webView, searchBar, searchResults;
+@synthesize webView, searchBar, searchResults, toolBar, backButton, forwardButton;
 @synthesize appDelegate, pageTitle, shade, tableView;
 
 @synthesize managedObjectContext;
@@ -47,6 +47,9 @@
 	searchBar.showsScopeBar = NO;
 	searchBar.frame = CGRectMake(0, 0, 320.0f, 44.0f);
 	
+        backButton.enabled = NO;
+        forwardButton.enabled = NO;
+        
 	[self loadStartPage];
 	
 	self.managedObjectContext = appDelegate.managedObjectContext;
@@ -118,7 +121,9 @@
 	}
 }
 
-- (void)webView:(UIWebView *)webView didFailLoadWithError:(NSError *)error {
+#pragma mark WebViewDelegate
+
+- (void)webView:(UIWebView *)awebView didFailLoadWithError:(NSError *)error {
 	[timer invalidate];
 	if (error != nil) {
 		NSString *errorString = [NSString stringWithFormat:@"%@", error];
@@ -127,14 +132,18 @@
 		if (error.code == -1003) {
 			UIAlertView *errorAlert = [[UIAlertView alloc] initWithTitle:NSLocalizedString(@"Can't find host", @"Can't find host") message:NSLocalizedString(@"Wikipedia could not be located. Please check your internet connection.", @"Wikipedia could not be located. Please check your internet connection.") delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
 			[errorAlert show];
+                        [errorAlert release];
 		}
 		
 		[UIApplication sharedApplication].networkActivityIndicatorVisible = NO; 
 		[HUD hide:YES];
 	}
+
+        self.backButton.enabled = awebView.canGoBack;
+        self.forwardButton.enabled = awebView.canGoForward;
 }
 
-- (void)webViewDidFinishLoad:(UIWebView *)webView {
+- (void)webViewDidFinishLoad:(UIWebView *)awebView {
 	[UIApplication sharedApplication].networkActivityIndicatorVisible = NO; 
 	
 	pageTitle = [self.webView stringByEvaluatingJavaScriptFromString:@"document.title"]; 
@@ -150,6 +159,9 @@
 	if (![pageTitle isEqualToString:@"Wikipedia"] && ![pageTitle isEqualToString:nil]) {
 		[self addRecentPage:pageTitle];
 	}
+        
+        self.backButton.enabled = awebView.canGoBack;
+        self.forwardButton.enabled = awebView.canGoForward;
 }
 
 - (void)addRecentPage:(NSString *)pageName {
@@ -255,11 +267,16 @@
 {
 	NSString *jsonString = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
 	NSArray *results = [jsonString JSONValue];
-	
-	searchResults = [NSMutableArray arrayWithArray:[results objectAtIndex:1]];
-	[tableView reloadData];
-	
-	[searchResults retain];
+        
+	if (results && [results count] >= 1) {
+            searchResults = [NSMutableArray arrayWithArray:[results objectAtIndex:1]];
+        } else {
+            searchResults = [NSMutableArray array];
+        }
+        [searchResults retain];
+        [jsonString release];
+        
+       	[tableView reloadData];
 }
 
 - (void)connectionDidFinishLoading:(NSURLConnection *)connection {
@@ -342,12 +359,12 @@
 
 - (UITableViewCell *)tableView:(UITableView *)_tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
-	static NSString *CellIdentifier = @"Cell";
-    UITableViewCell *cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
+        static NSString *CellIdentifier = @"Cell";
+        UITableViewCell *cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
 	
 	cell.textLabel.text = [searchResults objectAtIndex:indexPath.row];
 	
-    return cell;
+    return [cell autorelease];
 }
 
 - (void)tableView:(UITableView *)_tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -391,8 +408,10 @@
 						   cancelButtonTitle:NSLocalizedString(@"Cancel", @"Cancel")
 						   destructiveButtonTitle:nil
 						   otherButtonTitles:NSLocalizedString(@"Add Bookmark", @"Add Bookmark"), nil];
+
 	menu.actionSheetStyle = UIActionSheetStyleDefault;
 	[menu showInView:self.view];
+        [menu release];
 }
 
 - (void)actionSheet:(UIActionSheet *)actionSheet clickedButtonAtIndex:(int)buttonIndex
@@ -405,7 +424,6 @@
 			[self addBookmark:pageTitle];
 		}
 	}
-	[actionSheet release];
 }
 
 
@@ -465,9 +483,9 @@
 	HUD.progress = 0.0f;
 }
 
-- (void)hudWasHidden {
-	HUDvisible = NO;
-    [HUD removeFromSuperview];
+- (void)hudWasHidden:(MBProgressHUD *)hud {
+    HUDvisible = NO;
+    [hud removeFromSuperview];
 }
 
 #pragma mark memory/unload

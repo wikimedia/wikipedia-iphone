@@ -101,7 +101,7 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
 	static NSString *CellIdentifier = @"Cell";
-    UITableViewCell *cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
+        UITableViewCell *cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
 	
 	NSMutableDictionary *dictItem = [languagesArray objectAtIndex:indexPath.row];
 	cell.textLabel.text = [dictItem valueForKey:@"language"];
@@ -112,7 +112,7 @@
 		cell.accessoryType = UITableViewCellAccessoryNone;
 	}
 
-    return cell;
+    return [cell autorelease];
 }
 
 
