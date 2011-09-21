@@ -13,6 +13,7 @@
 #import "Wikipedia_MobileAppDelegate.h"
 #import "RecentPage.h"
 #import "Bookmark.h"
+#import <SystemConfiguration/SystemConfiguration.h>
 
 #define debug(format, ...) CFShow([NSString stringWithFormat:format, ## __VA_ARGS__]);
 
@@ -36,6 +37,24 @@
 	[webView loadRequest:URLrequest];
 }
 
+- (BOOL)isDataSourceAvailable
+{
+    static BOOL checkNetwork = YES;
+    if (checkNetwork) {
+        checkNetwork = NO;
+        
+        Boolean success;
+        const char *host_name = "wikipedia.org";
+		
+        SCNetworkReachabilityRef reachability = SCNetworkReachabilityCreateWithName(NULL, host_name);
+        SCNetworkReachabilityFlags flags;
+        success = SCNetworkReachabilityGetFlags(reachability, &flags);
+        _isDataSourceAvailable = success && (flags & kSCNetworkFlagsReachable) && !(flags & kSCNetworkFlagsConnectionRequired);
+        CFRelease(reachability);
+    }
+    return _isDataSourceAvailable;
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
 	appDelegate = (Wikipedia_MobileAppDelegate *)[[UIApplication sharedApplication] delegate];
@@ -49,6 +68,12 @@
 	
         backButton.enabled = NO;
         forwardButton.enabled = NO;
+    
+    if ([self isDataSourceAvailable] == NO) {
+		UIAlertView *errorAlert = [[UIAlertView alloc] initWithTitle:NSLocalizedString(@"Error: No Internet Connection", @"Error: No Internet Connection") message:NSLocalizedString(@"This application requires internet access.", @"This application requires internet access.") delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
+		[errorAlert show];
+        [errorAlert release];
+	}
         
 	[self loadStartPage];
 	

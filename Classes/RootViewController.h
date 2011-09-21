@@ -28,6 +28,7 @@
 	
 	NSMutableArray *searchResults;
 	NSManagedObjectContext *managedObjectContext;
+    BOOL _isDataSourceAvailable;
 }
 
 @property (nonatomic, retain) Wikipedia_MobileAppDelegate *appDelegate;
@@ -58,5 +59,6 @@
 - (void)reload;
 - (void)addRecentPage:(NSString *)pageName;
 - (void)addBookmark:(NSString *)pageName;
+- (BOOL)isDataSourceAvailable;
 
 @end

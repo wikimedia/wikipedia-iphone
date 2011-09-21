@@ -6,7 +6,6 @@
 //  Copyright Wikimedia Foundation 2010. All rights reserved.
 //
 
-#import <SystemConfiguration/SystemConfiguration.h>
 #import "Wikipedia_MobileAppDelegate.h"
 #import "RootViewController.h"
 #import "ModalViewController.h"
@@ -34,32 +33,7 @@
 	NSArray *languages = [defaults objectForKey:@"AppleLanguages"];
 	NSString *currentLanguage = [languages objectAtIndex:0];
 	NSLog(@"langSetting: %@", currentLanguage);
-	
-	if ([self isDataSourceAvailable] == NO) {
-		UIAlertView *errorAlert = [[UIAlertView alloc] initWithTitle:NSLocalizedString(@"Error: No Internet Connection", @"Error: No Internet Connection") message:NSLocalizedString(@"This application requires internet access.", @"This application requires internet access.") delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
-		[errorAlert show];
-                [errorAlert release];
-	}
 }
-
-- (BOOL)isDataSourceAvailable
-{
-    static BOOL checkNetwork = YES;
-    if (checkNetwork) {
-        checkNetwork = NO;
-        
-        Boolean success;
-        const char *host_name = "wikipedia.org";
-		
-        SCNetworkReachabilityRef reachability = SCNetworkReachabilityCreateWithName(NULL, host_name);
-        SCNetworkReachabilityFlags flags;
-        success = SCNetworkReachabilityGetFlags(reachability, &flags);
-        _isDataSourceAvailable = success && (flags & kSCNetworkFlagsReachable) && !(flags & kSCNetworkFlagsConnectionRequired);
-        CFRelease(reachability);
-    }
-    return _isDataSourceAvailable;
-}
-
 
 - (void)applicationWillTerminate:(UIApplication *)application {
 	// Save data if appropriate
@@ -93,7 +67,6 @@
 - (void)applicationWillEnterForeground:(UIApplication *)application {
     
 }
-
 
 #pragma mark -
 #pragma mark Memory management

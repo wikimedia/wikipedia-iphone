@@ -14,7 +14,6 @@
     UIWindow *window;
     UINavigationController *navigationController;
 	NSUserDefaults *settings;
-    BOOL _isDataSourceAvailable;
 }
 
 @property (nonatomic, retain, readonly) NSManagedObjectModel *managedObjectModel;
@@ -26,6 +25,5 @@
 @property (nonatomic, retain) NSUserDefaults *settings;
 
 - (NSString *)applicationDocumentsDirectory;
-- (BOOL)isDataSourceAvailable;
 
 @end
