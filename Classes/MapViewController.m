@@ -19,8 +19,8 @@
 	NSString *mURL;
 }
 
-@property (nonatomic, retain) NSString *title;
-@property (nonatomic, retain) NSString *subtitle;
+@property (nonatomic, copy) NSString *title;
+@property (nonatomic, copy) NSString *subtitle;
 @property (nonatomic, retain) NSString *mURL;
 
 @end

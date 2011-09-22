@@ -40,7 +40,7 @@
 }
 
 - (void)dealloc {
-	[self.locationManager release];
+	[locationManager release];
     [super dealloc];
 }
 
