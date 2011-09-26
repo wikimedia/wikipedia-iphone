@@ -1,5 +1,5 @@
 /*
- Copyright (C) 2009 Stig Brautaset. All rights reserved.
+ Copyright (C) 2011 Stig Brautaset. All rights reserved.
  
  Redistribution and use in source and binary forms, with or without
  modification, are permitted provided that the following conditions are met:
@@ -28,40 +28,10 @@
  */
 
 #import <Foundation/Foundation.h>
+#import "SBJsonStreamParserAdapter.h"
 
-#pragma mark JSON Writing
+@interface SBJsonStreamParserAccumulator : NSObject <SBJsonStreamParserAdapterDelegate>
 
-/// Adds JSON generation to NSObject
-@interface NSObject (NSObject_SBJsonWriting)
-
-/**
- @brief Encodes the receiver into a JSON string
- 
- Although defined as a category on NSObject it is only defined for NSArray and NSDictionary.
- 
- @return the receiver encoded in JSON, or nil on error.
- 
- @see @ref objc2json
- */
-- (NSString *)JSONRepresentation;
+@property (copy) id value;
 
 @end
-
-
-#pragma mark JSON Parsing
-
-/// Adds JSON parsing methods to NSString
-@interface NSString (NSString_SBJsonParsing)
-
-/**
- @brief Decodes the receiver's JSON text
- 
- @return the NSDictionary or NSArray represented by the receiver, or nil on error.
- 
- @see @ref json2objc
- */
-- (id)JSONValue;
-
-@end
-
-

@@ -8,7 +8,7 @@
 
 #import "MapViewController.h"
 #import "WikiViewController.h"
-#import "JSON.h"
+#import "SBJson.h"
 
 #pragma mark MKAnnotation subclass
 
@@ -95,7 +95,7 @@
 }
 
 - (void)fetchWikiPagesWithLatitude:(float)latitude longitude:(float)longitude {
-	SBJSON *parser = [[SBJSON alloc] init];
+    parser = [[SBJsonParser alloc] init];
 	
 	NSString *urlString = [NSString stringWithFormat:@"http://ws.geonames.org/findNearbyWikipediaJSON?formatted=true&username=wikimedia&lat=%f&lng=%f&style=full", latitude, longitude];
     NSLog(@"Loading: %@", urlString);
@@ -208,7 +208,7 @@
 }
 
 - (void)refetchWikiPagesWithLatitude:(float)latitude longitude:(float)longitude {
-	SBJSON *parser = [[SBJSON alloc] init];
+    parser = [[SBJsonParser alloc] init];
 	
 	NSString *urlString = [NSString stringWithFormat:@"http://ws.geonames.org/findNearbyWikipediaJSON?formatted=true&username=wikimedia&lat=%f&lng=%f&style=full", latitude, longitude];
 	NSLog(@"Loading: %@", urlString);
@@ -263,8 +263,8 @@
 }
 
 - (void)fetchWikiPagesAtLocation:(NSString *)location {
-	SBJSON *parser = [[SBJSON alloc] init];
-	
+	parser = [[SBJsonParser alloc] init];
+    
 	NSString *urlString = [NSString stringWithFormat:@"http://ws.geonames.org/wikipediaSearchJSON?formatted=true&q=%@&maxRows=10&style=full", location];
 	NSLog(@"Loading: %@", urlString);
 	

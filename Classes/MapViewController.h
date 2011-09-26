@@ -10,6 +10,8 @@
 #import <MapKit/MapKit.h>
 #import "CLController.h"
 
+@class SBJsonParser;
+
 @interface MapViewController : UIViewController <MKMapViewDelegate, CLControllerDelegate, CLLocationManagerDelegate, UISearchBarDelegate, UITableViewDelegate, UITableViewDataSource> {
 	MKMapView *mapView;
 	CLController *locationController;
@@ -21,6 +23,7 @@
 	UIBarButtonItem *locationBtn;
 	UISegmentedControl *mapListSwitch;
 	UISearchBar *searchBar;
+    SBJsonParser *parser;
 }
 
 @property (nonatomic, retain) IBOutlet MKMapView *mapView;

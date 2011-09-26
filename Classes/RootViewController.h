@@ -7,7 +7,7 @@
 //
 
 #import "Wikipedia_MobileAppDelegate.h"
-#import "JSON.h"
+#import "SBJson.h"
 #import "MBProgressHUD.h"
 
 @interface RootViewController : UIViewController <UISearchBarDelegate, UIWebViewDelegate, UIActionSheetDelegate, UITableViewDelegate, UITableViewDataSource, MBProgressHUDDelegate> {
