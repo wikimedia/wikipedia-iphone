@@ -6,6 +6,8 @@
 	<string>English</string>
 	<key>CFBundleDisplayName</key>
 	<string>Wikipedia</string>
+	<key>CFBundleDocumentTypes</key>
+	<array/>
 	<key>CFBundleExecutable</key>
 	<string>${EXECUTABLE_NAME}</string>
 	<key>CFBundleIconFile</key>
@@ -15,10 +17,8 @@
 		<string>icon.png</string>
 		<string>icon@2x.png</string>
 	</array>
-	<key>CFBundleDocumentTypes</key>
-	<array/>
 	<key>CFBundleIdentifier</key>
-	<string>andreaslengyel.${PRODUCT_NAME:rfc1034identifier}</string>
+	<string>org.wikimedia.wikipedia</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>
@@ -35,7 +35,7 @@
 		</dict>
 	</array>
 	<key>CFBundleVersion</key>
-	<string>2.1</string>
+	<string>2.2.1</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>NSMainNibFile</key>
