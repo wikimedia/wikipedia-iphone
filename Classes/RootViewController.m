@@ -32,7 +32,7 @@
 	NSString *url = [NSString stringWithFormat:@"http://%@.m.wikipedia.org", [appDelegate.settings stringForKey:@"languageKey"]];
 	NSURL *_url = [NSURL URLWithString:url];
 	NSMutableURLRequest *URLrequest = [NSMutableURLRequest requestWithURL:_url];
-	[URLrequest setValue:@"Wikipedia Mobile/2.0" forHTTPHeaderField:@"User_Agent"];
+	[URLrequest setValue:@"Wikipedia Mobile/2.2.1" forHTTPHeaderField:@"Application_Version"];
 	
 	[webView loadRequest:URLrequest];
 }
@@ -100,7 +100,7 @@
 	NSURL *_url = [NSURL URLWithString:url];
 	
 	NSMutableURLRequest *request = [[NSMutableURLRequest alloc] initWithURL:_url];
-	[request setValue:@"Wikipedia Mobile/2.0" forHTTPHeaderField:@"User_Agent"];
+	[request setValue:@"Wikipedia Mobile/2.2.1" forHTTPHeaderField:@"Application_Version"];
 	
 	[webView loadRequest:request];
 	[request release];
@@ -113,7 +113,7 @@
 	NSURL *_url = [NSURL URLWithString:url];
 		
 	NSMutableURLRequest *request = [[NSMutableURLRequest alloc] initWithURL:_url];
-	[request setValue:@"Wikipedia Mobile/2.0" forHTTPHeaderField:@"User_Agent"];
+	[request setValue:@"Wikipedia Mobile/2.2.1" forHTTPHeaderField:@"Application_Version"];
 	
 	[webView loadRequest:request];
 	[request release];
@@ -509,6 +509,16 @@
 - (void)hudWasHidden:(MBProgressHUD *)hud {
     HUDvisible = NO;
     [hud removeFromSuperview];
+}
+
+- (BOOL)webView:(UIWebView *)webView shouldStartLoadWithRequest:(NSURLRequest *)req navigationType:(UIWebViewNavigationType)navigationType
+{
+    NSMutableURLRequest *request = (NSMutableURLRequest *)req;
+    
+    if ([request respondsToSelector:@selector(setValue:forHTTPHeaderField:)]) {
+        [request setValue:@"Wikipedia Mobile/2.2.1" forHTTPHeaderField:@"Application_Version"];
+    }
+    return YES;
 }
 
 #pragma mark memory/unload
