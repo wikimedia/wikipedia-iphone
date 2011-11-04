@@ -67,6 +67,7 @@
 		9925E7DC142BE43E001346C9 /* SBJsonTokeniser.m in Sources */ = {isa = PBXBuildFile; fileRef = 9925E7CE142BE43E001346C9 /* SBJsonTokeniser.m */; };
 		9925E7DD142BE43E001346C9 /* SBJsonUTF8Stream.m in Sources */ = {isa = PBXBuildFile; fileRef = 9925E7D0142BE43E001346C9 /* SBJsonUTF8Stream.m */; };
 		9925E7DE142BE43E001346C9 /* SBJsonWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 9925E7D2142BE43E001346C9 /* SBJsonWriter.m */; };
+		D48EE8D31460B532000661D9 /* location@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D48EE8D21460B532000661D9 /* location@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -170,6 +171,7 @@
 		9925E7D0142BE43E001346C9 /* SBJsonUTF8Stream.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonUTF8Stream.m; sourceTree = "<group>"; };
 		9925E7D1142BE43E001346C9 /* SBJsonWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonWriter.h; sourceTree = "<group>"; };
 		9925E7D2142BE43E001346C9 /* SBJsonWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonWriter.m; sourceTree = "<group>"; };
+		D48EE8D21460B532000661D9 /* location@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "location@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -292,6 +294,7 @@
 				0B79B1A71134CDE6006BA370 /* Default.png */,
 				0BD48DB611FB0B9A0072BEEB /* Default@2x.png */,
 				0BBBAF1811203DEC0056EF45 /* location.png */,
+				D48EE8D21460B532000661D9 /* location@2x.png */,
 				0B79AEAA11344DB6006BA370 /* history.png */,
 				0BD48DA411FB0A360072BEEB /* history@2x.png */,
 				0B2D8CB0111BFDCE00328619 /* icon.png */,
@@ -375,7 +378,7 @@
 		29B97313FDCFA39411CA2CEA /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0410;
+				LastUpgradeCheck = 0420;
 			};
 			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "Wikipedia Mobile" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -434,6 +437,7 @@
 				59275BE713693BAF0053611D /* ModalViewController.xib in Resources */,
 				59275BE813693BAF0053611D /* WikiViewController.xib in Resources */,
 				4915D0E013F093260073EC55 /* Localizable.strings in Resources */,
+				D48EE8D31460B532000661D9 /* location@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -554,7 +558,7 @@
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = Wikipedia_Mobile_Prefix.pch;
-				GCC_VERSION = 4.2;
+				GCC_VERSION = "";
 				INFOPLIST_FILE = "Wikipedia_Mobile-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 3.0;
 				PRODUCT_NAME = "Wikipedia Mobile";
@@ -571,7 +575,7 @@
 				GCC_OPTIMIZATION_LEVEL = 3;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = Wikipedia_Mobile_Prefix.pch;
-				GCC_VERSION = 4.2;
+				GCC_VERSION = "";
 				INFOPLIST_FILE = "Wikipedia_Mobile-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 3.0;
 				PRODUCT_NAME = "Wikipedia Mobile";
