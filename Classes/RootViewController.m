@@ -244,6 +244,7 @@
 	shade.hidden = NO;
 	appDelegate = (Wikipedia_MobileAppDelegate *)[[UIApplication sharedApplication] delegate];
 	
+    searchBar.text = nil;
 	searchBar.showsScopeBar = YES;
 	searchBar.selectedScopeButtonIndex = 0;
 	searchBar.scopeButtonTitles = [NSArray arrayWithObjects:[appDelegate.settings stringForKey:@"languageName"], NSLocalizedString(@"Set Language", @"Set Language"), nil];
@@ -310,7 +311,13 @@
 	tableView.hidden = YES;
 }
 
-- (void)searchBarTextDidEndEditing:(UISearchBar *)searchBar {
+- (void)searchBarTextDidEndEditing:(UISearchBar *)_searchBar {
+    if (searchBar.text == nil || [searchBar.text isEqualToString:@""]) {
+        pageTitle = [self.webView stringByEvaluatingJavaScriptFromString:@"document.title"]; 
+        if (![pageTitle isEqualToString:@"Wikipedia"]) {
+            [searchBar setText:pageTitle];
+        }
+    }
 }
 
 - (void)searchBar:(UISearchBar *)_searchBar selectedScopeButtonIndexDidChange:(NSInteger)selectedScope {
