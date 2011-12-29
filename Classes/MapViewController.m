@@ -67,7 +67,7 @@
 }
 
 - (void)locationError:(NSError *)error {
-	UIAlertView *errorAlert = [[UIAlertView alloc] initWithTitle:NSLocalizedString(@"Error", @"Error") message:[error description] delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
+	UIAlertView *errorAlert = [[UIAlertView alloc] initWithTitle:NSLocalizedString(@"Oops", @"Oops") message:@"Sorry, could not find your location." delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
 	[errorAlert show];
 	
 	[UIApplication sharedApplication].networkActivityIndicatorVisible = NO;
