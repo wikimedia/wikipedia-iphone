@@ -55,6 +55,7 @@
 		59275BE813693BAF0053611D /* WikiViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0B95228711D7E986003946F1 /* WikiViewController.xib */; };
 		90533B501187AA7600108DF7 /* RootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 90533B4F1187AA7600108DF7 /* RootViewController.xib */; };
 		90533B5A1187AA7600108DF7 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 90533B591187AA7600108DF7 /* MainWindow.xib */; };
+		9911228D14B4CE0A009B3FA7 /* WikiConnectionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9911228C14B4CE0A009B3FA7 /* WikiConnectionController.m */; };
 		9925E7D3142BE43E001346C9 /* NSObject+SBJson.m in Sources */ = {isa = PBXBuildFile; fileRef = 9925E7BB142BE43E001346C9 /* NSObject+SBJson.m */; };
 		9925E7D4142BE43E001346C9 /* SBJsonParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 9925E7BE142BE43E001346C9 /* SBJsonParser.m */; };
 		9925E7D5142BE43E001346C9 /* SBJsonStreamParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 9925E7C0142BE43E001346C9 /* SBJsonStreamParser.m */; };
@@ -146,6 +147,8 @@
 		59E3B4D813694E650066D77F /* ja */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = ja; path = ja.lproj/ModalViewController.xib; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* Wikipedia_Mobile-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Wikipedia_Mobile-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
 		90533B6A1187AABD00108DF7 /* Dutch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = Dutch; path = Dutch.lproj/RootViewController.xib; sourceTree = "<group>"; };
+		9911228B14B4CE0A009B3FA7 /* WikiConnectionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WikiConnectionController.h; sourceTree = "<group>"; };
+		9911228C14B4CE0A009B3FA7 /* WikiConnectionController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WikiConnectionController.m; sourceTree = "<group>"; };
 		9925E7BA142BE43E001346C9 /* NSObject+SBJson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+SBJson.h"; sourceTree = "<group>"; };
 		9925E7BB142BE43E001346C9 /* NSObject+SBJson.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+SBJson.m"; sourceTree = "<group>"; };
 		9925E7BC142BE43E001346C9 /* SBJson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJson.h; sourceTree = "<group>"; };
@@ -205,6 +208,8 @@
 				0BC60AE1112619380046CB59 /* MapViewController.m */,
 				0BD18E7D112CB82C00ED0BDE /* WikiViewController.h */,
 				0BD18E7E112CB82C00ED0BDE /* WikiViewController.m */,
+				9911228B14B4CE0A009B3FA7 /* WikiConnectionController.h */,
+				9911228C14B4CE0A009B3FA7 /* WikiConnectionController.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -472,6 +477,7 @@
 				9925E7DC142BE43E001346C9 /* SBJsonTokeniser.m in Sources */,
 				9925E7DD142BE43E001346C9 /* SBJsonUTF8Stream.m in Sources */,
 				9925E7DE142BE43E001346C9 /* SBJsonWriter.m in Sources */,
+				9911228D14B4CE0A009B3FA7 /* WikiConnectionController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -553,6 +559,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = (
+					armv6,
+					"$(ARCHS_STANDARD_32_BIT)",
+				);
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -571,6 +581,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = (
+					armv6,
+					"$(ARCHS_STANDARD_32_BIT)",
+				);
 				COPY_PHASE_STRIP = NO;
 				GCC_OPTIMIZATION_LEVEL = 3;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
