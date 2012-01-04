@@ -37,7 +37,7 @@
 
 - (NSString *)subtitle {
 	return subtitle;
-} 
+}
 
 - (NSString *)title {
 	return title;
