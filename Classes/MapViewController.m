@@ -9,6 +9,7 @@
 #import "MapViewController.h"
 #import "WikiViewController.h"
 #import "SBJson.h"
+#import "WikiConnectionController.h"
 
 #pragma mark MKAnnotation subclass
 
@@ -25,6 +26,7 @@
 
 @end
 
+
 @implementation AddressAnnotation
 
 @synthesize coordinate, title, subtitle, mURL;
@@ -35,7 +37,7 @@
 
 - (NSString *)subtitle {
 	return subtitle;
-}
+} 
 
 - (NSString *)title {
 	return title;
@@ -51,8 +53,8 @@
 #pragma mark MapViewController
 
 @implementation MapViewController
-
 @protocol AddressAnnotation;
+@synthesize latitude, longitude;
 
 @synthesize mapView, annotations, navController, tableView, currentLocation, locationBtn, mapListSwitch, searchBar;
 
@@ -91,21 +93,54 @@
 	[UIApplication sharedApplication].networkActivityIndicatorVisible = YES;
 }
 
-- (void)viewDidAppear:(BOOL)animated {
+- (void)connectionSucceeded:(NSMutableData*)data {
+    NSString *response = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
+    NSLog(@"Response: %@", response);
+    [self processWikiPagesWithLatitude:data];
+    [response release];
+}
+- (void)connectionFailed:(NSError*)error {
+    // error contains reason for failure
 }
 
-- (void)fetchWikiPagesWithLatitude:(float)latitude longitude:(float)longitude {
-    parser = [[SBJsonParser alloc] init];
+- (void)refetchConnectionSucceeded:(NSMutableData*)data {
+    NSString *response = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
+    NSLog(@"Response: %@", response);
+    [self processRefetchWikiPagesWithLatitude:data];
+    [response release];
+}
+- (void)refetchConnectionFailed:(NSError*)error {
+    // error contains reason for failure
+}
+
+- (void)fetchWikiPagesAtLocationConnectionSucceeded:(NSMutableData*)data {
+    NSString *response = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
+    NSLog(@"Response: %@", response);
+    [self processFetchWikiPagesAtLocation:data];
+    [response release];
+}
+- (void)fetchWikiPagesAtLocationConnectionFailed:(NSError*)error {
+    // error contains reason for failure
+}
+
+- (void)fetchWikiPagesWithLatitude:(float)latitudeC longitude:(float)longitudeC {
+    
+    self.latitude = latitudeC;
+    self.longitude = longitudeC;
 	
-	NSString *urlString = [NSString stringWithFormat:@"http://ws.geonames.net/findNearbyWikipediaJSON?formatted=true&username=wikimedia&lat=%f&lng=%f&style=full", latitude, longitude];
+	NSString *urlString = [NSString stringWithFormat:@"http://ws.geonames.net/findNearbyWikipediaJSON?formatted=true&username=wikimedia&lat=%f&lng=%f&style=full", latitudeC, longitudeC];
     NSLog(@"Loading: %@", urlString);
-	
-	NSURL *url = [NSURL URLWithString:urlString];
-	NSURLRequest *request = [[NSURLRequest alloc] initWithURL:url];
-	
-	NSData *response = [NSURLConnection sendSynchronousRequest:request returningResponse:nil error:nil];
-	NSString *jsonString = [[NSString alloc] initWithData:response encoding:NSUTF8StringEncoding];
-	
+
+    id delegate = self;
+    WikiConnectionController *connectionController = [[[WikiConnectionController alloc] initWithDelegate:delegate selSucceeded:@selector(connectionSucceeded:) selFailed:@selector(connectionFailed:)] autorelease];
+    [connectionController startRequestForURL:[NSURL URLWithString:urlString]];
+}
+
+- (void)processWikiPagesWithLatitude:(NSMutableData*) response {
+    
+    NSString *jsonString = [[NSString alloc] initWithData:response encoding:NSUTF8StringEncoding];
+    parser = [[SBJsonParser alloc] init];
+    
 	NSMutableArray *items = [[parser objectWithString:jsonString error:nil] objectForKey:@"geonames"];
 	
 	MKCoordinateRegion region;
@@ -114,8 +149,8 @@
 	span.longitudeDelta = 0.2;
 	
 	CLLocationCoordinate2D location;
-    location.latitude = latitude;
-    location.longitude = longitude;
+    location.latitude = self.latitude;
+    location.longitude = self.longitude;
 	region.span = span;
 	region.center = location;
 	
@@ -145,7 +180,6 @@
 	[mapView regionThatFits:region];
 	
 	[jsonString release];
-	[request release];
 	[parser release];
 	firstLoad = NO;
 	mapListSwitch.enabled = YES;
@@ -207,17 +241,23 @@
 	
 }
 
-- (void)refetchWikiPagesWithLatitude:(float)latitude longitude:(float)longitude {
-    parser = [[SBJsonParser alloc] init];
+- (void)refetchWikiPagesWithLatitude:(float)latitudeC longitude:(float)longitudeC {
+    
+    self.latitude = latitudeC;
+    self.longitude = longitudeC;
 	
-	NSString *urlString = [NSString stringWithFormat:@"http://ws.geonames.net/findNearbyWikipediaJSON?formatted=true&username=wikimedia&lat=%f&lng=%f&style=full", latitude, longitude];
+	NSString *urlString = [NSString stringWithFormat:@"http://ws.geonames.net/findNearbyWikipediaJSON?formatted=true&username=wikimedia&lat=%f&lng=%f&style=full", latitudeC, longitudeC];
 	NSLog(@"Loading: %@", urlString);
-  
-	NSURL *url = [NSURL URLWithString:urlString];
-	NSURLRequest *request = [[NSURLRequest alloc] initWithURL:url];
-	
-	NSData *response = [NSURLConnection sendSynchronousRequest:request returningResponse:nil error:nil];
-	NSString *jsonString = [[NSString alloc] initWithData:response encoding:NSUTF8StringEncoding];
+    
+    id delegate = self;
+    WikiConnectionController *connectionController = [[[WikiConnectionController alloc] initWithDelegate:delegate selSucceeded:@selector(refetchConnectionSucceeded:) selFailed:@selector(refetchConnectionFailed:)] autorelease];
+    [connectionController startRequestForURL:[NSURL URLWithString:urlString]];
+}
+
+- (void)processRefetchWikiPagesWithLatitude:(NSMutableData*) response {
+    
+    NSString *jsonString = [[NSString alloc] initWithData:response encoding:NSUTF8StringEncoding];
+    parser = [[SBJsonParser alloc] init];
 	
 	NSMutableArray *items = [[parser objectWithString:jsonString error:nil] objectForKey:@"geonames"];
   
@@ -247,7 +287,6 @@
 	[mapView addAnnotations:annotations];
 	
 	[jsonString release];
-	[request release];
 	[parser release];
 }
 
@@ -262,17 +301,20 @@
 	[self fetchWikiPagesAtLocation:searchBar.text];
 }
 
-- (void)fetchWikiPagesAtLocation:(NSString *)location {
-	parser = [[SBJsonParser alloc] init];
+- (void)fetchWikiPagesAtLocation:(NSString *)locationC {
     
-	NSString *urlString = [NSString stringWithFormat:@"http://ws.geonames.net/wikipediaSearchJSON?formatted=true&q=%@&maxRows=10&style=full&username=wikimedia", location];
+	NSString *urlString = [NSString stringWithFormat:@"http://ws.geonames.net/wikipediaSearchJSON?formatted=true&q=%@&maxRows=10&style=full&username=wikimedia", locationC];
 	NSLog(@"Loading: %@", urlString);
-	
-	NSURL *url = [NSURL URLWithString:urlString];
-	NSURLRequest *request = [[NSURLRequest alloc] initWithURL:url];
-	
-	NSData *response = [NSURLConnection sendSynchronousRequest:request returningResponse:nil error:nil];
-	NSString *jsonString = [[NSString alloc] initWithData:response encoding:NSUTF8StringEncoding];
+    
+    id delegate = self;
+    WikiConnectionController *connectionController = [[[WikiConnectionController alloc] initWithDelegate:delegate selSucceeded:@selector(fetchWikiPagesAtLocationConnectionSucceeded:) selFailed:@selector(fetchWikiPagesAtLocationConnectionFailed:)] autorelease];
+    [connectionController startRequestForURL:[NSURL URLWithString:urlString]];
+}
+
+- (void)processFetchWikiPagesAtLocation:(NSMutableData*) response {
+
+    NSString *jsonString = [[NSString alloc] initWithData:response encoding:NSUTF8StringEncoding];
+    parser = [[SBJsonParser alloc] init];
 	
 	NSMutableArray *items = [[parser objectWithString:jsonString error:nil] objectForKey:@"geonames"];
 	
@@ -308,7 +350,6 @@
  	[mapView setCenterCoordinate:newCenter animated:NO];
 	
 	[jsonString release];
-	[request release];
 	[parser release];
 	[tableView reloadData];
 }

@@ -9,6 +9,8 @@
 #import <UIKit/UIKit.h>
 #import <MapKit/MapKit.h>
 #import "CLController.h"
+#import "WikiConnectionController.h"
+
 
 @class SBJsonParser;
 
@@ -34,6 +36,8 @@
 @property (nonatomic, retain) IBOutlet UIBarButtonItem *locationBtn;
 @property (nonatomic, retain) IBOutlet UISegmentedControl *mapListSwitch;
 @property (nonatomic, retain) IBOutlet UISearchBar *searchBar;
+@property float latitude;
+@property float longitude;
 
 - (IBAction)toggleMapAndListView:(id)tabs;
 - (IBAction)dismissModalView;
@@ -43,5 +47,9 @@
 - (void)fetchWikiPagesWithLatitude:(float)latitude longitude:(float)longitude;
 - (void)refetchWikiPagesWithLatitude:(float)latitude longitude:(float)longitude;
 - (void)fetchWikiPagesAtLocation:(NSString *)location;
+- (void)processWikiPagesWithLatitude:(NSMutableData*) response;
+- (void)processRefetchWikiPagesWithLatitude:(NSMutableData*) response;
+- (void)processFetchWikiPagesAtLocation:(NSMutableData*) response;
+
 
 @end
