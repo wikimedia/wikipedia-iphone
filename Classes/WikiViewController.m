@@ -43,7 +43,6 @@
         forwardButton.enabled = NO;
 	
 	NSMutableURLRequest *URLrequest = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:wikiEntryURL]];
-	[URLrequest setValue:@"Wikipedia Mobile/2.0" forHTTPHeaderField:@"User-Agent"];
 	
 	[webView loadRequest:URLrequest];
 }
