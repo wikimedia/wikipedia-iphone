@@ -9,11 +9,12 @@
 #import "Wikipedia_MobileAppDelegate.h"
 #import "SBJson.h"
 #import "MBProgressHUD.h"
+#import "WikiWebView.h"
 
 @interface RootViewController : UIViewController <UISearchBarDelegate, UIWebViewDelegate, UIActionSheetDelegate, UITableViewDelegate, UITableViewDataSource, MBProgressHUDDelegate> {
 	Wikipedia_MobileAppDelegate *appDelegate;
 	
-	UIWebView *webView;
+	WikiWebView *webView;
 	UISearchBar *searchBar;
 	UIToolbar *toolBar;
 	UIBarButtonItem *backButton;
@@ -33,7 +34,7 @@
 
 @property (nonatomic, retain) Wikipedia_MobileAppDelegate *appDelegate;
 
-@property (nonatomic, retain) IBOutlet UIWebView *webView;
+@property (nonatomic, retain) IBOutlet WikiWebView *webView;
 @property (nonatomic, retain) IBOutlet UISearchBar *searchBar;
 @property (nonatomic, retain) IBOutlet UIToolbar *toolBar;
 @property (nonatomic, retain) IBOutlet UIBarButtonItem *backButton;

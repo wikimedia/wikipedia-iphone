@@ -55,6 +55,7 @@
 		59275BE813693BAF0053611D /* WikiViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0B95228711D7E986003946F1 /* WikiViewController.xib */; };
 		90533B501187AA7600108DF7 /* RootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 90533B4F1187AA7600108DF7 /* RootViewController.xib */; };
 		90533B5A1187AA7600108DF7 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 90533B591187AA7600108DF7 /* MainWindow.xib */; };
+		99066CDE14B6692300CDD892 /* WikiWebView.m in Sources */ = {isa = PBXBuildFile; fileRef = 99066CDD14B6692300CDD892 /* WikiWebView.m */; };
 		9911228D14B4CE0A009B3FA7 /* WikiConnectionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9911228C14B4CE0A009B3FA7 /* WikiConnectionController.m */; };
 		9925E7D3142BE43E001346C9 /* NSObject+SBJson.m in Sources */ = {isa = PBXBuildFile; fileRef = 9925E7BB142BE43E001346C9 /* NSObject+SBJson.m */; };
 		9925E7D4142BE43E001346C9 /* SBJsonParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 9925E7BE142BE43E001346C9 /* SBJsonParser.m */; };
@@ -147,6 +148,8 @@
 		59E3B4D813694E650066D77F /* ja */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = ja; path = ja.lproj/ModalViewController.xib; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* Wikipedia_Mobile-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Wikipedia_Mobile-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
 		90533B6A1187AABD00108DF7 /* Dutch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = Dutch; path = Dutch.lproj/RootViewController.xib; sourceTree = "<group>"; };
+		99066CDD14B6692300CDD892 /* WikiWebView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WikiWebView.m; sourceTree = "<group>"; };
+		99066CE014B6692A00CDD892 /* WikiWebView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WikiWebView.h; sourceTree = "<group>"; };
 		9911228B14B4CE0A009B3FA7 /* WikiConnectionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WikiConnectionController.h; sourceTree = "<group>"; };
 		9911228C14B4CE0A009B3FA7 /* WikiConnectionController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WikiConnectionController.m; sourceTree = "<group>"; };
 		9925E7BA142BE43E001346C9 /* NSObject+SBJson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+SBJson.h"; sourceTree = "<group>"; };
@@ -198,6 +201,8 @@
 		080E96DDFE201D6D7F000001 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				99066CE014B6692A00CDD892 /* WikiWebView.h */,
+				99066CDD14B6692300CDD892 /* WikiWebView.m */,
 				28C286DF0D94DF7D0034E888 /* RootViewController.h */,
 				28C286E00D94DF7D0034E888 /* RootViewController.m */,
 				0B2D8A66111AB1CA00328619 /* ModalViewController.h */,
@@ -478,6 +483,7 @@
 				9925E7DD142BE43E001346C9 /* SBJsonUTF8Stream.m in Sources */,
 				9925E7DE142BE43E001346C9 /* SBJsonWriter.m in Sources */,
 				9911228D14B4CE0A009B3FA7 /* WikiConnectionController.m in Sources */,
+				99066CDE14B6692300CDD892 /* WikiWebView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
