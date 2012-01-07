@@ -99,6 +99,7 @@
 	NSURL *_url = [NSURL URLWithString:url];
 	
 	NSMutableURLRequest *request = [[NSMutableURLRequest alloc] initWithURL:_url];
+    request.cachePolicy = NSURLRequestReloadIgnoringLocalCacheData;
 	
 	[webView loadRequest:request];
 	[request release];
