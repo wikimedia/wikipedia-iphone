@@ -20,7 +20,7 @@
 @implementation RootViewController
 
 @synthesize webView, searchBar, searchResults, toolBar, backButton, forwardButton;
-@synthesize appDelegate, pageTitle, shade, tableView;
+@synthesize appDelegate, pageTitle, shade, tableView, externalURL;
 
 @synthesize managedObjectContext;
 
@@ -54,8 +54,45 @@
     return _isDataSourceAvailable;
 }
 
+-(BOOL)webView:(UIWebView *)webView shouldStartLoadWithRequest:(NSURLRequest *)request navigationType:(UIWebViewNavigationType)navigationType {
+    if (navigationType == UIWebViewNavigationTypeLinkClicked || navigationType == UIWebViewNavigationTypeOther) {
+        NSArray *sitesArray = [NSArray arrayWithObjects:@"wikiquote.org",@"wikinews.org",@"wikibooks.org",@"wikipedia.org",@"wiktionary.org",@"wikimedia.org", @"wikisource.org",@"wikiversity.org",nil];
+        NSURL *requestURL = [request URL]; 
+        BOOL siteFound = NO;
+
+        NSArray *hostParts = [requestURL.host componentsSeparatedByString:@"."];
+        NSString *documentDomain = [NSString stringWithFormat:@"%@%@%@", 
+                                    [hostParts objectAtIndex:(hostParts.count - 2)],
+                                    @".",
+                                    [hostParts objectAtIndex:(hostParts.count - 1)]];
+        
+        if ([sitesArray containsObject:documentDomain]) {
+            siteFound = YES;
+        }
+        
+        if (!siteFound) {
+            self.externalURL = [request URL];
+            UIAlertView *alert = [[UIAlertView alloc] initWithTitle:nil message:@"Open external link in Safari?" delegate:self cancelButtonTitle:@"OK" otherButtonTitles:@"Cancel", nil];
+            alert.tag = 2;
+            [alert show];
+            [alert release];
+            return NO;
+        }
+    }
+    return YES;
+}
+
+- (void)alertView:(UIAlertView *)actionSheet clickedButtonAtIndex:(NSInteger)buttonIndex {
+    if (actionSheet.tag == 2) {
+        if (buttonIndex == 0) {
+            [[UIApplication sharedApplication] openURL:self.externalURL];
+        }
+    }
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
+    webView.delegate = self;
 	appDelegate = (Wikipedia_MobileAppDelegate *)[[UIApplication sharedApplication] delegate];
     webView.customHeaders = [NSDictionary dictionaryWithObjectsAndKeys:@"Wikipedia Mobile/2.2.1", @"Application_Version", nil];
 	webView.scalesPageToFit = TRUE;
@@ -165,7 +202,7 @@
 }
 
 - (void)webViewDidFinishLoad:(UIWebView *)awebView {
-	[UIApplication sharedApplication].networkActivityIndicatorVisible = NO; 
+	[UIApplication sharedApplication].networkActivityIndicatorVisible = NO;
 	
 	pageTitle = [self.webView stringByEvaluatingJavaScriptFromString:@"document.title"]; 
 	if (![pageTitle isEqualToString:@"Wikipedia"]) {
@@ -533,6 +570,7 @@
 - (void)dealloc {
     [super dealloc];
 	[webView release];
+    self.externalURL = nil;
 }
 
 
