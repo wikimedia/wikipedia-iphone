@@ -21,6 +21,7 @@
 	UIBarButtonItem *forwardButton;
         
 	NSString *pageTitle;
+    NSURL *externalURL;
 	UIView *shade;
 	UITableView *tableView;
 	MBProgressHUD *HUD;
@@ -40,6 +41,7 @@
 @property (nonatomic, retain) IBOutlet UIBarButtonItem *backButton;
 @property (nonatomic, retain) IBOutlet UIBarButtonItem *forwardButton;
 @property (nonatomic, retain) NSString *pageTitle;
+@property (nonatomic, retain) NSURL *externalURL;
 @property (nonatomic, retain) IBOutlet UIView *shade;
 @property (nonatomic, retain) IBOutlet UITableView *tableView;
 
