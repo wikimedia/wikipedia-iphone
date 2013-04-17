@@ -1,5 +1,9 @@
 The official Wikipedia iPhone app
 
+<a href="https://www.cisimple.com/jobs/9bfd4dciie9c87j8o"><img src='https://www.cisimple.com/jobs/9bfd4dciie9c87j8o/build_status.png'/></a>
+
+Continuous Integration provided by [cisimple](https://www.cisimple.com).
+
 ----------
 
 BUILD NOTES
