@@ -1,8 +1,8 @@
-The official Wikipedia iPhone app
+### The official Wikipedia iPhone app
 
 ----------
 
-BUILD NOTES
+**BUILD NOTES**
 
 If you are building this for your own phone, then please note that
 you must modify the Wikipedia_Mobile-Info.plist file to build with
@@ -10,7 +10,7 @@ your own credentials.
 
 -----------
 
-SUPPORT
+**SUPPORT**
 
 If you need help with this application or would like to help out with
 further development, please touch base in irc.freenode.net in the #wikimedia-mobile
@@ -18,7 +18,7 @@ room. Lots of people in there to help and discuss this application.
 
 -----------
 
-TRADEMARK NOTES
+**TRADEMARK NOTES**
 
 All Wikimedia and Wikipedia trademarks contained herein are NOT licensed
 for use by any third-parties. Their inclusion in this open source software
@@ -30,7 +30,7 @@ distribution.
 
 ---------
 
-CONTRIBUTORS
+**CONTRIBUTORS**
 
 Andreas Lengyel (original creator)
 Hampton Catlin
